@@ -116,7 +116,7 @@ export default function Servizi() {
             </div>
 
             {/* Saldo e Stralcio */}
-            <div className="bg-white py-20">
+            <div className="bg-[#071029] py-20">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                   <div className="order-2 lg:order-1">
@@ -124,10 +124,10 @@ export default function Servizi() {
                       <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
                         <Scale className="w-8 h-8 text-[#071029]" />
                       </div>
-                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Saldo e Stralcio</h3>
+                      <h3 className="text-4xl font-montserrat font-bold text-white">Saldo e Stralcio</h3>
                     </div>
                     <div className="space-y-6">
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                      <p className="text-lg text-white leading-relaxed">
                         Abbiamo scelto di collaborare esclusivamente con il nostro partner, <strong>Jurelit</strong>, per offrire 
                         un'opportunità altamente vantaggiosa a tutte le parti coinvolte.
                       </p>
@@ -137,7 +137,7 @@ export default function Servizi() {
                           <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
                             🏠 <span className="ml-2">Debitore</span>
                           </h4>
-                          <p className="text-gray-600 leading-relaxed">
+                          <p className="text-white leading-relaxed">
                             Eliminazione completa del debito con sollievo finanziario immediato
                           </p>
                         </div>
@@ -145,7 +145,7 @@ export default function Servizi() {
                           <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
                             💼 <span className="ml-2">Creditore</span>
                           </h4>
-                          <p className="text-gray-600 leading-relaxed">
+                          <p className="text-white leading-relaxed">
                             Recupero rapido ed efficiente senza lunghe battaglie legali
                           </p>
                         </div>
@@ -153,14 +153,14 @@ export default function Servizi() {
                           <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
                             💰 <span className="ml-2">Acquirente</span>
                           </h4>
-                          <p className="text-gray-600 leading-relaxed">
+                          <p className="text-white leading-relaxed">
                             Acquisto di immobili a prezzi notevolmente sotto il valore di mercato
                           </p>
                         </div>
                       </div>
                       
                       <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-                        <p className="text-gray-700 font-medium">
+                        <p className="text-[#a9f6db] font-medium">
                           <strong>La collaborazione con Jurelit</strong> garantisce una gestione efficiente e trasparente 
                           per risultati soddisfacenti per tutti i partecipanti.
                         </p>
@@ -181,7 +181,7 @@ export default function Servizi() {
             </div>
 
             {/* Asta */}
-            <div className="bg-gray-50 py-20">
+            <div className="bg-white py-20">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                   <div className="order-1">
@@ -257,7 +257,7 @@ export default function Servizi() {
             </div>
 
             {/* Valorizzazione */}
-            <div className="bg-white py-20">
+            <div className="bg-[#071029] py-20">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                   <div className="order-2 lg:order-1">
@@ -265,14 +265,14 @@ export default function Servizi() {
                       <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
                         <TrendingUp className="w-8 h-8 text-[#071029]" />
                       </div>
-                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Valorizzazione</h3>
+                      <h3 className="text-4xl font-montserrat font-bold text-white">Valorizzazione</h3>
                     </div>
                     <div className="space-y-6">
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                      <p className="text-lg text-white leading-relaxed">
                         Il nostro servizio di valorizzazione immobiliare ti offre un <strong>supporto completo in ogni fase</strong> 
                         del processo di vendita della tua casa.
                       </p>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-white leading-relaxed">
                         Comprendiamo che la maggior parte dei potenziali acquirenti cerca casa online, ed è proprio per questo motivo 
                         che mettiamo a disposizione i nostri servizi per aiutarti a <strong>vendere la tua proprietà in modo più rapido</strong> 
                         e ad un prezzo più vantaggioso.
@@ -281,20 +281,20 @@ export default function Servizi() {
                       <div className="grid grid-cols-1 gap-4">
                         <div className="bg-gray-50 p-6 rounded-lg">
                           <h4 className="font-semibold text-[#071029] mb-3">🏡 Home Staging Professionale</h4>
-                          <p className="text-gray-600 leading-relaxed">
+                          <p className="text-white leading-relaxed">
                             Valorizziamo gli spazi e gli arredi della tua casa, rendendola più attraente per i potenziali acquirenti
                           </p>
                         </div>
                         <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
                           <h4 className="font-semibold text-[#071029] mb-3">💰 Rendita durante la Vendita</h4>
-                          <p className="text-gray-600 leading-relaxed">
+                          <p className="text-white leading-relaxed">
                             Sfruttare il potenziale di rendita tramite affitti a breve termine durante il periodo di vendita
                           </p>
                         </div>
                       </div>
                       
                       <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-                        <p className="text-gray-700 font-medium">
+                        <p className="text-[#a9f6db] font-medium">
                           <strong>Contattaci per ulteriori informazioni</strong> e per scoprire come possiamo aiutarti a valorizzare 
                           la tua casa e ottenere il massimo dalla vendita.
                         </p>
@@ -315,7 +315,7 @@ export default function Servizi() {
             </div>
 
             {/* Affitti Brevi */}
-            <div className="bg-[#071029] py-20">
+            <div className="bg-white py-20">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                   <div className="order-1">
@@ -332,35 +332,35 @@ export default function Servizi() {
                       <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
                         <Home className="w-8 h-8 text-[#071029]" />
                       </div>
-                      <h3 className="text-4xl font-montserrat font-bold text-white">Affitti Brevi</h3>
+                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Affitti Brevi</h3>
                     </div>
                     <div className="space-y-6">
-                      <p className="text-lg text-[#a9f6db] leading-relaxed font-semibold">
+                      <p className="text-lg text-gray-600 leading-relaxed font-semibold">
                         Gli affitti a breve termine offrono numerosi vantaggi che rendono questa opzione 
                         molto attraente per i proprietari immobiliari.
                       </p>
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
-                          <h4 className="font-semibold text-[#a9f6db] mb-2">💰 Maggiori Guadagni</h4>
-                          <p className="text-white text-sm">Reddito più elevato rispetto agli affitti a lungo termine</p>
+                        <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-2">💰 Maggiori Guadagni</h4>
+                          <p className="text-gray-600 text-sm">Reddito più elevato rispetto agli affitti a lungo termine</p>
                         </div>
-                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
-                          <h4 className="font-semibold text-[#a9f6db] mb-2">🔄 Flessibilità</h4>
-                          <p className="text-white text-sm">Controllo completo sulla disponibilità della proprietà</p>
+                        <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-2">🔄 Flessibilità</h4>
+                          <p className="text-gray-600 text-sm">Controllo completo sulla disponibilità della proprietà</p>
                         </div>
-                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
-                          <h4 className="font-semibold text-[#a9f6db] mb-2">📈 Valorizzazione</h4>
-                          <p className="text-white text-sm">Casa sempre presentabile per potenziali acquirenti</p>
+                        <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-2">📈 Valorizzazione</h4>
+                          <p className="text-gray-600 text-sm">Casa sempre presentabile per potenziali acquirenti</p>
                         </div>
-                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
-                          <h4 className="font-semibold text-[#a9f6db] mb-2">🌐 Visibilità</h4>
-                          <p className="text-white text-sm">Marketing su piattaforme di prenotazione online</p>
+                        <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-2">🌐 Visibilità</h4>
+                          <p className="text-gray-600 text-sm">Marketing su piattaforme di prenotazione online</p>
                         </div>
                       </div>
                       
-                      <div className="bg-[#a9f6db]/20 p-6 rounded-lg border border-[#a9f6db]/30">
-                        <p className="text-[#a9f6db] font-medium">
+                      <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
+                        <p className="text-gray-700 font-medium">
                           <strong>Se desideri massimizzare il guadagno e la visibilità</strong> della tua casa, contattaci 
                           per scoprire come il nostro servizio di affitti a breve termine può aiutarti a raggiungere 
                           i tuoi obiettivi di vendita.
