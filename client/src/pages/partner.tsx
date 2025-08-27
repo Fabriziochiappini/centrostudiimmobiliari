@@ -13,7 +13,51 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import HeroSection from "@/components/layout/hero-section";
 import { insertPartnerApplicationSchema, type InsertPartnerApplication } from "@shared/schema";
-import { DollarSign, BookOpen, Users, Wrench, Target, Award } from "lucide-react";
+import { Clock, Users, Lightbulb, Zap } from "lucide-react";
+import businessCardBackground from "@assets/pexels-goumbik-590045_1756309994763.jpg";
+import academyCardBackground from "@assets/pexels-singkham-178541-1108572_1756310104781.jpg";
+import flipCardBackground from "@assets/pexels-sevenstormphotography-443378_1756309842710.jpg";
+
+// FlipCard Component
+function FlipCard({ title, description, backgroundImage }: { title: string; description: string; backgroundImage?: string }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+  const bgImage = backgroundImage || flipCardBackground;
+
+  return (
+    <div className="relative h-80 perspective-1000">
+      <div
+        className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${
+          isFlipped ? 'rotate-y-180' : ''
+        }`}
+        onClick={() => setIsFlipped(!isFlipped)}
+        data-testid={`flip-card-${title.toLowerCase()}`}
+      >
+        {/* Front Side */}
+        <div 
+          className="absolute inset-0 w-full h-full backface-hidden border-2 border-[#a9f6db] rounded-lg flex items-center justify-center bg-cover bg-center"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        >
+          <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+          <div className="relative z-10 text-center">
+            <h3 className="text-2xl font-montserrat font-bold text-white mb-2">
+              {title}
+            </h3>
+            <p className="text-white/80 text-sm">
+              Clicca per saperne di più
+            </p>
+          </div>
+        </div>
+        
+        {/* Back Side */}
+        <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-white border-2 border-[#a9f6db] rounded-lg flex items-center justify-center p-6">
+          <p className="text-[#071029] text-center leading-relaxed">
+            {description}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Partner() {
   const { toast } = useToast();
@@ -71,78 +115,111 @@ export default function Partner() {
         backgroundImage="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=800"
       />
 
-      {/* Benefits Section */}
-      <section className="py-20 bg-background">
+      {/* Partner Cards Section */}
+      <section className="py-20 bg-[#071029]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Perché Diventare Partner
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
+              Scegli il Tuo Percorso
             </h2>
-            <p className="text-xl text-muted-foreground">
-              I vantaggi di far parte della rete EXPONENT
+            <p className="text-xl text-white/80">
+              Tre opportunità uniche per entrare nel mondo EXPONENT
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center shadow-lg">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <DollarSign className="w-8 h-8 text-accent" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <FlipCard
+              title="BUSINESS"
+              description="Diventa partner commerciale EXPONENT. Accedi a opportunità di business esclusive, commissioni competitive e supporto completo per sviluppare la tua rete professionale nel settore immobiliare."
+              backgroundImage={businessCardBackground}
+            />
+            <FlipCard
+              title="ACADEMY"
+              description="Entra nella EXPONENT Academy. Formazione specializzata, certificazioni professionali e aggiornamento continuo sulle ultime tendenze del mercato immobiliare per eccellere nel settore."
+              backgroundImage={academyCardBackground}
+            />
+            <FlipCard
+              title="INVESTOR"
+              description="Investi con EXPONENT. Opportunità di investimento selezionate, analisi di mercato approfondite e strategie personalizzate per massimizzare i tuoi rendimenti immobiliari."
+              backgroundImage={flipCardBackground}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose EXPONENT Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-4">
+              Perché Scegliere EXPONENT
+            </h2>
+            <p className="text-xl text-gray-600">
+              I valori che ci rendono unici nel settore immobiliare
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="space-y-8">
+              <div className="flex items-start space-x-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-8 h-8 text-[#071029]" />
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-3">Commissioni Competitive</h3>
-                <p className="text-muted-foreground">Sistema di commissioni vantaggioso e trasparente per massimizzare i tuoi guadagni.</p>
-              </CardContent>
-            </Card>
+                <div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                    Riprenditi il tuo tempo
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Qual è il valore più importante oggi? <strong>IL TEMPO</strong>. 
+                    Noi di Exponent non te ne facciamo perdere altro.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Users className="w-8 h-8 text-[#071029]" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                    Hai bisogno di assistenza?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    La nostra assistenza è unica perché è pensata su misura per le tue esigenze.
+                  </p>
+                </div>
+              </div>
+            </div>
             
-            <Card className="text-center shadow-lg">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="w-8 h-8 text-accent" />
+            <div className="space-y-8">
+              <div className="flex items-start space-x-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Lightbulb className="w-8 h-8 text-[#071029]" />
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-3">Formazione Continua</h3>
-                <p className="text-muted-foreground">Programmi di formazione e aggiornamento professionale per crescere insieme.</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center shadow-lg">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-accent" />
+                <div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                    Semplice
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    I nostri sistemi sono semplici per te: analisi, consulenza, assistenza.
+                  </p>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-3">Rete Professionale</h3>
-                <p className="text-muted-foreground">Accesso a una rete consolidata di professionisti e opportunità di business.</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center shadow-lg">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Wrench className="w-8 h-8 text-accent" />
+              </div>
+              
+              <div className="flex items-start space-x-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-8 h-8 text-[#071029]" />
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-3">Strumenti Digitali</h3>
-                <p className="text-muted-foreground">Piattaforme tecnologiche avanzate per gestire al meglio la tua attività.</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center shadow-lg">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-accent" />
+                <div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                    Smart
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Non sprechiamo risorse, le generiamo. Ti porteremo esattamente dove vuoi arrivare.
+                  </p>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-3">Supporto Marketing</h3>
-                <p className="text-muted-foreground">Materiali e strategie di marketing per promuovere efficacemente i tuoi servizi.</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center shadow-lg">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-accent" />
-                </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-3">Brand Riconosciuto</h3>
-                <p className="text-muted-foreground">Opera sotto un marchio consolidato e rispettato nel settore immobiliare.</p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
