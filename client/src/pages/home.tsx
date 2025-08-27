@@ -10,6 +10,7 @@ import heroVideo from "@assets/854325-hd_1280_720_25fps_1756306774660.mp4";
 import strategyVideo from "@assets/4514359-uhd_3840_2160_24fps_1756307297823.mp4";
 import flipCardBackground from "@assets/pexels-sevenstormphotography-443378_1756309842710.jpg";
 import businessCardBackground from "@assets/pexels-goumbik-590045_1756309994763.jpg";
+import academyCardBackground from "@assets/pexels-singkham-178541-1108572_1756310104781.jpg";
 
 // FlipCard Component
 function FlipCard({ title, description, backgroundImage }: { title: string; description: string; backgroundImage?: string }) {
@@ -312,6 +313,7 @@ export default function Home() {
             <FlipCard
               title="ACADEMY"
               description="Sono un consulente o un'azienda e voglio iscrivermi a un corso professionale di vendita per crescere personalmente e far crescere il mio team."
+              backgroundImage={academyCardBackground}
             />
             
             {/* INVESTOR Card */}
