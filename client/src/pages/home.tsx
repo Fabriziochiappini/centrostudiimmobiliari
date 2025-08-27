@@ -24,7 +24,7 @@ function FlipCard({ title, description }: { title: string; description: string }
       >
         {/* Front Side */}
         <div className="absolute inset-0 w-full h-full backface-hidden bg-white border-2 border-[#a9f6db] rounded-lg flex items-center justify-center">
-          <h3 className="text-2xl font-montserrat font-bold text-[#a9f6db]">
+          <h3 className="text-2xl font-montserrat font-bold text-[#071029]">
             {title}
           </h3>
         </div>
