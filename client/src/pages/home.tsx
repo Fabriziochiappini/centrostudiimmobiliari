@@ -9,11 +9,7 @@ export default function Home() {
     <div className="animate-fade-in">
       {/* Hero Section */}
       <HeroSection
-        title={
-          <>
-            La Tua <span className="text-accent">Consulenza</span> Immobiliare di Fiducia
-          </>
-        }
+        title="La Tua Consulenza Immobiliare di Fiducia"
         subtitle="EXPONENT trasforma i tuoi obiettivi immobiliari in risultati concreti attraverso consulenza specializzata e soluzioni innovative."
         backgroundImage="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
         className="min-h-screen flex items-center"

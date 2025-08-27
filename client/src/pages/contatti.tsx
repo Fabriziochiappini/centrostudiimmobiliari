@@ -196,7 +196,8 @@ export default function Contatti() {
                               <FormControl>
                                 <Input 
                                   type="tel" 
-                                  {...field} 
+                                  {...field}
+                                  value={field.value || ""}
                                   data-testid="input-contact-telefono"
                                 />
                               </FormControl>
@@ -213,7 +214,7 @@ export default function Contatti() {
                           <FormItem>
                             <FormLabel>Servizio di Interesse</FormLabel>
                             <FormControl>
-                              <Select onValueChange={field.onChange} value={field.value}>
+                              <Select onValueChange={field.onChange} value={field.value || ""}>
                                 <SelectTrigger data-testid="select-servizio">
                                   <SelectValue placeholder="Seleziona un servizio..." />
                                 </SelectTrigger>

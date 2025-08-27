@@ -20,7 +20,9 @@ export class MemStorage implements IStorage {
   async createContactRequest(insertRequest: InsertContactRequest): Promise<ContactRequest> {
     const id = randomUUID();
     const request: ContactRequest = { 
-      ...insertRequest, 
+      ...insertRequest,
+      telefono: insertRequest.telefono || null,
+      servizio: insertRequest.servizio || null,
       id, 
       createdAt: new Date() 
     };
