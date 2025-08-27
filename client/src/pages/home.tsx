@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
-import { BarChart, DollarSign, Users, TrendingUp } from "lucide-react";
+import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon } from "lucide-react";
 import heroImage from "@assets/pexels-sevenstormphotography-443383_1756304452891.jpg";
 
 export default function Home() {
@@ -27,60 +27,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Services Section */}
       <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Perché Scegliere EXPONENT
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              La nostra esperienza e professionalità al servizio dei tuoi investimenti immobiliari
-            </p>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
+            I Nostri Servizi
+          </h2>
+        </div>
+        
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
+          {/* Ricerca */}
+          <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+              <Search className="w-12 h-12 text-accent mb-4" />
+              <h3 className="text-xl font-montserrat font-semibold mb-4">Ricerca</h3>
+              <p className="text-white/80">Affidati ai nostri Property Finder</p>
+            </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow duration-200">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <BarChart className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-4">
-                  Analisi di Mercato
-                </h3>
-                <p className="text-muted-foreground">
-                  Studi approfonditi del mercato immobiliare per identificare le migliori opportunità di investimento.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover:shadow-xl transition-shadow duration-200">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <DollarSign className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-4">
-                  Valutazioni Accurate
-                </h3>
-                <p className="text-muted-foreground">
-                  Perizie e valutazioni immobiliari professionali basate su metodologie certificate e aggiornate.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover:shadow-xl transition-shadow duration-200">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <Users className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-montserrat font-semibold text-foreground mb-4">
-                  Consulenza Personalizzata
-                </h3>
-                <p className="text-muted-foreground">
-                  Servizi su misura per ogni cliente, dalla consulenza strategica alla gestione completa del patrimonio.
-                </p>
-              </CardContent>
-            </Card>
+
+          {/* NPL */}
+          <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+              <FileText className="w-12 h-12 text-accent mb-4" />
+              <h3 className="text-xl font-montserrat font-semibold mb-4">NPL</h3>
+              <p className="text-white/80">Accedi a proprietà di valore prima che finiscano sul mercato tradizionale.</p>
+            </div>
+          </div>
+
+          {/* Saldo e Stralcio */}
+          <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+              <Handshake className="w-12 h-12 text-accent mb-4" />
+              <h3 className="text-xl font-montserrat font-semibold mb-4">Saldo e Stralcio</h3>
+              <p className="text-white/80">Una soluzione win-win per trasformare il debito in valore.</p>
+            </div>
+          </div>
+
+          {/* Asta */}
+          <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+              <Gavel className="w-12 h-12 text-accent mb-4" />
+              <h3 className="text-xl font-montserrat font-semibold mb-4">Asta</h3>
+              <p className="text-white/80">Competenza e strategia per trasformare le aste in occasioni concrete.</p>
+            </div>
+          </div>
+
+          {/* Valorizzazione */}
+          <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+              <TrendingUp className="w-12 h-12 text-accent mb-4" />
+              <h3 className="text-xl font-montserrat font-semibold mb-4">Valorizzazione</h3>
+              <p className="text-white/80">Più attrattiva per gli acquirenti, più vantaggi per te.</p>
+            </div>
+          </div>
+
+          {/* Affitti Brevi */}
+          <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+              <HomeIcon className="w-12 h-12 text-accent mb-4" />
+              <h3 className="text-xl font-montserrat font-semibold mb-4">Affitti Brevi</h3>
+              <p className="text-white/80">Una scelta intelligente per investitori che puntano a valore e liquidità.</p>
+            </div>
           </div>
         </div>
       </section>
