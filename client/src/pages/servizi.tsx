@@ -61,8 +61,10 @@ export default function Servizi() {
                     <div className="aspect-video rounded-xl overflow-hidden">
                       <video 
                         className="w-full h-full object-cover rounded-xl"
-                        controls
-                        preload="metadata"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
                       >
                         <source src="/attached_assets/4301618-hd_1920_1080_30fps_1756313043711.mp4" type="video/mp4" />
                         Il tuo browser non supporta il tag video.
