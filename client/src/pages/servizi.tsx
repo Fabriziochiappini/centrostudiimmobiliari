@@ -326,10 +326,72 @@ export default function Servizi() {
                 </div>
                 <div className="text-left">
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Gestione completa di proprietà per affitti brevi e massimizzazione dei rendimenti turistici.
+                    Gli affitti a breve termine offrono <strong>numerosi vantaggi</strong> che rendono questa opzione 
+                    molto attraente per i proprietari immobiliari.
                   </p>
-                  <p className="text-gray-600 text-sm italic">
-                    Contenuto dettagliato in arrivo...
+                  
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    <strong>Ecco alcuni motivi per cui dovresti considerare gli affitti a breve termine:</strong>
+                  </p>
+                  
+                  <div className="space-y-4 mb-4">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">💰 Maggiori guadagni finanziari</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Gli affitti a breve termine spesso generano un reddito più elevato rispetto agli affitti a lungo termine. 
+                        Grazie alla crescente popolarità delle piattaforme come Airbnb, puoi sfruttare la domanda di alloggi 
+                        temporanei e ottenere tariffe più elevate, massimizzando il guadagno mensile durante la vendita.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">🔄 Flessibilità e controllo</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Ti offrono maggiore flessibilità nel gestire la disponibilità della tua proprietà. Puoi decidere 
+                        quando mettere a disposizione la casa e per quanto tempo, adattando gli affitti alla tua pianificazione 
+                        ed evitando lunghi periodi di locazione che potrebbero interferire con la vendita.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">📈 Valorizzazione dell'immobile</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Contribuiscono a valorizzare la tua casa durante il processo di vendita. Quando gli affittuari 
+                        visitano la casa arredata con cura, possono apprezzarne appieno il potenziale. Una casa ben 
+                        presentata può attirare più potenziali acquirenti.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">🌐 Maggiore visibilità e marketing</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Mettendo la casa in affitto a breve termine, potrai promuoverla su diverse piattaforme di 
+                        prenotazione online. Questo offre un'ampia visibilità e l'opportunità di raggiungere un 
+                        vasto pubblico di potenziali acquirenti interessati alla proprietà.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">⚡ Utilizzo efficiente dell'immobile</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Durante il periodo di vendita, l'immobile non rimarrà vuoto ed inutilizzato. Gli affitti 
+                        a breve termine ti permetteranno di sfruttare la casa e generare reddito, contribuendo 
+                        a coprire le spese associate durante il processo di vendita.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-[#a9f6db]/10 p-4 rounded-lg mb-4">
+                    <p className="text-gray-600 leading-relaxed mb-2">
+                      <strong>Considerando questi vantaggi</strong>, gli affitti a breve termine si presentano come 
+                      una scelta strategica per sfruttare al massimo il tuo immobile durante la vendita.
+                    </p>
+                  </div>
+                  
+                  <p className="text-gray-600 leading-relaxed">
+                    <strong>Se desideri massimizzare il guadagno e la visibilità</strong> della tua casa, contattaci 
+                    per scoprire come il nostro servizio di affitti a breve termine può aiutarti a raggiungere 
+                    i tuoi obiettivi di vendita.
                   </p>
                 </div>
               </CardContent>
