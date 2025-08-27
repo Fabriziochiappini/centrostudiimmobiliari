@@ -150,76 +150,76 @@ export default function Home() {
 
       {/* Value Strategy Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <div className="text-center group">
+            <div className="text-center group bg-primary border-4 border-[#a9f6db] p-8 rounded-lg">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#071029] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingDown className="w-8 h-8 text-[#a9f6db]" />
+                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingDown className="w-8 h-8 text-[#071029]" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-[#071029] font-bold text-sm">
                   1
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-3">
+              <h3 className="text-lg font-montserrat font-semibold text-white mb-3">
                 Acquisto Strategico
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-white text-sm leading-relaxed">
                 Acquistare un immobile ad un prezzo inferiore al valore di mercato
               </p>
             </div>
 
             {/* Step 2 */}
-            <div className="text-center group">
+            <div className="text-center group bg-primary border-4 border-[#a9f6db] p-8 rounded-lg">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#071029] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <HomeIcon className="w-8 h-8 text-[#a9f6db]" />
+                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <HomeIcon className="w-8 h-8 text-[#071029]" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-[#071029] font-bold text-sm">
                   2
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-3">
+              <h3 className="text-lg font-montserrat font-semibold text-white mb-3">
                 Massimizzazione Reddito
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-white text-sm leading-relaxed">
                 Massimizzare la messa a reddito con il servizio affitti brevi
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="text-center group">
+            <div className="text-center group bg-primary border-4 border-[#a9f6db] p-8 rounded-lg">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#071029] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUpIcon className="w-8 h-8 text-[#a9f6db]" />
+                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUpIcon className="w-8 h-8 text-[#071029]" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-[#071029] font-bold text-sm">
                   3
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-3">
+              <h3 className="text-lg font-montserrat font-semibold text-white mb-3">
                 Rivendita Valorizzata
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-white text-sm leading-relaxed">
                 Rivendere l'immobile ad un prezzo più alto dopo la valorizzazione
               </p>
             </div>
 
             {/* Step 4 */}
-            <div className="text-center group">
+            <div className="text-center group bg-primary border-4 border-[#a9f6db] p-8 rounded-lg">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#071029] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Repeat className="w-8 h-8 text-[#a9f6db]" />
+                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Repeat className="w-8 h-8 text-[#071029]" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-[#071029] font-bold text-sm">
                   4
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-3">
+              <h3 className="text-lg font-montserrat font-semibold text-white mb-3">
                 Reinvestimento
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-white text-sm leading-relaxed">
                 Acquistare un nuovo immobile con un budget più alto
               </p>
             </div>
