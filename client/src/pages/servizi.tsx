@@ -1,10 +1,9 @@
-import HeroSection from "@/components/layout/hero-section";
-import { Card, CardContent } from "@/components/ui/card";
 import { Search, FileText, Scale, Gavel, TrendingUp, Home } from "lucide-react";
+import HeroSection from "@/components/layout/hero-section";
 
 export default function Servizi() {
   return (
-    <div className="animate-fade-in">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection
         title="I Nostri Servizi"
@@ -12,390 +11,392 @@ export default function Servizi() {
         backgroundImage="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=800"
       />
 
-      {/* Services Grid */}
-      <section className="py-20 bg-white">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-4">
+      {/* Services Full Width */}
+      <section className="py-20 bg-gray-50">
+        <div className="w-full">
+          <div className="text-center mb-20 px-4 sm:px-6 lg:px-8">
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#071029] mb-6">
               I Nostri Servizi Specializzati
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Soluzioni complete per ogni fase del tuo investimento immobiliare
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Soluzioni complete e innovative per ogni fase del tuo investimento immobiliare, 
+              dal primo contatto alla massimizzazione dei rendimenti
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="space-y-0">
             {/* Ricerca */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <CardContent className="p-0">
-                <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Search className="w-10 h-10 text-[#071029]" />
+            <div className="bg-white py-20">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                  <div className="order-2 lg:order-1">
+                    <div className="flex items-center mb-8">
+                      <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
+                        <Search className="w-8 h-8 text-[#071029]" />
+                      </div>
+                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Ricerca</h3>
+                    </div>
+                    <div className="space-y-6">
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Il Property Finder può aiutarti a trovare l'immobile che soddisfi le tue esigenze specifiche.
+                      </p>
+                      <p className="text-gray-600 leading-relaxed">
+                        Grazie alla sua conoscenza del mercato immobiliare e alla sua esperienza nella ricerca di proprietà, 
+                        il Property Finder può identificare le opzioni che meglio si adattano alle tue esigenze di acquisto, 
+                        risparmiandoti tempo e sforzi nella ricerca.
+                      </p>
+                      <p className="text-gray-600 leading-relaxed">
+                        Inoltre, il Property Finder può assisterti nella trattativa con l'agenzia immobiliare o il venditore privato, 
+                        cercando di ottenere il miglior prezzo possibile per l'immobile e garantendoti una transazione sicura e trasparente.
+                      </p>
+                      <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
+                        <p className="text-gray-700 font-medium">
+                          In sintesi, il Property Finder è un professionista esperto che può supportarti nella ricerca e nell'acquisto 
+                          della casa dei tuoi sogni, garantendoti un servizio personalizzato e di alta qualità.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Ricerca</h3>
+                  <div className="order-1 lg:order-2">
+                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                      <div className="text-center text-gray-500">
+                        <div className="text-6xl mb-4">🏡</div>
+                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
+                        <p className="text-sm">Property Finder in azione</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Il Property Finder può aiutarti a trovare l'immobile che soddisfi le tue esigenze specifiche.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Grazie alla sua conoscenza del mercato immobiliare e alla sua esperienza nella ricerca di proprietà, 
-                    il Property Finder può identificare le opzioni che meglio si adattano alle tue esigenze di acquisto, 
-                    risparmiandoti tempo e sforzi nella ricerca.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Inoltre, il Property Finder può assisterti nella trattativa con l'agenzia immobiliare o il venditore privato, 
-                    cercando di ottenere il miglior prezzo possibile per l'immobile e garantendoti una transazione sicura e trasparente.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Affidarsi al Property Finder può anche aiutarti a evitare errori costosi, come l'acquisto di un immobile 
-                    che non corrisponde alle tue esigenze o che ha problemi strutturali o legali.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed">
-                    In sintesi, il Property Finder è un professionista esperto che può supportarti nella ricerca e nell'acquisto 
-                    della casa dei tuoi sogni, garantendoti un servizio personalizzato e di alta qualità.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* NPL */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <CardContent className="p-0">
-                <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <FileText className="w-10 h-10 text-[#071029]" />
+            <div className="bg-[#071029] py-20">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                  <div className="order-1">
+                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                      <div className="text-center text-gray-500">
+                        <div className="text-6xl mb-4">📊</div>
+                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
+                        <p className="text-sm">Opportunità NPL</p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">NPL</h3>
+                  <div className="order-2">
+                    <div className="flex items-center mb-8">
+                      <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
+                        <FileText className="w-8 h-8 text-[#071029]" />
+                      </div>
+                      <h3 className="text-4xl font-montserrat font-bold text-white">NPL</h3>
+                    </div>
+                    <div className="space-y-6">
+                      <p className="text-lg text-[#a9f6db] leading-relaxed font-semibold">
+                        Hai mai desiderato accedere a un'affare immobiliare unico nel suo genere?
+                      </p>
+                      <p className="text-white leading-relaxed">
+                        Sei pronto a cogliere un'opportunità che potrebbe trasformare il tuo portafoglio di investimenti? 
+                        Allora gli NPL, o crediti non performanti, potrebbero essere la chiave per sbloccare il tuo potenziale finanziario.
+                      </p>
+                      <p className="text-white leading-relaxed">
+                        Gli NPL rappresentano una via straordinaria per acquisire immobili a prezzi straordinariamente vantaggiosi. 
+                        Questi crediti bancari non performanti offrono l'opportunità di accedere a proprietà di valore 
+                        prima che finiscano sul mercato tradizionale.
+                      </p>
+                      <div className="bg-[#a9f6db]/20 p-6 rounded-lg border border-[#a9f6db]/30">
+                        <p className="text-[#a9f6db] font-medium">
+                          Grazie al supporto delle normative vigenti e all'autorizzazione della Banca d'Italia, 
+                          puoi avere la sicurezza di un investimento solido e regolamentato.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    <strong>Hai mai desiderato accedere a un'affare immobiliare unico nel suo genere?</strong>
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Sei pronto a cogliere un'opportunità che potrebbe trasformare il tuo portafoglio di investimenti? 
-                    Allora gli NPL, o crediti non performanti, potrebbero essere la chiave per sbloccare il tuo potenziale finanziario.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Gli NPL rappresentano una via straordinaria per acquisire immobili a prezzi straordinariamente vantaggiosi. 
-                    Questi crediti bancari non performanti, spesso derivanti da mutui immobiliari inadempiuti, offrono l'opportunità 
-                    di accedere a proprietà di valore prima che finiscano sul mercato tradizionale.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    <strong>Perché limitarsi a seguire la folla quando puoi distinguerti dagli altri investitori?</strong>
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Investire negli NPL ti permette di evitare la concorrenza sempre più agguerrita nel settore immobiliare, 
-                    che spesso porta a prezzi gonfiati e ad aste estremamente competitive. Con una strategia di investimento 
-                    ben pianificata e l'accesso a competenze specializzate, puoi gestire efficacemente il rischio e massimizzare 
-                    il potenziale di ritorno sui tuoi investimenti.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed">
-                    <strong>Grazie al supporto delle normative vigenti e all'autorizzazione della Banca d'Italia</strong>, 
-                    puoi avere la sicurezza di un investimento solido e regolamentato. Gli NPL rappresentano l'esclusiva 
-                    opportunità immobiliare per trasformare il tuo futuro finanziario.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Saldo e Stralcio */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <CardContent className="p-0">
-                <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Scale className="w-10 h-10 text-[#071029]" />
+            <div className="bg-white py-20">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                  <div className="order-2 lg:order-1">
+                    <div className="flex items-center mb-8">
+                      <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
+                        <Scale className="w-8 h-8 text-[#071029]" />
+                      </div>
+                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Saldo e Stralcio</h3>
+                    </div>
+                    <div className="space-y-6">
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Abbiamo scelto di collaborare esclusivamente con il nostro partner, <strong>Jurelit</strong>, per offrire 
+                        un'opportunità altamente vantaggiosa a tutte le parti coinvolte.
+                      </p>
+                      
+                      <div className="grid grid-cols-1 gap-4">
+                        <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
+                            🏠 <span className="ml-2">Debitore</span>
+                          </h4>
+                          <p className="text-gray-600 leading-relaxed">
+                            Eliminazione completa del debito con sollievo finanziario immediato
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
+                            💼 <span className="ml-2">Creditore</span>
+                          </h4>
+                          <p className="text-gray-600 leading-relaxed">
+                            Recupero rapido ed efficiente senza lunghe battaglie legali
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
+                            💰 <span className="ml-2">Acquirente</span>
+                          </h4>
+                          <p className="text-gray-600 leading-relaxed">
+                            Acquisto di immobili a prezzi notevolmente sotto il valore di mercato
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
+                        <p className="text-gray-700 font-medium">
+                          <strong>La collaborazione con Jurelit</strong> garantisce una gestione efficiente e trasparente 
+                          per risultati soddisfacenti per tutti i partecipanti.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Saldo e Stralcio</h3>
-                </div>
-                <div className="text-left">
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Abbiamo scelto di collaborare esclusivamente con il nostro partner, <strong>Jurelit</strong>, per offrire 
-                    un'opportunità altamente vantaggiosa a tutte le parti coinvolte: debitori, creditori e acquirenti.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    <strong>L'operazione di stralcio si distingue per i suoi benefici unici:</strong>
-                  </p>
-                  
-                  <div className="space-y-4 mb-4">
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">🏠 Beneficio per il debitore:</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Attraverso lo stralcio, il debitore può eliminare completamente il suo debito. Questo rappresenta 
-                        un enorme sollievo finanziario e la possibilità di iniziare da zero, liberandosi da pesanti obblighi finanziari.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">💼 Beneficio per il creditore:</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Lo stralcio permette al creditore di recuperare una parte dei suoi soldi in modo più rapido ed efficiente 
-                        rispetto ai lunghi tempi d'attesa di una procedura legale tradizionale, ottenendo almeno una parte 
-                        del proprio credito senza lunghe battaglie legali.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">💰 Beneficio per il compratore:</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        I potenziali acquirenti hanno la straordinaria opportunità di acquistare immobili a un prezzo 
-                        notevolmente inferiore rispetto al valore di mercato, ottenendo un potenziale rendimento elevato 
-                        sull'investimento e proprietà di qualità a un costo più accessibile.
-                      </p>
+                  <div className="order-1 lg:order-2">
+                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                      <div className="text-center text-gray-500">
+                        <div className="text-6xl mb-4">⚖️</div>
+                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
+                        <p className="text-sm">Partnership Jurelit</p>
+                      </div>
                     </div>
                   </div>
-                  
-                  <p className="text-gray-600 leading-relaxed">
-                    <strong>La collaborazione con Jurelit</strong> ci permette di offrire una soluzione innovativa che soddisfa 
-                    le esigenze di tutte le parti coinvolte, facilitando il processo di stralcio con una gestione efficiente 
-                    e trasparente dell'operazione per raggiungere risultati soddisfacenti per tutti i partecipanti.
-                  </p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Asta */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <CardContent className="p-0">
-                <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Gavel className="w-10 h-10 text-[#071029]" />
-                  </div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Asta</h3>
-                </div>
-                <div className="text-left">
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Negli ultimi anni, abbiamo notato un <strong>aumento significativo delle richieste</strong> da parte dei nostri clienti 
-                    di partecipare alle aste immobiliari.
-                  </p>
-                  
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    <strong>I motivi dietro a questa crescente tendenza sono molteplici e vantaggiosi:</strong>
-                  </p>
-                  
-                  <div className="space-y-3 mb-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <strong className="text-[#071029]">Sicurezza:</strong>
-                        <span className="text-gray-600 text-sm"> Le aste offrono un vantaggio in termini di sicurezza, in quanto tutti i documenti relativi all'immobile sono pubblici e consultabili.</span>
+            <div className="bg-gray-50 py-20">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                  <div className="order-1">
+                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-8">
+                      <div className="text-center text-gray-500">
+                        <div className="text-6xl mb-4">🔨</div>
+                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
+                        <p className="text-sm">Aste immobiliari</p>
                       </div>
                     </div>
                     
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <strong className="text-[#071029]">Risparmio economico:</strong>
-                        <span className="text-gray-600 text-sm"> Partecipare alle aste consente di acquistare beni immobiliari a prezzi al di sotto del valore di mercato.</span>
+                    <div className="bg-white p-8 rounded-xl shadow-lg">
+                      <h4 className="text-2xl font-semibold text-[#071029] mb-6 text-center">📋 Processo Aste</h4>
+                      <div className="grid grid-cols-1 gap-4">
+                        <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                          <div className="w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-xs font-bold text-[#071029]">1</div>
+                          <span className="text-sm font-medium text-gray-700">Lettura perizia e analisi documenti</span>
+                        </div>
+                        <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                          <div className="w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-xs font-bold text-[#071029]">2</div>
+                          <span className="text-sm font-medium text-gray-700">Visita immobile e valutazione</span>
+                        </div>
+                        <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                          <div className="w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-xs font-bold text-[#071029]">3</div>
+                          <span className="text-sm font-medium text-gray-700">Strategia d'acquisto e offerta</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                   
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Tuttavia, comprendiamo che molti acquirenti possano sentirsi intimiditi nell'approcciarsi a questo tipo di acquisto 
-                    a causa di informazioni errate, pertanto <strong>consigliamo sempre di affidarsi a un professionista specializzato</strong> 
-                    per evitare ritardi o problemi.
-                  </p>
-                  
-                  <div className="bg-gray-50 p-4 rounded-lg mb-4">
-                    <h4 className="font-semibold text-[#071029] mb-3">📋 Passaggi fondamentali per partecipare a un'asta:</h4>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li className="flex items-start space-x-2">
-                        <span className="text-[#a9f6db]">•</span>
-                        <span><strong>Lettura della perizia:</strong> Analizzare attentamente la perizia per comprendere caratteristiche e valore</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-[#a9f6db]">•</span>
-                        <span><strong>Avviso di vendita:</strong> Esaminare l'avviso per comprendere condizioni e requisiti specifici</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-[#a9f6db]">•</span>
-                        <span><strong>Visita all'immobile:</strong> Effettuare una visita per valutare le condizioni effettive</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-[#a9f6db]">•</span>
-                        <span><strong>Stato occupazionale:</strong> Verificare eventuali occupazioni o locazioni in corso</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-[#a9f6db]">•</span>
-                        <span><strong>Valutazione reale:</strong> Ottenere una stima accurata del valore di mercato da esperti</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-[#a9f6db]">•</span>
-                        <span><strong>Strategia d'acquisto:</strong> Sviluppare una strategia considerando limiti di prezzo e condizioni</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-[#a9f6db]">•</span>
-                        <span><strong>Deposito dell'offerta:</strong> Presentare un'offerta competitiva e adeguata entro i termini e le modalità stabilite dall'asta</span>
-                      </li>
-                    </ul>
+                  <div className="order-2">
+                    <div className="flex items-center mb-8">
+                      <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
+                        <Gavel className="w-8 h-8 text-[#071029]" />
+                      </div>
+                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Asta</h3>
+                    </div>
+                    
+                    <div className="space-y-6">
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Negli ultimi anni, abbiamo notato un <strong>aumento significativo delle richieste</strong> da parte dei nostri clienti 
+                        di partecipare alle aste immobiliari.
+                      </p>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-3">🔒 Sicurezza</h4>
+                          <p className="text-gray-600 text-sm">
+                            Tutti i documenti sono pubblici e consultabili, garantendo massima trasparenza
+                          </p>
+                        </div>
+                        <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#a9f6db]">
+                          <h4 className="font-semibold text-[#071029] mb-3">💰 Risparmio</h4>
+                          <p className="text-gray-600 text-sm">
+                            Acquisto di immobili a prezzi sotto il valore di mercato
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-[#071029] p-6 rounded-lg text-white">
+                        <p className="leading-relaxed mb-4">
+                          Tuttavia, comprendiamo che molti possano sentirsi intimiditi. Per questo <strong className="text-[#a9f6db]">consigliamo sempre di affidarsi a un professionista specializzato</strong>.
+                        </p>
+                        <p className="text-[#a9f6db] font-medium">
+                          Il nostro team di professionisti è qui per guidarti attraverso l'intero processo e assicurarti 
+                          un'esperienza di acquisto senza intoppi.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Partecipare alle aste immobiliari può essere un'opportunità interessante per gli acquirenti, ma è fondamentale 
-                    essere ben informati e seguire una strategia ben definita.
-                  </p>
-                  
-                  <p className="text-gray-600 leading-relaxed">
-                    <strong>Il nostro team di professionisti è qui per guidarti</strong> attraverso l'intero processo e assicurarti 
-                    un'esperienza di acquisto senza intoppi.
-                  </p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Valorizzazione */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <CardContent className="p-0">
-                <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <TrendingUp className="w-10 h-10 text-[#071029]" />
+            <div className="bg-white py-20">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                  <div className="order-2 lg:order-1">
+                    <div className="flex items-center mb-8">
+                      <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
+                        <TrendingUp className="w-8 h-8 text-[#071029]" />
+                      </div>
+                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Valorizzazione</h3>
+                    </div>
+                    <div className="space-y-6">
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Il nostro servizio di valorizzazione immobiliare ti offre un <strong>supporto completo in ogni fase</strong> 
+                        del processo di vendita della tua casa.
+                      </p>
+                      <p className="text-gray-600 leading-relaxed">
+                        Comprendiamo che la maggior parte dei potenziali acquirenti cerca casa online, ed è proprio per questo motivo 
+                        che mettiamo a disposizione i nostri servizi per aiutarti a <strong>vendere la tua proprietà in modo più rapido</strong> 
+                        e ad un prezzo più vantaggioso.
+                      </p>
+                      
+                      <div className="grid grid-cols-1 gap-4">
+                        <div className="bg-gray-50 p-6 rounded-lg">
+                          <h4 className="font-semibold text-[#071029] mb-3">🏡 Home Staging Professionale</h4>
+                          <p className="text-gray-600 leading-relaxed">
+                            Valorizziamo gli spazi e gli arredi della tua casa, rendendola più attraente per i potenziali acquirenti
+                          </p>
+                        </div>
+                        <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
+                          <h4 className="font-semibold text-[#071029] mb-3">💰 Rendita durante la Vendita</h4>
+                          <p className="text-gray-600 leading-relaxed">
+                            Sfruttare il potenziale di rendita tramite affitti a breve termine durante il periodo di vendita
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
+                        <p className="text-gray-700 font-medium">
+                          <strong>Contattaci per ulteriori informazioni</strong> e per scoprire come possiamo aiutarti a valorizzare 
+                          la tua casa e ottenere il massimo dalla vendita.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Valorizzazione</h3>
+                  <div className="order-1 lg:order-2">
+                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                      <div className="text-center text-gray-500">
+                        <div className="text-6xl mb-4">📈</div>
+                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
+                        <p className="text-sm">Home Staging e Valorizzazione</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Il nostro servizio di valorizzazione immobiliare ti offre un <strong>supporto completo in ogni fase</strong> 
-                    del processo di vendita della tua casa.
-                  </p>
-                  
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Comprendiamo che la maggior parte dei potenziali acquirenti cerca casa online, ed è proprio per questo motivo 
-                    che mettiamo a disposizione i nostri servizi per aiutarti a <strong>vendere la tua proprietà in modo più rapido</strong> 
-                    e ad un prezzo più vantaggioso.
-                  </p>
-                  
-                  <div className="bg-gray-50 p-4 rounded-lg mb-4">
-                    <h4 className="font-semibold text-[#071029] mb-2">🏡 Home Staging Professionale</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Attraverso il nostro servizio di homestaging, valorizziamo gli spazi e gli arredi della tua casa, 
-                      rendendola più attraente e invitante per i potenziali acquirenti. La valorizzazione immobiliare 
-                      è un elemento chiave per aumentare il valore di mercato della tua casa.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-[#a9f6db]/10 p-4 rounded-lg mb-4">
-                    <h4 className="font-semibold text-[#071029] mb-2">💰 Opportunità Unica: Rendita durante la Vendita</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-2">
-                      Se la tua casa è attualmente libera, possiamo <strong>sfruttare il suo potenziale di rendita</strong> 
-                      tramite affitti a breve termine durante il periodo di vendita.
-                    </p>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Questo significa che mentre la tua casa è in vendita, avrai la possibilità di guadagnare grazie 
-                      agli affitti temporanei. Tale opportunità può essere particolarmente attraente per gli investitori 
-                      che cercano un immobile in grado di generare reddito fin da subito.
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-2 mb-4">
-                    <h4 className="font-semibold text-[#071029] mb-2">✨ Vantaggi del nostro servizio:</h4>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-600 text-sm">Valorizzazione immobiliare professionale</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-600 text-sm">Vendita più veloce della proprietà</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-600 text-sm">Prezzo di vendita più elevato</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-600 text-sm">Possibilità di guadagnare durante la vendita</span>
-                    </div>
-                  </div>
-                  
-                  <p className="text-gray-600 leading-relaxed">
-                    <strong>Contattaci per ulteriori informazioni</strong> e per scoprire come possiamo aiutarti a valorizzare 
-                    la tua casa e ottenere il massimo dalla vendita.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Affitti Brevi */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <CardContent className="p-0">
-                <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Home className="w-10 h-10 text-[#071029]" />
+            <div className="bg-[#071029] py-20">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                  <div className="order-1">
+                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                      <div className="text-center text-gray-500">
+                        <div className="text-6xl mb-4">🏨</div>
+                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
+                        <p className="text-sm">Gestione Affitti Brevi</p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Affitti Brevi</h3>
+                  <div className="order-2">
+                    <div className="flex items-center mb-8">
+                      <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
+                        <Home className="w-8 h-8 text-[#071029]" />
+                      </div>
+                      <h3 className="text-4xl font-montserrat font-bold text-white">Affitti Brevi</h3>
+                    </div>
+                    <div className="space-y-6">
+                      <p className="text-lg text-[#a9f6db] leading-relaxed font-semibold">
+                        Gli affitti a breve termine offrono numerosi vantaggi che rendono questa opzione 
+                        molto attraente per i proprietari immobiliari.
+                      </p>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
+                          <h4 className="font-semibold text-[#a9f6db] mb-2">💰 Maggiori Guadagni</h4>
+                          <p className="text-white text-sm">Reddito più elevato rispetto agli affitti a lungo termine</p>
+                        </div>
+                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
+                          <h4 className="font-semibold text-[#a9f6db] mb-2">🔄 Flessibilità</h4>
+                          <p className="text-white text-sm">Controllo completo sulla disponibilità della proprietà</p>
+                        </div>
+                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
+                          <h4 className="font-semibold text-[#a9f6db] mb-2">📈 Valorizzazione</h4>
+                          <p className="text-white text-sm">Casa sempre presentabile per potenziali acquirenti</p>
+                        </div>
+                        <div className="bg-white/10 p-4 rounded-lg border border-[#a9f6db]/30">
+                          <h4 className="font-semibold text-[#a9f6db] mb-2">🌐 Visibilità</h4>
+                          <p className="text-white text-sm">Marketing su piattaforme di prenotazione online</p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-[#a9f6db]/20 p-6 rounded-lg border border-[#a9f6db]/30">
+                        <p className="text-[#a9f6db] font-medium">
+                          <strong>Se desideri massimizzare il guadagno e la visibilità</strong> della tua casa, contattaci 
+                          per scoprire come il nostro servizio di affitti a breve termine può aiutarti a raggiungere 
+                          i tuoi obiettivi di vendita.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Gli affitti a breve termine offrono <strong>numerosi vantaggi</strong> che rendono questa opzione 
-                    molto attraente per i proprietari immobiliari.
-                  </p>
-                  
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    <strong>Ecco alcuni motivi per cui dovresti considerare gli affitti a breve termine:</strong>
-                  </p>
-                  
-                  <div className="space-y-4 mb-4">
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">💰 Maggiori guadagni finanziari</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Gli affitti a breve termine spesso generano un reddito più elevato rispetto agli affitti a lungo termine. 
-                        Grazie alla crescente popolarità delle piattaforme come Airbnb, puoi sfruttare la domanda di alloggi 
-                        temporanei e ottenere tariffe più elevate, massimizzando il guadagno mensile durante la vendita.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">🔄 Flessibilità e controllo</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Ti offrono maggiore flessibilità nel gestire la disponibilità della tua proprietà. Puoi decidere 
-                        quando mettere a disposizione la casa e per quanto tempo, adattando gli affitti alla tua pianificazione 
-                        ed evitando lunghi periodi di locazione che potrebbero interferire con la vendita.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">📈 Valorizzazione dell'immobile</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Contribuiscono a valorizzare la tua casa durante il processo di vendita. Quando gli affittuari 
-                        visitano la casa arredata con cura, possono apprezzarne appieno il potenziale. Una casa ben 
-                        presentata può attirare più potenziali acquirenti.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">🌐 Maggiore visibilità e marketing</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Mettendo la casa in affitto a breve termine, potrai promuoverla su diverse piattaforme di 
-                        prenotazione online. Questo offre un'ampia visibilità e l'opportunità di raggiungere un 
-                        vasto pubblico di potenziali acquirenti interessati alla proprietà.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-[#071029] mb-2">⚡ Utilizzo efficiente dell'immobile</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Durante il periodo di vendita, l'immobile non rimarrà vuoto ed inutilizzato. Gli affitti 
-                        a breve termine ti permetteranno di sfruttare la casa e generare reddito, contribuendo 
-                        a coprire le spese associate durante il processo di vendita.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-[#a9f6db]/10 p-4 rounded-lg mb-4">
-                    <p className="text-gray-600 leading-relaxed mb-2">
-                      <strong>Considerando questi vantaggi</strong>, gli affitti a breve termine si presentano come 
-                      una scelta strategica per sfruttare al massimo il tuo immobile durante la vendita.
-                    </p>
-                  </div>
-                  
-                  <p className="text-gray-600 leading-relaxed">
-                    <strong>Se desideri massimizzare il guadagno e la visibilità</strong> della tua casa, contattaci 
-                    per scoprire come il nostro servizio di affitti a breve termine può aiutarti a raggiungere 
-                    i tuoi obiettivi di vendita.
-                  </p>
+              </div>
+            </div>
+
+            {/* Call to Action Section */}
+            <div className="bg-gray-100 py-20">
+              <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-6">
+                  Pronto a Trasformare il Tuo Investimento Immobiliare?
+                </h2>
+                <p className="text-xl text-gray-600 mb-12">
+                  I nostri esperti sono pronti ad accompagnarti in ogni fase del tuo percorso immobiliare
+                </p>
+                <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                  <a 
+                    href="/contatti" 
+                    className="inline-flex items-center justify-center px-8 py-4 bg-[#071029] text-white font-semibold rounded-lg hover:bg-[#071029]/90 transition-colors duration-300"
+                  >
+                    Contattaci
+                  </a>
+                  <a 
+                    href="/partner" 
+                    className="inline-flex items-center justify-center px-8 py-4 bg-[#a9f6db] text-[#071029] font-semibold rounded-lg hover:bg-[#a9f6db]/80 transition-colors duration-300"
+                  >
+                    Scopri i Servizi
+                  </a>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
