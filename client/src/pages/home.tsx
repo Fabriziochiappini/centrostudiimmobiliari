@@ -240,6 +240,16 @@ export default function Home() {
               </p>
             </div>
           </div>
+          
+          {/* Approfondisci Button */}
+          <div className="text-center mt-12">
+            <Button 
+              className="bg-primary border-2 border-white text-white hover:bg-primary/90 font-semibold py-3 px-8"
+              data-testid="button-approfondisci"
+            >
+              Approfondisci
+            </Button>
+          </div>
         </div>
       </section>
 
