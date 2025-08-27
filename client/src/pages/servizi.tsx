@@ -255,10 +255,61 @@ export default function Servizi() {
                 </div>
                 <div className="text-left">
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Strategie per aumentare il valore degli immobili attraverso ristrutturazioni mirate e ottimizzazioni.
+                    Il nostro servizio di valorizzazione immobiliare ti offre un <strong>supporto completo in ogni fase</strong> 
+                    del processo di vendita della tua casa.
                   </p>
-                  <p className="text-gray-600 text-sm italic">
-                    Contenuto dettagliato in arrivo...
+                  
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Comprendiamo che la maggior parte dei potenziali acquirenti cerca casa online, ed è proprio per questo motivo 
+                    che mettiamo a disposizione i nostri servizi per aiutarti a <strong>vendere la tua proprietà in modo più rapido</strong> 
+                    e ad un prezzo più vantaggioso.
+                  </p>
+                  
+                  <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                    <h4 className="font-semibold text-[#071029] mb-2">🏡 Home Staging Professionale</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Attraverso il nostro servizio di homestaging, valorizziamo gli spazi e gli arredi della tua casa, 
+                      rendendola più attraente e invitante per i potenziali acquirenti. La valorizzazione immobiliare 
+                      è un elemento chiave per aumentare il valore di mercato della tua casa.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-[#a9f6db]/10 p-4 rounded-lg mb-4">
+                    <h4 className="font-semibold text-[#071029] mb-2">💰 Opportunità Unica: Rendita durante la Vendita</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-2">
+                      Se la tua casa è attualmente libera, possiamo <strong>sfruttare il suo potenziale di rendita</strong> 
+                      tramite affitti a breve termine durante il periodo di vendita.
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Questo significa che mentre la tua casa è in vendita, avrai la possibilità di guadagnare grazie 
+                      agli affitti temporanei. Tale opportunità può essere particolarmente attraente per gli investitori 
+                      che cercano un immobile in grado di generare reddito fin da subito.
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-2 mb-4">
+                    <h4 className="font-semibold text-[#071029] mb-2">✨ Vantaggi del nostro servizio:</h4>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-600 text-sm">Valorizzazione immobiliare professionale</span>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-600 text-sm">Vendita più veloce della proprietà</span>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-600 text-sm">Prezzo di vendita più elevato</span>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-600 text-sm">Possibilità di guadagnare durante la vendita</span>
+                    </div>
+                  </div>
+                  
+                  <p className="text-gray-600 leading-relaxed">
+                    <strong>Contattaci per ulteriori informazioni</strong> e per scoprire come possiamo aiutarti a valorizzare 
+                    la tua casa e ottenere il massimo dalla vendita.
                   </p>
                 </div>
               </CardContent>
