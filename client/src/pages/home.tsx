@@ -19,12 +19,9 @@ export default function Home() {
       />
 
       {/* Value Strategy Section */}
-      <section className="py-20 bg-primary">
-        <div className="w-full">
+      <section className="py-20 bg-primary text-primary-foreground">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
-              Massimizza i tuoi investimenti immobiliari con la nostra Value Strategy
-            </h2>
           </div>
         </div>
       </section>
@@ -40,7 +37,7 @@ export default function Home() {
             I Nostri Servizi
           </h2>
         </div>
-        
+
         <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
           {/* Ricerca */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
