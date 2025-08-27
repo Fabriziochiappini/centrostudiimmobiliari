@@ -165,10 +165,70 @@ export default function Servizi() {
                 </div>
                 <div className="text-left">
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Supporto completo per partecipazione ad aste immobiliari e acquisizione di immobili a prezzi vantaggiosi.
+                    Negli ultimi anni, abbiamo notato un <strong>aumento significativo delle richieste</strong> da parte dei nostri clienti 
+                    di partecipare alle aste immobiliari.
                   </p>
+                  
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    <strong>I motivi dietro a questa crescente tendenza sono molteplici e vantaggiosi:</strong>
+                  </p>
+                  
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <strong className="text-[#071029]">Sicurezza:</strong>
+                        <span className="text-gray-600 text-sm"> Le aste offrono un vantaggio in termini di sicurezza, in quanto tutti i documenti relativi all'immobile sono pubblici e consultabili.</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <strong className="text-[#071029]">Risparmio economico:</strong>
+                        <span className="text-gray-600 text-sm"> Partecipare alle aste consente di acquistare beni immobiliari a prezzi al di sotto del valore di mercato.</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Tuttavia, comprendiamo che molti acquirenti possano sentirsi intimiditi nell'approcciarsi a questo tipo di acquisto 
+                    a causa di informazioni errate, pertanto <strong>consigliamo sempre di affidarsi a un professionista specializzato</strong> 
+                    per evitare ritardi o problemi.
+                  </p>
+                  
+                  <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                    <h4 className="font-semibold text-[#071029] mb-3">📋 Passaggi fondamentali per partecipare a un'asta:</h4>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li className="flex items-start space-x-2">
+                        <span className="text-[#a9f6db]">•</span>
+                        <span><strong>Lettura della perizia:</strong> Analizzare attentamente la perizia per comprendere caratteristiche e valore</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-[#a9f6db]">•</span>
+                        <span><strong>Avviso di vendita:</strong> Esaminare l'avviso per comprendere condizioni e requisiti specifici</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-[#a9f6db]">•</span>
+                        <span><strong>Visita all'immobile:</strong> Effettuare una visita per valutare le condizioni effettive</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-[#a9f6db]">•</span>
+                        <span><strong>Stato occupazionale:</strong> Verificare eventuali occupazioni o locazioni in corso</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-[#a9f6db]">•</span>
+                        <span><strong>Valutazione reale:</strong> Ottenere una stima accurata del valore di mercato da esperti</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-[#a9f6db]">•</span>
+                        <span><strong>Strategia d'acquisto:</strong> Sviluppare una strategia considerando limiti di prezzo e condizioni</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
                   <p className="text-gray-600 text-sm italic">
-                    Contenuto dettagliato in arrivo...
+                    Ultima sezione in aggiornamento...
                   </p>
                 </div>
               </CardContent>
