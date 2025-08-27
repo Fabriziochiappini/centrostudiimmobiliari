@@ -342,6 +342,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact CTA Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-6">
+            Hai bisogno di maggiori informazioni?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Il nostro team di esperti è pronto ad aiutarti a trovare la soluzione perfetta per i tuoi investimenti immobiliari. Contattaci per una consulenza personalizzata.
+          </p>
+          <Link href="/contatti">
+            <Button 
+              size="lg"
+              className="bg-[#071029] border-2 border-[#071029] text-white hover:bg-[#071029]/90 font-semibold py-4 px-10 text-lg"
+              data-testid="button-contattaci"
+            >
+              Contattaci Ora
+            </Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
