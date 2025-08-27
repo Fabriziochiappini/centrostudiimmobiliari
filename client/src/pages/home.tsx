@@ -32,9 +32,14 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
-          <h3 className="relative z-10 text-2xl font-montserrat font-bold text-[#a9f6db]">
-            {title}
-          </h3>
+          <div className="relative z-10 text-center">
+            <h3 className="text-2xl font-montserrat font-bold text-white mb-2">
+              {title}
+            </h3>
+            <p className="text-white/80 text-sm">
+              Clicca per saperne di più
+            </p>
+          </div>
         </div>
         
         {/* Back Side */}
