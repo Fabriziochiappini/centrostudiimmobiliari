@@ -70,10 +70,30 @@ export default function Servizi() {
                 </div>
                 <div className="text-left">
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Gestione specializzata di crediti deteriorati e Non Performing Loans nel settore immobiliare.
+                    <strong>Hai mai desiderato accedere a un'affare immobiliare unico nel suo genere?</strong>
                   </p>
-                  <p className="text-gray-600 text-sm italic">
-                    Contenuto dettagliato in arrivo...
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Sei pronto a cogliere un'opportunità che potrebbe trasformare il tuo portafoglio di investimenti? 
+                    Allora gli NPL, o crediti non performanti, potrebbero essere la chiave per sbloccare il tuo potenziale finanziario.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Gli NPL rappresentano una via straordinaria per acquisire immobili a prezzi straordinariamente vantaggiosi. 
+                    Questi crediti bancari non performanti, spesso derivanti da mutui immobiliari inadempiuti, offrono l'opportunità 
+                    di accedere a proprietà di valore prima che finiscano sul mercato tradizionale.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    <strong>Perché limitarsi a seguire la folla quando puoi distinguerti dagli altri investitori?</strong>
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Investire negli NPL ti permette di evitare la concorrenza sempre più agguerrita nel settore immobiliare, 
+                    che spesso porta a prezzi gonfiati e ad aste estremamente competitive. Con una strategia di investimento 
+                    ben pianificata e l'accesso a competenze specializzate, puoi gestire efficacemente il rischio e massimizzare 
+                    il potenziale di ritorno sui tuoi investimenti.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    <strong>Grazie al supporto delle normative vigenti e all'autorizzazione della Banca d'Italia</strong>, 
+                    puoi avere la sicurezza di un investimento solido e regolamentato. Gli NPL rappresentano l'esclusiva 
+                    opportunità immobiliare per trasformare il tuo futuro finanziario.
                   </p>
                 </div>
               </CardContent>
