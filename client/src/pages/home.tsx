@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20" style={{ backgroundColor: '#a9f6db' }}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
             I Nostri Servizi
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
-              <Search className="w-12 h-12 text-accent mb-4" />
+              <Search className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Ricerca</h3>
               <p className="text-white/80">Affidati ai nostri Property Finder</p>
             </div>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
-              <FileText className="w-12 h-12 text-accent mb-4" />
+              <FileText className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">NPL</h3>
               <p className="text-white/80">Accedi a proprietà di valore prima che finiscano sul mercato tradizionale.</p>
             </div>
@@ -60,7 +60,7 @@ export default function Home() {
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
-              <Handshake className="w-12 h-12 text-accent mb-4" />
+              <Handshake className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Saldo e Stralcio</h3>
               <p className="text-white/80">Una soluzione win-win per trasformare il debito in valore.</p>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
-              <Gavel className="w-12 h-12 text-accent mb-4" />
+              <Gavel className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Asta</h3>
               <p className="text-white/80">Competenza e strategia per trasformare le aste in occasioni concrete.</p>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
-              <TrendingUp className="w-12 h-12 text-accent mb-4" />
+              <TrendingUp className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Valorizzazione</h3>
               <p className="text-white/80">Più attrattiva per gli acquirenti, più vantaggi per te.</p>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
-              <HomeIcon className="w-12 h-12 text-accent mb-4" />
+              <HomeIcon className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Affitti Brevi</h3>
               <p className="text-white/80">Una scelta intelligente per investitori che puntano a valore e liquidità.</p>
             </div>
