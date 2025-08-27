@@ -46,7 +46,7 @@ export default function Home() {
           {/* Ricerca */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="relative bg-[#071029] text-white p-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Search className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Ricerca</h3>
               <p className="text-white/80 mb-4">Affidati ai nostri Property Finder</p>
@@ -62,7 +62,7 @@ export default function Home() {
           {/* NPL */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="relative bg-[#071029] text-white p-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <FileText className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">NPL</h3>
               <p className="text-white/80 mb-4">Accedi a proprietà di valore prima che finiscano sul mercato tradizionale.</p>
@@ -78,7 +78,7 @@ export default function Home() {
           {/* Saldo e Stralcio */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="relative bg-[#071029] text-white p-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Handshake className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Saldo e Stralcio</h3>
               <p className="text-white/80 mb-4">Una soluzione win-win per trasformare il debito in valore.</p>
@@ -94,7 +94,7 @@ export default function Home() {
           {/* Asta */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="relative bg-[#071029] text-white p-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Gavel className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Asta</h3>
               <p className="text-white/80 mb-4">Competenza e strategia per trasformare le aste in occasioni concrete.</p>
@@ -110,7 +110,7 @@ export default function Home() {
           {/* Valorizzazione */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="relative bg-[#071029] text-white p-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <TrendingUp className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Valorizzazione</h3>
               <p className="text-white/80 mb-4">Più attrattiva per gli acquirenti, più vantaggi per te.</p>
@@ -126,7 +126,7 @@ export default function Home() {
           {/* Affitti Brevi */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="relative bg-[#071029] text-white p-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <HomeIcon className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Affitti Brevi</h3>
               <p className="text-white/80 mb-4">Una scelta intelligente per investitori che puntano a valore e liquidità.</p>
