@@ -58,20 +58,12 @@ export default function Servizi() {
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
-                    <div className="w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden relative">
-                      <video 
+                    <div className="w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden">
+                      <img 
+                        src="attached_assets/pexels-michael-s-2150441079-33569428_1756313225240.jpg" 
+                        alt="Property Finder - Casa con giardino e viale d'accesso"
                         className="w-full h-full object-cover"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        style={{ display: 'block', minHeight: '200px', backgroundColor: '#f3f4f6' }}
-                      >
-                        <source src="./attached_assets/4301618-hd_1920_1080_30fps_1756313043711.mp4" type="video/mp4" />
-                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                          <p className="text-gray-500">Video non disponibile</p>
-                        </div>
-                      </video>
+                      />
                     </div>
                   </div>
                 </div>
