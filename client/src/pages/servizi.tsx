@@ -58,12 +58,15 @@ export default function Servizi() {
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
-                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <div className="text-center text-gray-500">
-                        <div className="text-6xl mb-4">🏡</div>
-                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
-                        <p className="text-sm">Property Finder in azione</p>
-                      </div>
+                    <div className="aspect-video rounded-xl overflow-hidden">
+                      <video 
+                        className="w-full h-full object-cover rounded-xl"
+                        controls
+                        preload="metadata"
+                      >
+                        <source src="/attached_assets/4301618-hd_1920_1080_30fps_1756313043711.mp4" type="video/mp4" />
+                        Il tuo browser non supporta il tag video.
+                      </video>
                     </div>
                   </div>
                 </div>
