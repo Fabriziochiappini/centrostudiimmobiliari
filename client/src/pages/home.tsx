@@ -6,6 +6,7 @@ import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, Arrow
 import heroImage from "@assets/pexels-sevenstormphotography-443383_1756304452891.jpg";
 import servicesImage from "@assets/pexels-frankfurtpictures-830891_1756305978315.jpg";
 import heroVideo from "@assets/854325-hd_1280_720_25fps_1756306774660.mp4";
+import strategyVideo from "@assets/4514359-uhd_3840_2160_24fps_1756307297823.mp4";
 
 export default function Home() {
   return (
@@ -149,8 +150,20 @@ export default function Home() {
       </section>
 
       {/* Value Strategy Section */}
-      <section className="py-20 bg-white">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative overflow-hidden">
+        {/* Video Background */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={strategyVideo} type="video/mp4" />
+        </video>
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
             <div className="text-center group bg-primary border-4 border-[#a9f6db] p-8 rounded-lg">
