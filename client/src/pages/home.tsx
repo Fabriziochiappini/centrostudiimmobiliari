@@ -24,7 +24,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
-              La Nostra Value Strategy in 4 passaggi
+              Massimizza i tuoi investimenti con la nostra Value Strategy
             </h2>
           </div>
         </div>
@@ -137,6 +137,17 @@ export default function Home() {
                 </span>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Strategy Title Section */}
+      <section className="py-20 bg-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
+              La Nostra Value Strategy in 4 passaggi
+            </h2>
           </div>
         </div>
       </section>
