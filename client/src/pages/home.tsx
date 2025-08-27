@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon } from "lucide-react";
 import heroImage from "@assets/pexels-sevenstormphotography-443383_1756304452891.jpg";
+import servicesImage from "@assets/pexels-frankfurtpictures-830891_1756305978315.jpg";
 
 export default function Home() {
   return (
@@ -28,14 +29,18 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20" style={{ backgroundColor: '#a9f6db' }}>
-        <div className="text-center mb-16">
+      <section 
+        className="py-20 relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${servicesImage})` }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
             I Nostri Servizi
           </h2>
         </div>
         
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
+        <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
           {/* Ricerca */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-10">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
