@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Value Strategy Section */}
       <section className="py-20 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
               Massimizza i tuoi investimenti immobiliari con la nostra Value Strategy
