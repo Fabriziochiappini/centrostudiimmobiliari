@@ -43,7 +43,7 @@ export default function Home() {
         <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
           {/* Ricerca */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1"></div>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Search className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Ricerca</h3>
@@ -53,7 +53,7 @@ export default function Home() {
 
           {/* NPL */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1"></div>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <FileText className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">NPL</h3>
@@ -63,7 +63,7 @@ export default function Home() {
 
           {/* Saldo e Stralcio */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1"></div>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Handshake className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Saldo e Stralcio</h3>
@@ -73,7 +73,7 @@ export default function Home() {
 
           {/* Asta */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1"></div>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Gavel className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Asta</h3>
@@ -83,7 +83,7 @@ export default function Home() {
 
           {/* Valorizzazione */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1"></div>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <TrendingUp className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Valorizzazione</h3>
@@ -93,7 +93,7 @@ export default function Home() {
 
           {/* Affitti Brevi */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1"></div>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
             <div className="relative bg-[#071029] text-white p-8 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <HomeIcon className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Affitti Brevi</h3>
