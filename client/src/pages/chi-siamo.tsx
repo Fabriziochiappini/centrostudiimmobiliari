@@ -240,7 +240,7 @@ export default function ChiSiamo() {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#a9f6db] text-[#a9f6db] hover:bg-[#a9f6db] hover:text-[#071029] font-semibold py-4 px-8 text-lg"
+                className="border-2 border-[#a9f6db] text-primary hover:bg-[#a9f6db] hover:text-[#071029] font-semibold py-4 px-8 text-lg"
                 data-testid="button-contattaci"
               >
                 Contattaci
