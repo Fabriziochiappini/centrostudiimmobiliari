@@ -26,7 +26,7 @@ export default function Servizi() {
           
           <div className="space-y-0">
             {/* Ricerca */}
-            <div className="bg-white py-20">
+            <div className="bg-[#071029] py-20">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                   <div className="order-2 lg:order-1">
@@ -34,23 +34,23 @@ export default function Servizi() {
                       <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
                         <Search className="w-8 h-8 text-[#071029]" />
                       </div>
-                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">Ricerca</h3>
+                      <h3 className="text-4xl font-montserrat font-bold text-white">Ricerca</h3>
                     </div>
                     <div className="space-y-6">
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                      <p className="text-lg text-white leading-relaxed">
                         Il Property Finder può aiutarti a trovare l'immobile che soddisfi le tue esigenze specifiche.
                       </p>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-white leading-relaxed">
                         Grazie alla sua conoscenza del mercato immobiliare e alla sua esperienza nella ricerca di proprietà, 
                         il Property Finder può identificare le opzioni che meglio si adattano alle tue esigenze di acquisto, 
                         risparmiandoti tempo e sforzi nella ricerca.
                       </p>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-white leading-relaxed">
                         Inoltre, il Property Finder può assisterti nella trattativa con l'agenzia immobiliare o il venditore privato, 
                         cercando di ottenere il miglior prezzo possibile per l'immobile e garantendoti una transazione sicura e trasparente.
                       </p>
                       <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-                        <p className="text-gray-700 font-medium">
+                        <p className="text-[#a9f6db] font-medium">
                           In sintesi, il Property Finder è un professionista esperto che può supportarti nella ricerca e nell'acquisto 
                           della casa dei tuoi sogni, garantendoti un servizio personalizzato e di alta qualità.
                         </p>
@@ -71,7 +71,7 @@ export default function Servizi() {
             </div>
 
             {/* NPL */}
-            <div className="bg-[#071029] py-20">
+            <div className="bg-white py-20">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                   <div className="order-1">
@@ -88,23 +88,23 @@ export default function Servizi() {
                       <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
                         <FileText className="w-8 h-8 text-[#071029]" />
                       </div>
-                      <h3 className="text-4xl font-montserrat font-bold text-white">NPL</h3>
+                      <h3 className="text-4xl font-montserrat font-bold text-[#071029]">NPL</h3>
                     </div>
                     <div className="space-y-6">
-                      <p className="text-lg text-[#a9f6db] leading-relaxed font-semibold">
+                      <p className="text-lg text-gray-600 leading-relaxed font-semibold">
                         Hai mai desiderato accedere a un'affare immobiliare unico nel suo genere?
                       </p>
-                      <p className="text-white leading-relaxed">
+                      <p className="text-gray-600 leading-relaxed">
                         Sei pronto a cogliere un'opportunità che potrebbe trasformare il tuo portafoglio di investimenti? 
                         Allora gli NPL, o crediti non performanti, potrebbero essere la chiave per sbloccare il tuo potenziale finanziario.
                       </p>
-                      <p className="text-white leading-relaxed">
+                      <p className="text-gray-600 leading-relaxed">
                         Gli NPL rappresentano una via straordinaria per acquisire immobili a prezzi straordinariamente vantaggiosi. 
                         Questi crediti bancari non performanti offrono l'opportunità di accedere a proprietà di valore 
                         prima che finiscano sul mercato tradizionale.
                       </p>
-                      <div className="bg-[#a9f6db]/20 p-6 rounded-lg border border-[#a9f6db]/30">
-                        <p className="text-[#a9f6db] font-medium">
+                      <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
+                        <p className="text-gray-700 font-medium">
                           Grazie al supporto delle normative vigenti e all'autorizzazione della Banca d'Italia, 
                           puoi avere la sicurezza di un investimento solido e regolamentato.
                         </p>
