@@ -224,160 +224,31 @@ export default function Partner() {
         </div>
       </section>
 
-      {/* Partner Form Section */}
-      <section className="py-20 bg-muted">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Candidati Ora
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Compila il form per iniziare il processo di selezione
-            </p>
+      {/* Call to Action Section */}
+      <section className="py-20 bg-[#071029]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
+            Pronto a Entrare nel Mondo EXPONENT?
+          </h2>
+          <p className="text-xl text-white/80 mb-12">
+            Contattaci oggi stesso per scoprire le opportunità di partnership che ti aspettano
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a 
+              href="/contatti" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#a9f6db] text-[#071029] font-semibold rounded-lg hover:bg-[#a9f6db]/80 transition-colors duration-300"
+              data-testid="button-contatti"
+            >
+              Contattaci Ora
+            </a>
+            <a 
+              href="/servizi" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#071029] transition-colors duration-300"
+              data-testid="button-servizi"
+            >
+              Scopri i Servizi
+            </a>
           </div>
-          
-          <Card className="shadow-lg">
-            <CardContent className="p-8">
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="nome"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Nome *</FormLabel>
-                          <FormControl>
-                            <Input 
-                              {...field} 
-                              data-testid="input-nome"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="cognome"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Cognome *</FormLabel>
-                          <FormControl>
-                            <Input 
-                              {...field} 
-                              data-testid="input-cognome"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Email *</FormLabel>
-                          <FormControl>
-                            <Input 
-                              type="email" 
-                              {...field} 
-                              data-testid="input-email"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="telefono"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Telefono *</FormLabel>
-                          <FormControl>
-                            <Input 
-                              type="tel" 
-                              {...field} 
-                              data-testid="input-telefono"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
-                  
-                  <FormField
-                    control={form.control}
-                    name="esperienza"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Anni di Esperienza nel Settore *</FormLabel>
-                        <FormControl>
-                          <Select onValueChange={field.onChange} value={field.value}>
-                            <SelectTrigger data-testid="select-esperienza">
-                              <SelectValue placeholder="Seleziona..." />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="0-2">0-2 anni</SelectItem>
-                              <SelectItem value="3-5">3-5 anni</SelectItem>
-                              <SelectItem value="6-10">6-10 anni</SelectItem>
-                              <SelectItem value="10+">Più di 10 anni</SelectItem>
-                            </SelectContent>
-                          </Select>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  
-                  <FormField
-                    control={form.control}
-                    name="motivazione"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Perché vuoi diventare partner EXPONENT? *</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            {...field} 
-                            rows={4}
-                            placeholder="Descrivi le tue motivazioni e come pensi di contribuire al successo di EXPONENT..."
-                            data-testid="textarea-motivazione"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  
-                  <div className="flex items-center space-x-2">
-                    <Checkbox 
-                      required 
-                      data-testid="checkbox-terms"
-                    />
-                    <label className="text-sm text-muted-foreground">
-                      Accetto i termini e le condizioni e autorizzo il trattamento dei miei dati personali *
-                    </label>
-                  </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full" 
-                    size="lg"
-                    disabled={isSubmitting}
-                    data-testid="button-submit-partner"
-                  >
-                    {isSubmitting ? "Invio in corso..." : "Invia Candidatura"}
-                  </Button>
-                </form>
-              </Form>
-            </CardContent>
-          </Card>
         </div>
       </section>
     </div>
