@@ -224,11 +224,21 @@ export default function Servizi() {
                         <span className="text-[#a9f6db]">•</span>
                         <span><strong>Strategia d'acquisto:</strong> Sviluppare una strategia considerando limiti di prezzo e condizioni</span>
                       </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-[#a9f6db]">•</span>
+                        <span><strong>Deposito dell'offerta:</strong> Presentare un'offerta competitiva e adeguata entro i termini e le modalità stabilite dall'asta</span>
+                      </li>
                     </ul>
                   </div>
                   
-                  <p className="text-gray-600 text-sm italic">
-                    Ultima sezione in aggiornamento...
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Partecipare alle aste immobiliari può essere un'opportunità interessante per gli acquirenti, ma è fondamentale 
+                    essere ben informati e seguire una strategia ben definita.
+                  </p>
+                  
+                  <p className="text-gray-600 leading-relaxed">
+                    <strong>Il nostro team di professionisti è qui per guidarti</strong> attraverso l'intero processo e assicurarti 
+                    un'esperienza di acquisto senza intoppi.
                   </p>
                 </div>
               </CardContent>
