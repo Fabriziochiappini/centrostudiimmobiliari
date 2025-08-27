@@ -23,8 +23,8 @@ function FlipCard({ title, description }: { title: string; description: string }
         data-testid={`flip-card-${title.toLowerCase()}`}
       >
         {/* Front Side */}
-        <div className="absolute inset-0 w-full h-full backface-hidden bg-primary border-2 border-[#a9f6db] rounded-lg flex items-center justify-center">
-          <h3 className="text-2xl font-montserrat font-bold text-white">
+        <div className="absolute inset-0 w-full h-full backface-hidden bg-white border-2 border-[#a9f6db] rounded-lg flex items-center justify-center">
+          <h3 className="text-2xl font-montserrat font-bold text-[#a9f6db]">
             {title}
           </h3>
         </div>
@@ -287,9 +287,9 @@ export default function Home() {
       </section>
 
       {/* EXPONENT World Section */}
-      <section className="py-20 bg-muted">
+      <section className="py-20 bg-primary">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white text-center mb-12">
             Entra nel mondo EXPONENT
           </h2>
           
