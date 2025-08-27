@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { BarChart, DollarSign, Users, TrendingUp } from "lucide-react";
+import heroImage from "@assets/pexels-sevenstormphotography-443383_1756304452891.jpg";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <HeroSection
         title="La Tua Consulenza Immobiliare di Fiducia"
         subtitle="EXPONENT trasforma i tuoi obiettivi immobiliari in risultati concreti attraverso consulenza specializzata e soluzioni innovative."
-        backgroundImage="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
+        backgroundImage={heroImage}
         className="min-h-screen flex items-center"
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
