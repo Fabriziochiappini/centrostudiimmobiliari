@@ -110,10 +110,45 @@ export default function Servizi() {
                 </div>
                 <div className="text-left">
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Negoziazione e gestione di accordi di saldo e stralcio per ottimizzare la risoluzione di posizioni debitorie.
+                    Abbiamo scelto di collaborare esclusivamente con il nostro partner, <strong>Jurelit</strong>, per offrire 
+                    un'opportunità altamente vantaggiosa a tutte le parti coinvolte: debitori, creditori e acquirenti.
                   </p>
-                  <p className="text-gray-600 text-sm italic">
-                    Contenuto dettagliato in arrivo...
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    <strong>L'operazione di stralcio si distingue per i suoi benefici unici:</strong>
+                  </p>
+                  
+                  <div className="space-y-4 mb-4">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">🏠 Beneficio per il debitore:</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Attraverso lo stralcio, il debitore può eliminare completamente il suo debito. Questo rappresenta 
+                        un enorme sollievo finanziario e la possibilità di iniziare da zero, liberandosi da pesanti obblighi finanziari.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">💼 Beneficio per il creditore:</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Lo stralcio permette al creditore di recuperare una parte dei suoi soldi in modo più rapido ed efficiente 
+                        rispetto ai lunghi tempi d'attesa di una procedura legale tradizionale, ottenendo almeno una parte 
+                        del proprio credito senza lunghe battaglie legali.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-[#071029] mb-2">💰 Beneficio per il compratore:</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        I potenziali acquirenti hanno la straordinaria opportunità di acquistare immobili a un prezzo 
+                        notevolmente inferiore rispetto al valore di mercato, ottenendo un potenziale rendimento elevato 
+                        sull'investimento e proprietà di qualità a un costo più accessibile.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-gray-600 leading-relaxed">
+                    <strong>La collaborazione con Jurelit</strong> ci permette di offrire una soluzione innovativa che soddisfa 
+                    le esigenze di tutte le parti coinvolte, facilitando il processo di stralcio con una gestione efficiente 
+                    e trasparente dell'operazione per raggiungere risultati soddisfacenti per tutti i partecipanti.
                   </p>
                 </div>
               </CardContent>
