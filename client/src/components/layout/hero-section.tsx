@@ -3,7 +3,8 @@ import { ReactNode } from "react";
 interface HeroSectionProps {
   title: string;
   subtitle: string;
-  backgroundImage: string;
+  backgroundVideo?: string;
+  backgroundImage?: string;
   children?: ReactNode;
   className?: string;
 }
@@ -11,16 +12,29 @@ interface HeroSectionProps {
 export default function HeroSection({ 
   title, 
   subtitle, 
+  backgroundVideo,
   backgroundImage, 
   children, 
   className = "py-32" 
 }: HeroSectionProps) {
   return (
     <section className={`relative hero-pattern ${className}`}>
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      />
+      {backgroundVideo ? (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={backgroundVideo} type="video/mp4" />
+        </video>
+      ) : (
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        />
+      )}
       <div className="absolute inset-0 gradient-overlay" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">

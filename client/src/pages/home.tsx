@@ -5,6 +5,7 @@ import HeroSection from "@/components/layout/hero-section";
 import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat } from "lucide-react";
 import heroImage from "@assets/pexels-sevenstormphotography-443383_1756304452891.jpg";
 import servicesImage from "@assets/pexels-frankfurtpictures-830891_1756305978315.jpg";
+import heroVideo from "@assets/854325-hd_1280_720_25fps_1756306774660.mp4";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <HeroSection
         title="EXPONENT"
         subtitle="New Way Of Consulting"
-        backgroundImage={heroImage}
+        backgroundVideo={heroVideo}
         className="min-h-screen flex items-center"
       />
 
