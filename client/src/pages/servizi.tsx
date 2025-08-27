@@ -58,12 +58,12 @@ export default function Servizi() {
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
-                    <div className="w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden">
-                      <img 
-                        src="/attached_assets/generated_images/Property_Finder_house_image_3a9f7a4b.png" 
-                        alt="Property Finder - Casa moderna con giardino e viale d'accesso"
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                      <div className="text-center text-gray-500">
+                        <div className="text-6xl mb-4">🏡</div>
+                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
+                        <p className="text-sm">Property Finder in azione</p>
+                      </div>
                     </div>
                   </div>
                 </div>
