@@ -30,7 +30,7 @@ export default function Home() {
       {/* Services Section */}
       <section className="py-20" style={{ backgroundColor: '#a9f6db' }}>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
             I Nostri Servizi
           </h2>
         </div>
