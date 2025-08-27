@@ -10,33 +10,11 @@ export default function Home() {
     <div className="animate-fade-in">
       {/* Hero Section */}
       <HeroSection
-        title="La Tua Consulenza Immobiliare di Fiducia"
-        subtitle="EXPONENT trasforma i tuoi obiettivi immobiliari in risultati concreti attraverso consulenza specializzata e soluzioni innovative."
+        title="EXPONENT"
+        subtitle="New Way Of Consulting"
         backgroundImage={heroImage}
         className="min-h-screen flex items-center"
-      >
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/servizi">
-            <Button 
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold py-4 px-8 transform hover:scale-105 transition-all duration-200"
-              data-testid="button-scopri-servizi"
-            >
-              Scopri i Nostri Servizi
-            </Button>
-          </Link>
-          <Link href="/contatti">
-            <Button 
-              variant="outline"
-              size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold py-4 px-8 transition-all duration-200"
-              data-testid="button-richiedi-consulenza"
-            >
-              Richiedi Consulenza
-            </Button>
-          </Link>
-        </div>
-      </HeroSection>
+      />
 
       {/* Features Section */}
       <section className="py-20 bg-background">
