@@ -18,7 +18,7 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
   const bgImage = backgroundImage || flipCardBackground;
 
   return (
-    <div className="relative h-64 perspective-1000">
+    <div className="relative h-80 perspective-1000">
       <div
         className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${
           isFlipped ? 'rotate-y-180' : ''
