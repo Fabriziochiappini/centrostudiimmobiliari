@@ -288,7 +288,7 @@ export default function Home() {
 
       {/* EXPONENT World Section */}
       <section className="py-20 bg-primary">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white text-center mb-12">
             Entra nel mondo EXPONENT
           </h2>
