@@ -58,12 +58,21 @@ export default function Servizi() {
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
-                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <div className="text-center text-gray-500">
-                        <div className="text-6xl mb-4">🏡</div>
-                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
-                        <p className="text-sm">Property Finder in azione</p>
-                      </div>
+                    {/* Carica un'immagine chiamata "ricerca-property-finder.jpg" nella directory public dell'Object Storage */}
+                    <div className="aspect-video rounded-xl overflow-hidden">
+                      <img 
+                        src="/public-objects/ricerca-property-finder.jpg" 
+                        alt="Property Finder - Casa con giardino e viale d'accesso"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const fallback = document.createElement('div');
+                          fallback.className = 'bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 w-full h-full';
+                          fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-6xl mb-4">🏡</div><p class="text-lg font-semibold">Carica "ricerca-property-finder.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+                          target.parentNode?.appendChild(fallback);
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -75,12 +84,21 @@ export default function Servizi() {
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                   <div className="order-1">
-                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <div className="text-center text-gray-500">
-                        <div className="text-6xl mb-4">📊</div>
-                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
-                        <p className="text-sm">Opportunità NPL</p>
-                      </div>
+                    {/* Carica un'immagine chiamata "npl-opportunita.jpg" nella directory public dell'Object Storage */}
+                    <div className="aspect-video rounded-xl overflow-hidden">
+                      <img 
+                        src="/public-objects/npl-opportunita.jpg" 
+                        alt="NPL - Opportunità di investimento immobiliare"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const fallback = document.createElement('div');
+                          fallback.className = 'bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 w-full h-full';
+                          fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-6xl mb-4">📊</div><p class="text-lg font-semibold">Carica "npl-opportunita.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+                          target.parentNode?.appendChild(fallback);
+                        }}
+                      />
                     </div>
                   </div>
                   <div className="order-2">
@@ -168,12 +186,21 @@ export default function Servizi() {
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
-                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <div className="text-center text-gray-500">
-                        <div className="text-6xl mb-4">⚖️</div>
-                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
-                        <p className="text-sm">Partnership Jurelit</p>
-                      </div>
+                    {/* Carica un'immagine chiamata "saldo-stralcio-jurelit.jpg" nella directory public dell'Object Storage */}
+                    <div className="aspect-video rounded-xl overflow-hidden">
+                      <img 
+                        src="/public-objects/saldo-stralcio-jurelit.jpg" 
+                        alt="Saldo e Stralcio - Partnership Jurelit"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const fallback = document.createElement('div');
+                          fallback.className = 'bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 w-full h-full';
+                          fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-6xl mb-4">⚖️</div><p class="text-lg font-semibold">Carica "saldo-stralcio-jurelit.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+                          target.parentNode?.appendChild(fallback);
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -185,12 +212,21 @@ export default function Servizi() {
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                   <div className="order-1">
-                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-8">
-                      <div className="text-center text-gray-500">
-                        <div className="text-6xl mb-4">🔨</div>
-                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
-                        <p className="text-sm">Aste immobiliari</p>
-                      </div>
+                    {/* Carica un'immagine chiamata "asta-immobiliare.jpg" nella directory public dell'Object Storage */}
+                    <div className="aspect-video rounded-xl overflow-hidden mb-8">
+                      <img 
+                        src="/public-objects/asta-immobiliare.jpg" 
+                        alt="Aste immobiliari - Tribunale e martelletto"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const fallback = document.createElement('div');
+                          fallback.className = 'bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 w-full h-full';
+                          fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-6xl mb-4">🔨</div><p class="text-lg font-semibold">Carica "asta-immobiliare.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+                          target.parentNode?.appendChild(fallback);
+                        }}
+                      />
                     </div>
                     
                     <div className="bg-white p-8 rounded-xl shadow-lg">
@@ -302,12 +338,21 @@ export default function Servizi() {
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
-                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <div className="text-center text-gray-500">
-                        <div className="text-6xl mb-4">📈</div>
-                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
-                        <p className="text-sm">Home Staging e Valorizzazione</p>
-                      </div>
+                    {/* Carica un'immagine chiamata "valorizzazione-home-staging.jpg" nella directory public dell'Object Storage */}
+                    <div className="aspect-video rounded-xl overflow-hidden">
+                      <img 
+                        src="/public-objects/valorizzazione-home-staging.jpg" 
+                        alt="Valorizzazione - Home staging di un soggiorno moderno"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const fallback = document.createElement('div');
+                          fallback.className = 'bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 w-full h-full';
+                          fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-6xl mb-4">📈</div><p class="text-lg font-semibold">Carica "valorizzazione-home-staging.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+                          target.parentNode?.appendChild(fallback);
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -319,12 +364,21 @@ export default function Servizi() {
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                   <div className="order-1">
-                    <div className="bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <div className="text-center text-gray-500">
-                        <div className="text-6xl mb-4">🏨</div>
-                        <p className="text-lg font-semibold">Spazio per immagine/video</p>
-                        <p className="text-sm">Gestione Affitti Brevi</p>
-                      </div>
+                    {/* Carica un'immagine chiamata "affitti-brevi-airbnb.jpg" nella directory public dell'Object Storage */}
+                    <div className="aspect-video rounded-xl overflow-hidden">
+                      <img 
+                        src="/public-objects/affitti-brevi-airbnb.jpg" 
+                        alt="Affitti Brevi - Camera da letto accogliente per ospiti"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const fallback = document.createElement('div');
+                          fallback.className = 'bg-gray-100 aspect-video rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 w-full h-full';
+                          fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-6xl mb-4">🏨</div><p class="text-lg font-semibold">Carica "affitti-brevi-airbnb.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+                          target.parentNode?.appendChild(fallback);
+                        }}
+                      />
                     </div>
                   </div>
                   <div className="order-2">
