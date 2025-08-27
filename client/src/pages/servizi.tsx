@@ -60,8 +60,8 @@ export default function Servizi() {
                   <div className="order-1 lg:order-2">
                     <div className="w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden">
                       <img 
-                        src="attached_assets/pexels-michael-s-2150441079-33569428_1756313225240.jpg" 
-                        alt="Property Finder - Casa con giardino e viale d'accesso"
+                        src="/attached_assets/generated_images/Property_Finder_house_image_3a9f7a4b.png" 
+                        alt="Property Finder - Casa moderna con giardino e viale d'accesso"
                         className="w-full h-full object-cover"
                       />
                     </div>
