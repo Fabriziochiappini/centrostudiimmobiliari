@@ -1,6 +1,6 @@
 import HeroSection from "@/components/layout/hero-section";
 import { Card, CardContent } from "@/components/ui/card";
-import { Lightbulb, DollarSign, Building, TrendingUp } from "lucide-react";
+import { Search, FileText, Scale, Gavel, TrendingUp, Home } from "lucide-react";
 
 export default function Servizi() {
   return (
@@ -13,196 +13,151 @@ export default function Servizi() {
       />
 
       {/* Services Grid */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Consulenza Strategica */}
-            <Card className="p-8 shadow-lg">
-              <CardContent className="p-0">
-                <div className="flex items-start space-x-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Lightbulb className="w-8 h-8 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-foreground mb-4">Consulenza Strategica</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Analisi approfondite e strategie personalizzate per massimizzare il valore dei tuoi investimenti immobiliari.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Analisi di mercato dettagliate
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Pianificazione degli investimenti
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Ottimizzazione del portfolio
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Valutazione dei rischi
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Valutazioni Immobiliari */}
-            <Card className="p-8 shadow-lg">
-              <CardContent className="p-0">
-                <div className="flex items-start space-x-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <DollarSign className="w-8 h-8 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-foreground mb-4">Valutazioni Immobiliari</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Perizie accurate e certificate per determinare il valore reale dei tuoi immobili secondo standard internazionali.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Perizie certificate
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Valutazioni per mutui
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Due diligence tecnica
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Analisi comparative
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Gestione Patrimonio */}
-            <Card className="p-8 shadow-lg">
-              <CardContent className="p-0">
-                <div className="flex items-start space-x-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Building className="w-8 h-8 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-foreground mb-4">Gestione Patrimonio</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Servizi completi per la gestione e l'ottimizzazione del tuo patrimonio immobiliare esistente.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Property management
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Ottimizzazione rendimenti
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Manutenzione programmata
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Gestione contratti locazione
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Investimenti e Sviluppo */}
-            <Card className="p-8 shadow-lg">
-              <CardContent className="p-0">
-                <div className="flex items-start space-x-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-8 h-8 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-foreground mb-4">Investimenti e Sviluppo</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Identificazione di opportunità di investimento e supporto nello sviluppo di progetti immobiliari.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Ricerca opportunità
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Analisi fattibilità
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Project management
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                        Supporto finanziario
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="py-20 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Il Nostro Processo
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-4">
+              I Nostri Servizi Specializzati
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Un approccio strutturato per garantire risultati eccellenti
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Soluzioni complete per ogni fase del tuo investimento immobiliare
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                1
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-foreground mb-2">Analisi Iniziale</h3>
-              <p className="text-muted-foreground">Valutazione delle tue esigenze e obiettivi</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                2
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-foreground mb-2">Strategia</h3>
-              <p className="text-muted-foreground">Sviluppo di un piano personalizzato</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                3
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-foreground mb-2">Implementazione</h3>
-              <p className="text-muted-foreground">Esecuzione delle attività previste</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                4
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-foreground mb-2">Monitoraggio</h3>
-              <p className="text-muted-foreground">Controllo e ottimizzazione continua</p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Ricerca */}
+            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Search className="w-10 h-10 text-[#071029]" />
+                  </div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Ricerca</h3>
+                </div>
+                <div className="text-left">
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Il Property Finder può aiutarti a trovare l'immobile che soddisfi le tue esigenze specifiche.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Grazie alla sua conoscenza del mercato immobiliare e alla sua esperienza nella ricerca di proprietà, 
+                    il Property Finder può identificare le opzioni che meglio si adattano alle tue esigenze di acquisto, 
+                    risparmiandoti tempo e sforzi nella ricerca.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Inoltre, il Property Finder può assisterti nella trattativa con l'agenzia immobiliare o il venditore privato, 
+                    cercando di ottenere il miglior prezzo possibile per l'immobile e garantendoti una transazione sicura e trasparente.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Affidarsi al Property Finder può anche aiutarti a evitare errori costosi, come l'acquisto di un immobile 
+                    che non corrisponde alle tue esigenze o che ha problemi strutturali o legali.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    In sintesi, il Property Finder è un professionista esperto che può supportarti nella ricerca e nell'acquisto 
+                    della casa dei tuoi sogni, garantendoti un servizio personalizzato e di alta qualità.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* NPL */}
+            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <FileText className="w-10 h-10 text-[#071029]" />
+                  </div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">NPL</h3>
+                </div>
+                <div className="text-left">
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Gestione specializzata di crediti deteriorati e Non Performing Loans nel settore immobiliare.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    Contenuto dettagliato in arrivo...
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Saldo e Stralcio */}
+            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Scale className="w-10 h-10 text-[#071029]" />
+                  </div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Saldo e Stralcio</h3>
+                </div>
+                <div className="text-left">
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Negoziazione e gestione di accordi di saldo e stralcio per ottimizzare la risoluzione di posizioni debitorie.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    Contenuto dettagliato in arrivo...
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Asta */}
+            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Gavel className="w-10 h-10 text-[#071029]" />
+                  </div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Asta</h3>
+                </div>
+                <div className="text-left">
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Supporto completo per partecipazione ad aste immobiliari e acquisizione di immobili a prezzi vantaggiosi.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    Contenuto dettagliato in arrivo...
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Valorizzazione */}
+            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-10 h-10 text-[#071029]" />
+                  </div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Valorizzazione</h3>
+                </div>
+                <div className="text-left">
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Strategie per aumentare il valore degli immobili attraverso ristrutturazioni mirate e ottimizzazioni.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    Contenuto dettagliato in arrivo...
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Affitti Brevi */}
+            <Card className="bg-white border-4 border-[#a9f6db] p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Home className="w-10 h-10 text-[#071029]" />
+                  </div>
+                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">Affitti Brevi</h3>
+                </div>
+                <div className="text-left">
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Gestione completa di proprietà per affitti brevi e massimizzazione dei rendimenti turistici.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    Contenuto dettagliato in arrivo...
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
