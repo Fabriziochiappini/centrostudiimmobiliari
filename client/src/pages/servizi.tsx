@@ -285,8 +285,8 @@ export default function Servizi() {
                             Valorizziamo gli spazi e gli arredi della tua casa, rendendola più attraente per i potenziali acquirenti
                           </p>
                         </div>
-                        <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-                          <h4 className="font-semibold text-[#071029] mb-3">💰 Rendita durante la Vendita</h4>
+                        <div className="bg-white p-6 rounded-lg">
+                          <h4 className="font-semibold text-black mb-3">💰 Rendita durante la Vendita</h4>
                           <p className="text-black leading-relaxed">
                             Sfruttare il potenziale di rendita tramite affitti a breve termine durante il periodo di vendita
                           </p>
