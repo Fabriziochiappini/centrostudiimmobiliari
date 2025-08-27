@@ -137,7 +137,7 @@ export default function Servizi() {
                           <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
                             🏠 <span className="ml-2">Debitore</span>
                           </h4>
-                          <p className="text-white leading-relaxed">
+                          <p className="text-black leading-relaxed">
                             Eliminazione completa del debito con sollievo finanziario immediato
                           </p>
                         </div>
@@ -145,7 +145,7 @@ export default function Servizi() {
                           <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
                             💼 <span className="ml-2">Creditore</span>
                           </h4>
-                          <p className="text-white leading-relaxed">
+                          <p className="text-black leading-relaxed">
                             Recupero rapido ed efficiente senza lunghe battaglie legali
                           </p>
                         </div>
@@ -153,7 +153,7 @@ export default function Servizi() {
                           <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
                             💰 <span className="ml-2">Acquirente</span>
                           </h4>
-                          <p className="text-white leading-relaxed">
+                          <p className="text-black leading-relaxed">
                             Acquisto di immobili a prezzi notevolmente sotto il valore di mercato
                           </p>
                         </div>
