@@ -9,10 +9,12 @@ import servicesImage from "@assets/pexels-frankfurtpictures-830891_1756305978315
 import heroVideo from "@assets/854325-hd_1280_720_25fps_1756306774660.mp4";
 import strategyVideo from "@assets/4514359-uhd_3840_2160_24fps_1756307297823.mp4";
 import flipCardBackground from "@assets/pexels-sevenstormphotography-443378_1756309842710.jpg";
+import businessCardBackground from "@assets/pexels-goumbik-590045_1756309994763.jpg";
 
 // FlipCard Component
-function FlipCard({ title, description }: { title: string; description: string }) {
+function FlipCard({ title, description, backgroundImage }: { title: string; description: string; backgroundImage?: string }) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const bgImage = backgroundImage || flipCardBackground;
 
   return (
     <div className="relative h-64 perspective-1000">
@@ -26,7 +28,7 @@ function FlipCard({ title, description }: { title: string; description: string }
         {/* Front Side */}
         <div 
           className="absolute inset-0 w-full h-full backface-hidden border-2 border-[#a9f6db] rounded-lg flex items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${flipCardBackground})` }}
+          style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
           <h3 className="relative z-10 text-2xl font-montserrat font-bold text-[#a9f6db]">
@@ -303,6 +305,7 @@ export default function Home() {
             <FlipCard
               title="BUSINESS"
               description="Come azienda, vogliamo ottimizzare ogni processo, ridurre gli sprechi e massimizzare i profitti."
+              backgroundImage={businessCardBackground}
             />
             
             {/* ACADEMY Card */}
