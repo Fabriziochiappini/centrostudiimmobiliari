@@ -139,26 +139,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* La Value Strategy Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold mb-2" data-testid="stat-clienti">500+</div>
-              <div className="text-lg opacity-90">Clienti Soddisfatti</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold mb-2" data-testid="stat-valore">€2.5M</div>
-              <div className="text-lg opacity-90">Valore Transato</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold mb-2" data-testid="stat-esperienza">15+</div>
-              <div className="text-lg opacity-90">anni di Esperienza</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold mb-2" data-testid="stat-successo">98%</div>
-              <div className="text-lg opacity-90">Tasso di Successo</div>
-            </div>
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
+              La Value Strategy
+            </h2>
           </div>
         </div>
       </section>
