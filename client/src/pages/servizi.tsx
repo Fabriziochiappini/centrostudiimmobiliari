@@ -58,16 +58,19 @@ export default function Servizi() {
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
-                    <div className="aspect-video rounded-xl overflow-hidden">
+                    <div className="w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden relative">
                       <video 
-                        className="w-full h-full object-cover rounded-xl"
+                        className="w-full h-full object-cover"
                         autoPlay
                         muted
                         loop
                         playsInline
+                        style={{ display: 'block', minHeight: '200px', backgroundColor: '#f3f4f6' }}
                       >
-                        <source src="/attached_assets/4301618-hd_1920_1080_30fps_1756313043711.mp4" type="video/mp4" />
-                        Il tuo browser non supporta il tag video.
+                        <source src="./attached_assets/4301618-hd_1920_1080_30fps_1756313043711.mp4" type="video/mp4" />
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                          <p className="text-gray-500">Video non disponibile</p>
+                        </div>
                       </video>
                     </div>
                   </div>
