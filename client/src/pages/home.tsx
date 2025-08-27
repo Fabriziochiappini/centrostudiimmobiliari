@@ -140,6 +140,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Value Strategy Intro Section */}
+      <section className="py-20 bg-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
+              La Nostra Value Strategy in 4 passaggi
+            </h2>
+          </div>
+        </div>
+      </section>
+
       {/* Value Strategy Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
