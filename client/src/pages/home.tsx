@@ -327,6 +327,19 @@ export default function Home() {
               description="Voglio trasformare ogni operazione immobiliare in un'opportunità di successo."
             />
           </div>
+          
+          {/* Diventa Partner Button */}
+          <div className="text-center mt-12">
+            <Link href="/partner">
+              <Button 
+                size="lg"
+                className="bg-[#a9f6db] border-2 border-[#a9f6db] text-[#071029] hover:bg-[#a9f6db]/90 font-semibold py-4 px-10 text-lg"
+                data-testid="button-diventa-partner"
+              >
+                Diventa Partner
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
