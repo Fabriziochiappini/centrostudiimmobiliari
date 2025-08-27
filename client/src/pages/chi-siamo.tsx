@@ -121,92 +121,89 @@ export default function ChiSiamo() {
 
       {/* Detailed Explanation */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] text-center mb-12">
-            Come Funziona nel Dettaglio
-          </h2>
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-4">
+              Come Funziona nel Dettaglio
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Scopri passo dopo passo come la nostra Value Strategy trasforma i tuoi investimenti immobiliari
+            </p>
+          </div>
           
-          <div className="space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {/* Step 1 Detail */}
-            <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#a9f6db] rounded-full flex items-center justify-center">
-                  <span className="text-[#071029] font-bold text-lg">1</span>
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-[#071029] font-bold text-xl">1</span>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029] mb-3">
+                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
                   Acquisto Strategico sotto Valore
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Il primo passo consiste nell'acquistare un immobile ad un prezzo inferiore rispetto al suo valore di mercato. 
-                  Questo può essere ottenuto attraverso varie strategie, tramite procedure di saldo e stralcio, tramite immobili 
-                  presenti nel portafoglio aziendale, aste o la ricerca di proprietà in aree in fase di sviluppo o che richiedono 
-                  lavori di ristrutturazione. L'obiettivo è trovare opportunità di acquisto che offrano un potenziale di 
-                  apprezzamento del valore nel tempo.
-                </p>
               </div>
+              <p className="text-gray-600 leading-relaxed">
+                Il primo passo consiste nell'acquistare un immobile ad un prezzo inferiore rispetto al suo valore di mercato. 
+                Questo può essere ottenuto attraverso varie strategie, tramite procedure di saldo e stralcio, tramite immobili 
+                presenti nel portafoglio aziendale, aste o la ricerca di proprietà in aree in fase di sviluppo o che richiedono 
+                lavori di ristrutturazione. L'obiettivo è trovare opportunità di acquisto che offrano un potenziale di 
+                apprezzamento del valore nel tempo.
+              </p>
             </div>
 
             {/* Step 2 Detail */}
-            <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#a9f6db] rounded-full flex items-center justify-center">
-                  <span className="text-[#071029] font-bold text-lg">2</span>
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-[#071029] font-bold text-xl">2</span>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029] mb-3">
+                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
                   Massimizzazione del Reddito
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Una volta acquisita la proprietà, il secondo passo consiste nel massimizzare la messa a reddito attraverso 
-                  il servizio di affitti brevi. Gli affitti brevi offrono la possibilità di ottenere un reddito stabile e 
-                  spesso superiore rispetto agli affitti tradizionali a lungo termine. Sfruttando la domanda di alloggi 
-                  temporanei in destinazioni turistiche o in città con una forte presenza studentesca, puoi massimizzare 
-                  i guadagni e coprire i costi associati all'immobile.
-                </p>
               </div>
+              <p className="text-gray-600 leading-relaxed">
+                Una volta acquisita la proprietà, il secondo passo consiste nel massimizzare la messa a reddito attraverso 
+                il servizio di affitti brevi. Gli affitti brevi offrono la possibilità di ottenere un reddito stabile e 
+                spesso superiore rispetto agli affitti tradizionali a lungo termine. Sfruttando la domanda di alloggi 
+                temporanei in destinazioni turistiche o in città con una forte presenza studentesca, puoi massimizzare 
+                i guadagni e coprire i costi associati all'immobile.
+              </p>
             </div>
 
             {/* Step 3 Detail */}
-            <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#a9f6db] rounded-full flex items-center justify-center">
-                  <span className="text-[#071029] font-bold text-lg">3</span>
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-[#071029] font-bold text-xl">3</span>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029] mb-3">
+                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
                   Rivendita al Momento Giusto
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Il terzo passo consiste nella rivendita dell'immobile ad un prezzo più alto. Utilizzando una strategia 
-                  di timing e valutazione del mercato immobiliare, puoi cercare il momento giusto per vendere e capitalizzare 
-                  sull'apprezzamento del valore dell'immobile. Questo ti permette di realizzare un profitto significativo 
-                  e reinvestirlo in altre opportunità immobiliari.
-                </p>
               </div>
+              <p className="text-gray-600 leading-relaxed">
+                Il terzo passo consiste nella rivendita dell'immobile ad un prezzo più alto. Utilizzando una strategia 
+                di timing e valutazione del mercato immobiliare, puoi cercare il momento giusto per vendere e capitalizzare 
+                sull'apprezzamento del valore dell'immobile. Questo ti permette di realizzare un profitto significativo 
+                e reinvestirlo in altre opportunità immobiliari.
+              </p>
             </div>
 
             {/* Step 4 Detail */}
-            <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#a9f6db] rounded-full flex items-center justify-center">
-                  <span className="text-[#071029] font-bold text-lg">4</span>
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-[#071029] font-bold text-xl">4</span>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029] mb-3">
+                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
                   Reinvestimento Strategico
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Infine, il quarto passo della Value Strategy è quello di utilizzare il profitto ottenuto dalla vendita 
-                  per acquistare un immobile con un budget più alto. Questo ti consente di accedere a proprietà di 
-                  maggior valore e potenziale di crescita, ampliando così il tuo portafoglio immobiliare e aumentando 
-                  le tue opportunità di guadagno futuro.
-                </p>
               </div>
+              <p className="text-gray-600 leading-relaxed">
+                Infine, il quarto passo della Value Strategy è quello di utilizzare il profitto ottenuto dalla vendita 
+                per acquistare un immobile con un budget più alto. Questo ti consente di accedere a proprietà di 
+                maggior valore e potenziale di crescita, ampliando così il tuo portafoglio immobiliare e aumentando 
+                le tue opportunità di guadagno futuro.
+              </p>
             </div>
           </div>
         </div>
