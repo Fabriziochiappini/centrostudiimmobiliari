@@ -226,24 +226,24 @@ export default function ChiSiamo() {
             valore dai tuoi investimenti immobiliari.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contatti">
-              <Button 
-                size="lg"
-                className="bg-[#a9f6db] border-2 border-[#a9f6db] text-[#071029] hover:bg-[#a9f6db]/90 font-semibold py-4 px-8 text-lg"
-                data-testid="button-scopri-strategia"
-              >
-                Scopri la Strategia
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
             <Link href="/servizi">
               <Button 
                 size="lg"
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#071029] font-semibold py-4 px-8 text-lg"
-                data-testid="button-vedi-servizi"
+                className="bg-[#a9f6db] border-2 border-[#a9f6db] text-[#071029] hover:bg-[#a9f6db]/90 font-semibold py-4 px-8 text-lg"
+                data-testid="button-scopri-servizi"
               >
-                Vedi i Servizi
+                Scopri i Servizi
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+            <Link href="/contatti">
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-2 border-[#a9f6db] text-[#a9f6db] hover:bg-[#a9f6db] hover:text-[#071029] font-semibold py-4 px-8 text-lg"
+                data-testid="button-contattaci"
+              >
+                Contattaci
               </Button>
             </Link>
           </div>
