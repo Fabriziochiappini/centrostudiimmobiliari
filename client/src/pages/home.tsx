@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
-import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon } from "lucide-react";
+import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight } from "lucide-react";
 import heroImage from "@assets/pexels-sevenstormphotography-443383_1756304452891.jpg";
 import servicesImage from "@assets/pexels-frankfurtpictures-830891_1756305978315.jpg";
 
@@ -100,6 +100,16 @@ export default function Home() {
               <p className="text-white/80">Una scelta intelligente per investitori che puntano a valore e liquidità.</p>
             </div>
           </div>
+        </div>
+        
+        {/* Services CTA */}
+        <div className="relative z-10 text-center mt-8">
+          <Link href="/servizi">
+            <span className="inline-flex items-center text-sm text-white hover:text-[#a9f6db] transition-colors duration-200 cursor-pointer">
+              Scopri di più
+              <ArrowRight className="ml-1 w-3 h-3" />
+            </span>
+          </Link>
         </div>
       </section>
 
