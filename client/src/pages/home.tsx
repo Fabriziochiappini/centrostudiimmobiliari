@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section 
-        className="py-20 relative bg-cover bg-center bg-no-repeat"
+        className="min-h-screen flex flex-col justify-center relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${servicesImage})` }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
