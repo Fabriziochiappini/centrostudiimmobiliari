@@ -3,8 +3,9 @@ import { Link } from "wouter";
 export default function Footer() {
   return (
     <footer className="bg-foreground text-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="md:col-span-1">
             <div className="text-2xl font-montserrat font-bold text-accent mb-4">EXPONENT</div>
@@ -89,6 +90,21 @@ export default function Footer() {
             </ul>
           </div>
           
+          {/* Le Nostre Sedi */}
+          <div>
+            <h3 className="text-lg font-montserrat font-semibold mb-4">Le Nostre Sedi</h3>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+              <div className="text-background/80">Bologna</div>
+              <div className="text-background/80">Firenze</div>
+              <div className="text-background/80">Padova</div>
+              <div className="text-background/80">Milano</div>
+              <div className="text-background/80">Piacenza</div>
+              <div className="text-background/80">Cagliari</div>
+              <div className="text-background/80">Venezia</div>
+              <div className="text-background/80">Modena</div>
+            </div>
+          </div>
+          
           {/* Contact */}
           <div>
             <h3 className="text-lg font-montserrat font-semibold mb-4">Contatti</h3>
@@ -98,6 +114,7 @@ export default function Footer() {
               <li>info@exponent group.it</li>
               <li>P.IVA 04062291206</li>
             </ul>
+          </div>
           </div>
         </div>
         
