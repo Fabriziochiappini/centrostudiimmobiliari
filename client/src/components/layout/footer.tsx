@@ -144,6 +144,21 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      
+      {/* Developer Credit */}
+      <div className="bg-[#071029] py-3">
+        <div className="text-center">
+          <a 
+            href="https://webproitalia.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-[#a9f6db] hover:text-white text-sm transition-colors duration-200"
+            data-testid="link-webproitalia"
+          >
+            Realizzato da WEBPROITALIA
+          </a>
+        </div>
+      </div>
     </footer>
   );
 }
