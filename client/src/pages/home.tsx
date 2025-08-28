@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat } from "lucide-react";
 // File da caricare nell'Object Storage nella directory public:
-// hero-video.mp4, strategy-video.mp4, flip-card-bg.jpg, business-card-bg.jpg, academy-card-bg.jpg, services-bg.jpg
+// hero-video.mp4, strategy-video.mp4, services-bg.jpg
+// business-card-bg.jpg, academy-card-bg.jpg, investor-card-bg.jpg
 
 // FlipCard Component
 function FlipCard({ title, description, backgroundImage }: { title: string; description: string; backgroundImage?: string }) {
@@ -32,7 +33,8 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
               target.style.display = 'none';
               const fallback = document.createElement('div');
               fallback.className = 'absolute inset-0 bg-gray-200 rounded-lg flex items-center justify-center';
-              fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-4xl mb-2">🖼️</div><p class="text-sm">Carica "flip-card-bg.jpg" nell\'Object Storage</p></div>';
+              const filename = bgImage.split('/').pop() || 'flip-card-bg.jpg';
+              fallback.innerHTML = `<div class="text-center text-gray-500"><div class="text-4xl mb-2">🖼️</div><p class="text-sm">Carica "${filename}" nell'Object Storage</p></div>`;
               target.parentNode?.appendChild(fallback);
             }}
           />
@@ -352,6 +354,7 @@ export default function Home() {
             <FlipCard
               title="INVESTOR"
               description="Voglio trasformare ogni operazione immobiliare in un'opportunità di successo."
+              backgroundImage="/public-objects/investor-card-bg.jpg"
             />
           </div>
           
