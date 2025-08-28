@@ -56,14 +56,6 @@ export default function Header() {
                     </a>
                   </Link>
                 ))}
-                <Link href="/contatti">
-                  <Button 
-                    size="sm"
-                    data-testid="button-contatti-header"
-                  >
-                    Contatti
-                  </Button>
-                </Link>
               </div>
             </div>
 
