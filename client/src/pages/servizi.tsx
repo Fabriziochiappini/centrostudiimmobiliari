@@ -327,7 +327,7 @@ export default function Servizi() {
                     className="bg-white rounded-xl shadow-lg border-0 overflow-hidden"
                   >
                     <AccordionTrigger 
-                      className="px-6 py-4 hover:no-underline [&[data-state=open]>div>svg]:rotate-180"
+                      className="px-6 py-4 hover:no-underline"
                       data-testid={`accordion-trigger-${service.id}`}
                     >
                       <div className="flex items-center space-x-4 flex-1 text-left">
@@ -338,7 +338,6 @@ export default function Servizi() {
                           {service.title}
                         </h3>
                       </div>
-                      <ChevronDown className="h-5 w-5 text-[#071029] transition-transform duration-200" />
                     </AccordionTrigger>
                     <AccordionContent 
                       className="px-6 pb-6 pt-2"
@@ -363,7 +362,7 @@ export default function Servizi() {
                         </div>
                         
                         {/* Contenuto */}
-                        <div className={service.textColor}>
+                        <div className="text-gray-600">
                           <service.content />
                         </div>
                       </div>
