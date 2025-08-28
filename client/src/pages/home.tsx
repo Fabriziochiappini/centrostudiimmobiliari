@@ -62,6 +62,7 @@ export default function Home() {
         subtitle="New Way Of Consulting"
         backgroundVideo={heroVideo}
         className="min-h-screen flex items-center"
+        isHomepage={true}
       />
 
       {/* Value Strategy Intro Section */}
