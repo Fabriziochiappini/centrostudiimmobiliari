@@ -66,6 +66,13 @@ export default function Footer() {
                   </a>
                 </Link>
               </li>
+              <li>
+                <Link href="/contatti">
+                  <a className="text-background/80 hover:text-accent transition-colors duration-200">
+                    Contatti
+                  </a>
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -73,10 +80,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-montserrat font-semibold mb-4">Servizi</h3>
             <ul className="space-y-2">
-              <li className="text-background/80">Consulenza Strategica</li>
-              <li className="text-background/80">Valutazioni Immobiliari</li>
-              <li className="text-background/80">Gestione Patrimonio</li>
-              <li className="text-background/80">Investimenti e Sviluppo</li>
+              <li className="text-background/80">Property Finder</li>
+              <li className="text-background/80">NPL Opportunità</li>
+              <li className="text-background/80">Saldo e Stralcio</li>
+              <li className="text-background/80">Aste Immobiliari</li>
+              <li className="text-background/80">Home Staging</li>
+              <li className="text-background/80">Affitti Brevi</li>
             </ul>
           </div>
           
@@ -84,9 +93,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-montserrat font-semibold mb-4">Contatti</h3>
             <ul className="space-y-2 text-background/80">
-              <li>Via Roma 123, 20100 Milano</li>
-              <li>+39 02 1234 5678</li>
-              <li>info@exponent.it</li>
+              <li>Exponent S.r.l.s</li>
+              <li>+39 051 196 000 10</li>
+              <li>info@exponent group.it</li>
+              <li>P.IVA 04062291206</li>
             </ul>
           </div>
         </div>
@@ -98,15 +108,21 @@ export default function Footer() {
               &copy; 2024 EXPONENT. Tutti i diritti riservati.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
-                Cookie Policy
-              </a>
-              <a href="#" className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
-                Termini di Servizio
-              </a>
+              <Link href="/privacy-policy">
+                <a className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
+                  Privacy Policy
+                </a>
+              </Link>
+              <Link href="/cookie-policy">
+                <a className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
+                  Cookie Policy
+                </a>
+              </Link>
+              <Link href="/termini-servizio">
+                <a className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
+                  Termini di Servizio
+                </a>
+              </Link>
             </div>
           </div>
         </div>

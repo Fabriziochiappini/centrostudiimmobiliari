@@ -13,7 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import HeroSection from "@/components/layout/hero-section";
 import { insertContactRequestSchema, type InsertContactRequest } from "@shared/schema";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Building2 } from "lucide-react";
 
 export default function Contatti() {
   const { toast } = useToast();
@@ -77,46 +77,49 @@ export default function Contatti() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-montserrat font-bold text-foreground mb-8">Informazioni di Contatto</h2>
+              <h2 className="text-3xl font-montserrat font-bold text-[#071029] mb-8">Informazioni di Contatto</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-[#a9f6db]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-[#071029]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Sede Principale</h3>
-                    <p className="text-muted-foreground">Via Roma 123<br />20100 Milano, Italy</p>
+                    <h3 className="text-lg font-semibold text-[#071029] mb-2">Telefono</h3>
+                    <p className="text-gray-600">+39 051 196 000 10</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-[#a9f6db]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-[#071029]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Telefono</h3>
-                    <p className="text-muted-foreground">+39 02 1234 5678</p>
+                    <h3 className="text-lg font-semibold text-[#071029] mb-2">Email</h3>
+                    <p className="text-gray-600">info@exponent group.it</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-[#a9f6db]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Building2 className="w-6 h-6 text-[#071029]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
-                    <p className="text-muted-foreground">info@exponent.it</p>
+                    <h3 className="text-lg font-semibold text-[#071029] mb-2">Dati Aziendali</h3>
+                    <p className="text-gray-600">
+                      Exponent S.r.l.s<br />
+                      P.iva 04062291206
+                    </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-[#a9f6db]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-[#071029]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Orari di Apertura</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="text-lg font-semibold text-[#071029] mb-2">Orari di Apertura</h3>
+                    <p className="text-gray-600">
                       Lunedì - Venerdì: 9:00 - 18:00<br />
                       Sabato: 9:00 - 13:00<br />
                       Domenica: Chiuso
@@ -130,7 +133,7 @@ export default function Contatti() {
             <div>
               <Card className="shadow-lg">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-montserrat font-bold text-foreground mb-6">Richiedi Informazioni</h2>
+                  <h2 className="text-2xl font-montserrat font-bold text-[#071029] mb-6">Richiedi Informazioni</h2>
                   
                   <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -256,8 +259,8 @@ export default function Contatti() {
                           required 
                           data-testid="checkbox-privacy"
                         />
-                        <label className="text-sm text-muted-foreground">
-                          Accetto il trattamento dei miei dati personali secondo la Privacy Policy *
+                        <label className="text-sm text-gray-600">
+                          Accetto il trattamento dei miei dati personali secondo la <a href="/privacy-policy" className="text-[#071029] underline">Privacy Policy</a> *
                         </label>
                       </div>
                       

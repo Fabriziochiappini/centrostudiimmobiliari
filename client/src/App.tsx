@@ -10,6 +10,10 @@ import ChiSiamo from "./pages/chi-siamo";
 import Servizi from "./pages/servizi";
 import Partner from "./pages/partner";
 import Contatti from "./pages/contatti";
+import Sedi from "./pages/sedi";
+import PrivacyPolicy from "./pages/privacy-policy";
+import CookiePolicy from "./pages/cookie-policy";
+import TerminiServizio from "./pages/termini-servizio";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -23,6 +27,10 @@ function Router() {
           <Route path="/servizi" component={Servizi} />
           <Route path="/partner" component={Partner} />
           <Route path="/contatti" component={Contatti} />
+          <Route path="/sedi" component={Sedi} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/cookie-policy" component={CookiePolicy} />
+          <Route path="/termini-servizio" component={TerminiServizio} />
           <Route component={NotFound} />
         </Switch>
       </main>
