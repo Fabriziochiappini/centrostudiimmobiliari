@@ -66,6 +66,7 @@ export default function Header() {
                 size="sm"
                 onClick={() => setIsMobileMenuOpen(true)}
                 data-testid="button-mobile-menu"
+                className="hover:bg-[#a9f6db]"
               >
                 <Menu className="h-6 w-6" />
               </Button>
