@@ -40,37 +40,37 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/">
-                  <a className="text-background/80 hover:text-accent transition-colors duration-200">
+                  <span className="text-background/80 hover:text-accent transition-colors duration-200 cursor-pointer">
                     Home
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/chi-siamo">
-                  <a className="text-background/80 hover:text-accent transition-colors duration-200">
+                  <span className="text-background/80 hover:text-accent transition-colors duration-200 cursor-pointer">
                     Chi Siamo
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/servizi">
-                  <a className="text-background/80 hover:text-accent transition-colors duration-200">
+                  <span className="text-background/80 hover:text-accent transition-colors duration-200 cursor-pointer">
                     Servizi
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/partner">
-                  <a className="text-background/80 hover:text-accent transition-colors duration-200">
+                  <span className="text-background/80 hover:text-accent transition-colors duration-200 cursor-pointer">
                     Diventa Partner
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/contatti">
-                  <a className="text-background/80 hover:text-accent transition-colors duration-200">
+                  <span className="text-background/80 hover:text-accent transition-colors duration-200 cursor-pointer">
                     Contatti
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>
@@ -124,19 +124,19 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacy-policy">
-                <a className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
+                <span className="text-background/60 hover:text-accent text-sm transition-colors duration-200 cursor-pointer">
                   Privacy Policy
-                </a>
+                </span>
               </Link>
               <Link href="/cookie-policy">
-                <a className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
+                <span className="text-background/60 hover:text-accent text-sm transition-colors duration-200 cursor-pointer">
                   Cookie Policy
-                </a>
+                </span>
               </Link>
               <Link href="/termini-servizio">
-                <a className="text-background/60 hover:text-accent text-sm transition-colors duration-200">
+                <span className="text-background/60 hover:text-accent text-sm transition-colors duration-200 cursor-pointer">
                   Termini di Servizio
-                </a>
+                </span>
               </Link>
             </div>
           </div>

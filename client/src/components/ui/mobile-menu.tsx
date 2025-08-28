@@ -47,8 +47,8 @@ export default function MobileMenu({ isOpen, onClose, navItems, currentLocation 
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
-              <a
-                className={`block px-3 py-2 text-base font-medium rounded-md transition-colors ${
+              <span
+                className={`block px-3 py-2 text-base font-medium rounded-md transition-colors cursor-pointer ${
                   isActive(item.href)
                     ? "text-primary bg-muted"
                     : "text-foreground hover:text-primary hover:bg-muted"
@@ -57,7 +57,7 @@ export default function MobileMenu({ isOpen, onClose, navItems, currentLocation 
                 data-testid={`mobile-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
               >
                 {item.label}
-              </a>
+              </span>
             </Link>
           ))}
         </div>

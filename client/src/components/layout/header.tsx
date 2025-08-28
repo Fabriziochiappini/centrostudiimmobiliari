@@ -30,12 +30,12 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/">
-                <a 
-                  className="text-2xl font-montserrat font-bold text-primary hover:text-primary/90 transition-colors"
+                <span 
+                  className="text-2xl font-montserrat font-bold text-primary hover:text-primary/90 transition-colors cursor-pointer"
                   data-testid="logo"
                 >
                   EXPONENT
-                </a>
+                </span>
               </Link>
             </div>
 
@@ -44,8 +44,8 @@ export default function Header() {
               <div className="ml-10 flex items-baseline space-x-8">
                 {navItems.map((item) => (
                   <Link key={item.href} href={item.href}>
-                    <a
-                      className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                    <span
+                      className={`px-3 py-2 text-sm font-medium transition-colors duration-200 cursor-pointer ${
                         isActive(item.href)
                           ? "text-primary"
                           : "text-foreground hover:text-primary"
@@ -53,7 +53,7 @@ export default function Header() {
                       data-testid={`nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
                     >
                       {item.label}
-                    </a>
+                    </span>
                   </Link>
                 ))}
               </div>
