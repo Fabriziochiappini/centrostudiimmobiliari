@@ -4,18 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat } from "lucide-react";
-import heroImage from "@assets/pexels-sevenstormphotography-443383_1756304452891.jpg";
-import servicesImage from "@assets/pexels-frankfurtpictures-830891_1756305978315.jpg";
-import heroVideo from "@assets/854325-hd_1280_720_25fps_1756306774660.mp4";
-import strategyVideo from "@assets/4514359-uhd_3840_2160_24fps_1756307297823.mp4";
-import flipCardBackground from "@assets/pexels-sevenstormphotography-443378_1756309842710.jpg";
-import businessCardBackground from "@assets/pexels-goumbik-590045_1756309994763.jpg";
-import academyCardBackground from "@assets/pexels-singkham-178541-1108572_1756310104781.jpg";
+// File da caricare nell'Object Storage nella directory public:
+// hero-video.mp4, strategy-video.mp4, flip-card-bg.jpg, business-card-bg.jpg, academy-card-bg.jpg, services-bg.jpg
 
 // FlipCard Component
 function FlipCard({ title, description, backgroundImage }: { title: string; description: string; backgroundImage?: string }) {
   const [isFlipped, setIsFlipped] = useState(false);
-  const bgImage = backgroundImage || flipCardBackground;
+  const bgImage = backgroundImage || "/public-objects/flip-card-bg.jpg";
 
   return (
     <div className="relative h-80 perspective-1000">
@@ -27,10 +22,20 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
         data-testid={`flip-card-${title.toLowerCase()}`}
       >
         {/* Front Side */}
-        <div 
-          className="absolute inset-0 w-full h-full backface-hidden border-2 border-[#a9f6db] rounded-lg flex items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${bgImage})` }}
-        >
+        <div className="absolute inset-0 w-full h-full backface-hidden border-2 border-[#a9f6db] rounded-lg flex items-center justify-center">
+          <img 
+            src={bgImage}
+            alt={`Background for ${title}`}
+            className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const fallback = document.createElement('div');
+              fallback.className = 'absolute inset-0 bg-gray-200 rounded-lg flex items-center justify-center';
+              fallback.innerHTML = '<div class="text-center text-gray-500"><div class="text-4xl mb-2">🖼️</div><p class="text-sm">Carica "flip-card-bg.jpg" nell\'Object Storage</p></div>';
+              target.parentNode?.appendChild(fallback);
+            }}
+          />
           <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
           <div className="relative z-10 text-center">
             <h3 className="text-2xl font-montserrat font-bold text-white mb-2">
@@ -60,7 +65,7 @@ export default function Home() {
       <HeroSection
         title="EXPONENT"
         subtitle="New Way Of Consulting"
-        backgroundVideo={heroVideo}
+        backgroundVideo="/public-objects/hero-video.mp4"
         className="min-h-screen flex items-center"
         isHomepage={true}
       />
@@ -77,10 +82,23 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section 
-        className="min-h-screen flex flex-col justify-center relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${servicesImage})` }}
-      >
+      <section className="min-h-screen flex flex-col justify-center relative">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/public-objects/services-bg.jpg" 
+            alt="Servizi immobiliari"
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const fallback = document.createElement('div');
+              fallback.className = 'absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-600 w-full h-full flex items-center justify-center';
+              fallback.innerHTML = '<div class="text-center text-white"><div class="text-6xl mb-4">🏢</div><p class="text-lg font-semibold">Carica "services-bg.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+              target.parentNode?.appendChild(fallback);
+            }}
+          />
+        </div>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
@@ -207,8 +225,16 @@ export default function Home() {
           loop
           muted
           playsInline
+          onError={(e) => {
+            const target = e.target as HTMLVideoElement;
+            target.style.display = 'none';
+            const fallback = document.createElement('div');
+            fallback.className = 'absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 w-full h-full flex items-center justify-center';
+            fallback.innerHTML = '<div class="text-center text-white"><div class="text-6xl mb-4">🎬</div><p class="text-lg font-semibold">Carica "strategy-video.mp4"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
+            target.parentNode?.appendChild(fallback);
+          }}
         >
-          <source src={strategyVideo} type="video/mp4" />
+          <source src="/public-objects/strategy-video.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-black/40"></div>
@@ -312,14 +338,14 @@ export default function Home() {
             <FlipCard
               title="BUSINESS"
               description="Come azienda, vogliamo ottimizzare ogni processo, ridurre gli sprechi e massimizzare i profitti."
-              backgroundImage={businessCardBackground}
+              backgroundImage="/public-objects/business-card-bg.jpg"
             />
             
             {/* ACADEMY Card */}
             <FlipCard
               title="ACADEMY"
               description="Sono un consulente o un'azienda e voglio iscrivermi a un corso professionale di vendita per crescere personalmente e far crescere il mio team."
-              backgroundImage={academyCardBackground}
+              backgroundImage="/public-objects/academy-card-bg.jpg"
             />
             
             {/* INVESTOR Card */}
