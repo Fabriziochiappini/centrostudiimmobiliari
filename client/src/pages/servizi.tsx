@@ -1,5 +1,7 @@
-import { Search, FileText, Scale, Gavel, TrendingUp, Home, ChevronDown } from "lucide-react";
+import { Search, FileText, Scale, Gavel, TrendingUp, Home, ChevronDown, ArrowRight } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import HeroSection from "@/components/layout/hero-section";
 
 // Componente per il contenuto del servizio Ricerca
@@ -418,6 +420,34 @@ export default function Servizi() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-20 bg-[#071029]">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-6">
+            Pronto a Iniziare il Tuo Investimento?
+          </h2>
+          <p className="text-xl text-white/80 mb-8 leading-relaxed">
+            I nostri esperti sono pronti ad aiutarti a trovare l'opportunità immobiliare perfetta per i tuoi obiettivi. 
+            Contattaci oggi per una consulenza personalizzata e gratuita.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/contatti">
+              <Button 
+                size="lg" 
+                className="bg-[#a9f6db] text-[#071029] hover:bg-[#a9f6db]/90 font-semibold px-8 py-3 text-lg"
+                data-testid="button-contact-cta"
+              >
+                Contattaci Ora
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <p className="text-white/60 text-sm">
+              Consulenza gratuita • Risposta entro 24h
+            </p>
           </div>
         </div>
       </section>
