@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
+import ScrollToTop from "./components/ui/scroll-to-top";
+import { useScrollToTop } from "./hooks/useScrollToTop";
 import Home from "./pages/home";
 import ChiSiamo from "./pages/chi-siamo";
 import Servizi from "./pages/servizi";
@@ -17,6 +19,8 @@ import TerminiServizio from "./pages/termini-servizio";
 import NotFound from "@/pages/not-found";
 
 function Router() {
+  useScrollToTop(); // Hook per scroll automatico al cambio pagina
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -35,6 +39,7 @@ function Router() {
         </Switch>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
