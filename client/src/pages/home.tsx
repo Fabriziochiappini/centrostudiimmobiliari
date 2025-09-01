@@ -222,29 +222,20 @@ export default function Home() {
 
       {/* Value Strategy Section */}
       <section className="py-20 relative overflow-hidden">
-        {/* Video Background */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          onLoadStart={() => console.log('Video loading started')}
-          onCanPlay={() => console.log('Video can play')}
-          onError={(e) => {
-            console.error('Video error:', e);
-            const target = e.target as HTMLVideoElement;
-            target.style.display = 'none';
-            const fallback = document.createElement('div');
-            fallback.className = 'absolute inset-0 bg-gradient-to-br from-gray-500 to-gray-700 w-full h-full flex items-center justify-center';
-            fallback.innerHTML = '<div class="text-center text-white"><div class="text-6xl mb-4">🎬</div><p class="text-lg font-semibold">Video non disponibile</p><p class="text-sm">Verifica che strategy-video.mp4 sia nell\'Object Storage</p></div>';
-            target.parentNode?.appendChild(fallback);
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: 'url(/public-objects/strategy-background.jpg)',
+            backgroundColor: '#6b7280'
           }}
-          style={{ backgroundColor: '#6b7280' }}
-        >
-          <source src="/public-objects/strategy-video.mp4?v=3" type="video/mp4" />
-          Il tuo browser non supporta il video HTML5.
-        </video>
+          onError={(e) => {
+            console.error('Background image error:', e);
+            const target = e.target as HTMLDivElement;
+            target.style.backgroundImage = 'none';
+            target.style.backgroundColor = '#6b7280';
+          }}
+        ></div>
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
