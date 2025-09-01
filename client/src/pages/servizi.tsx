@@ -43,8 +43,8 @@ const NPLContent = () => (
       Questi crediti bancari non performanti offrono l'opportunità di accedere a proprietà di valore 
       prima che finiscano sul mercato tradizionale.
     </p>
-    <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-      <p className="font-medium">
+    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
+      <p className="font-medium text-black">
         Grazie al supporto delle normative vigenti e all'autorizzazione della Banca d'Italia, 
         puoi avere la sicurezza di un investimento solido e regolamentato.
       </p>
