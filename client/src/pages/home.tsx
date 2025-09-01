@@ -238,7 +238,7 @@ export default function Home() {
             target.parentNode?.appendChild(fallback);
           }}
         >
-          <source src="/public-objects/strategy-video.mp4" type="video/mp4" />
+          <source src="/public-objects/strategy-video.mp4?v=2" type="video/mp4" />
         </video>
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-black/40"></div>
