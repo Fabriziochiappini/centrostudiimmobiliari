@@ -17,7 +17,7 @@ export default function ChiSiamo() {
       {/* Value Strategy Introduction */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-6">
             La Nostra Value Strategy
           </h2>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -45,7 +45,7 @@ export default function ChiSiamo() {
             </div>
           </div>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-4">
               I Quattro Passaggi Fondamentali
             </h2>
           </div>
@@ -61,7 +61,7 @@ export default function ChiSiamo() {
                   1
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
                 Acquisto Strategico
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -80,7 +80,7 @@ export default function ChiSiamo() {
                   2
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
                 Massimizzazione Reddito
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -99,7 +99,7 @@ export default function ChiSiamo() {
                   3
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
                 Rivendita Valorizzata
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -118,7 +118,7 @@ export default function ChiSiamo() {
                   4
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
                 Reinvestimento
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -145,7 +145,7 @@ export default function ChiSiamo() {
       <section className="py-20 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-4">
               Come Funziona nel Dettaglio
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -160,7 +160,7 @@ export default function ChiSiamo() {
                 <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold text-xl">1</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
+                <h3 className="text-xl font-montserrat font-semibold text-black">
                   Acquisto Strategico sotto Valore
                 </h3>
               </div>
@@ -179,7 +179,7 @@ export default function ChiSiamo() {
                 <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold text-xl">2</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
+                <h3 className="text-xl font-montserrat font-semibold text-black">
                   Massimizzazione del Reddito
                 </h3>
               </div>
@@ -198,7 +198,7 @@ export default function ChiSiamo() {
                 <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold text-xl">3</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
+                <h3 className="text-xl font-montserrat font-semibold text-black">
                   Rivendita al Momento Giusto
                 </h3>
               </div>
@@ -216,7 +216,7 @@ export default function ChiSiamo() {
                 <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold text-xl">4</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
+                <h3 className="text-xl font-montserrat font-semibold text-black">
                   Reinvestimento Strategico
                 </h3>
               </div>
@@ -245,10 +245,10 @@ export default function ChiSiamo() {
               </div>
             </div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-6">
             Una Strategia Vincente
           </h2>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          <p className="text-lg text-black mb-8 leading-relaxed">
             In conclusione, la nostra Value Strategy ti offre un approccio completo per massimizzare 
             i tuoi investimenti immobiliari. Acquistando proprietà ad un prezzo inferiore, sfruttando 
             gli affitti brevi per generare reddito, rivendendo ad un prezzo più alto e reinvestendo 

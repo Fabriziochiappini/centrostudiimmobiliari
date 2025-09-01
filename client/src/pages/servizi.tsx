@@ -233,7 +233,7 @@ export default function Servizi() {
       icon: Search,
       content: RicercaContent,
       bgColor: 'bg-white',
-      textColor: 'text-gray-600',
+      textColor: 'text-black',
       image: '/public-objects/ricerca-property-finder.jpg',
       imageAlt: 'Property Finder - Casa con giardino e viale d\'accesso',
       imagePlaceholder: '🏡'
@@ -244,7 +244,7 @@ export default function Servizi() {
       icon: FileText,
       content: NPLContent,
       bgColor: 'bg-white',
-      textColor: 'text-gray-600',
+      textColor: 'text-black',
       image: '/public-objects/npl-opportunita.jpg',
       imageAlt: 'NPL - Opportunità di investimento immobiliare',
       imagePlaceholder: '📊'
@@ -255,7 +255,7 @@ export default function Servizi() {
       icon: Scale,
       content: SaldoStralcioContent,
       bgColor: 'bg-white',
-      textColor: 'text-gray-600',
+      textColor: 'text-black',
       image: '/public-objects/saldo-stralcio-jurelit.jpg',
       imageAlt: 'Saldo e Stralcio - Partnership Jurelit',
       imagePlaceholder: '⚖️'
@@ -266,7 +266,7 @@ export default function Servizi() {
       icon: Gavel,
       content: AstaContent,
       bgColor: 'bg-white',
-      textColor: 'text-gray-600',
+      textColor: 'text-black',
       image: '/public-objects/asta-immobiliare.jpg',
       imageAlt: 'Aste immobiliari - Tribunale e martelletto',
       imagePlaceholder: '🔨'
@@ -277,7 +277,7 @@ export default function Servizi() {
       icon: TrendingUp,
       content: ValorizzazioneContent,
       bgColor: 'bg-white',
-      textColor: 'text-gray-600',
+      textColor: 'text-black',
       image: '/public-objects/valorizzazione-home-staging.jpg',
       imageAlt: 'Valorizzazione - Home staging di un soggiorno moderno',
       imagePlaceholder: '📈'
@@ -288,7 +288,7 @@ export default function Servizi() {
       icon: Home,
       content: AffittiBreviContent,
       bgColor: 'bg-white',
-      textColor: 'text-gray-600',
+      textColor: 'text-black',
       image: '/public-objects/affitti-brevi-airbnb.jpg',
       imageAlt: 'Affitti Brevi - Camera da letto accogliente per ospiti',
       imagePlaceholder: '🏨'
@@ -319,10 +319,10 @@ export default function Servizi() {
                 </div>
               </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2ca781] mb-6">
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
               I Nostri Servizi Specializzati
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-4xl mx-auto leading-relaxed">
               Soluzioni complete e innovative per ogni fase del tuo investimento immobiliare, 
               dal primo contatto alla massimizzazione dei rendimenti
             </p>
@@ -347,7 +347,7 @@ export default function Servizi() {
                         <div className="w-12 h-12 bg-[#2ca781] rounded-full flex items-center justify-center">
                           <IconComponent className="w-6 h-6 text-white" />
                         </div>
-                        <h3 className="text-xl font-montserrat font-bold text-[#2ca781]">
+                        <h3 className="text-xl font-montserrat font-bold text-black">
                           {service.title}
                         </h3>
                       </div>
@@ -375,7 +375,7 @@ export default function Servizi() {
                         </div>
                         
                         {/* Contenuto */}
-                        <div className="text-gray-600">
+                        <div className="text-black">
                           <service.content />
                         </div>
                       </div>
@@ -418,7 +418,7 @@ export default function Servizi() {
                           <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-6">
                             <IconComponent className="w-8 h-8 text-white" />
                           </div>
-                          <h3 className="text-4xl font-montserrat font-bold text-[#2ca781]">
+                          <h3 className="text-4xl font-montserrat font-bold text-black">
                             {service.title}
                           </h3>
                         </div>
@@ -467,10 +467,10 @@ export default function Servizi() {
               </div>
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2ca781] mb-6">
+          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
             Pronto a Iniziare il Tuo Investimento?
           </h2>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-xl text-black mb-8 leading-relaxed">
             I nostri esperti sono pronti ad aiutarti a trovare l'opportunità immobiliare perfetta per i tuoi obiettivi. 
             Contattaci oggi per una consulenza personalizzata e gratuita.
           </p>
@@ -485,7 +485,7 @@ export default function Servizi() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <p className="text-gray-500 text-sm">
+            <p className="text-black text-sm">
               Consulenza gratuita • Risposta entro 24h
             </p>
           </div>
