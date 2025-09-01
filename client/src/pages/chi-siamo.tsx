@@ -17,7 +17,7 @@ export default function ChiSiamo() {
       {/* Value Strategy Introduction */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-6">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
             La Nostra Value Strategy
           </h2>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -31,26 +31,26 @@ export default function ChiSiamo() {
       </section>
 
       {/* 4 Steps Strategy */}
-      <section className="py-20 bg-[#071029]">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
               I Quattro Passaggi Fondamentali
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingDown className="w-8 h-8 text-[#071029]" />
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingDown className="w-8 h-8 text-white" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   1
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
                 Acquisto Strategico
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -60,16 +60,16 @@ export default function ChiSiamo() {
             </Card>
 
             {/* Step 2 */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <HomeIcon className="w-8 h-8 text-[#071029]" />
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <HomeIcon className="w-8 h-8 text-white" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   2
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
                 Massimizzazione Reddito
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -79,16 +79,16 @@ export default function ChiSiamo() {
             </Card>
 
             {/* Step 3 */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-8 h-8 text-[#071029]" />
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUp className="w-8 h-8 text-white" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   3
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
                 Rivendita Valorizzata
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -98,16 +98,16 @@ export default function ChiSiamo() {
             </Card>
 
             {/* Step 4 */}
-            <Card className="bg-white border-4 border-[#a9f6db] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#a9f6db] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Repeat className="w-8 h-8 text-[#071029]" />
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Repeat className="w-8 h-8 text-white" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   4
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#071029] mb-4">
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-4">
                 Reinvestimento
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -120,10 +120,10 @@ export default function ChiSiamo() {
       </section>
 
       {/* Detailed Explanation */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-4">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
               Come Funziona nel Dettaglio
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -133,12 +133,12 @@ export default function ChiSiamo() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {/* Step 1 Detail */}
-            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#2ca781] hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#071029] font-bold text-xl">1</span>
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">1</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
+                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
                   Acquisto Strategico sotto Valore
                 </h3>
               </div>
@@ -152,12 +152,12 @@ export default function ChiSiamo() {
             </div>
 
             {/* Step 2 Detail */}
-            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#2ca781] hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#071029] font-bold text-xl">2</span>
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">2</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
+                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
                   Massimizzazione del Reddito
                 </h3>
               </div>
@@ -171,12 +171,12 @@ export default function ChiSiamo() {
             </div>
 
             {/* Step 3 Detail */}
-            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#2ca781] hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#071029] font-bold text-xl">3</span>
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">3</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
+                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
                   Rivendita al Momento Giusto
                 </h3>
               </div>
@@ -189,12 +189,12 @@ export default function ChiSiamo() {
             </div>
 
             {/* Step 4 Detail */}
-            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#a9f6db] hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#2ca781] hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#071029] font-bold text-xl">4</span>
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">4</span>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-[#071029]">
+                <h3 className="text-xl font-montserrat font-semibold text-[#2ca781]">
                   Reinvestimento Strategico
                 </h3>
               </div>
@@ -210,12 +210,12 @@ export default function ChiSiamo() {
       </section>
 
       {/* Conclusion CTA */}
-      <section className="py-20 bg-[#071029]">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
             Una Strategia Vincente
           </h2>
-          <p className="text-lg text-white/90 mb-8 leading-relaxed">
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             In conclusione, la nostra Value Strategy ti offre un approccio completo per massimizzare 
             i tuoi investimenti immobiliari. Acquistando proprietà ad un prezzo inferiore, sfruttando 
             gli affitti brevi per generare reddito, rivendendo ad un prezzo più alto e reinvestendo 
