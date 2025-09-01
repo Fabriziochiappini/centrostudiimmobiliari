@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { MapPin, Phone, Mail, Building2 } from "lucide-react";
-import contattiHeroImage from "@assets/pexels-apasaric-618079_1756737746076.jpg";
+import contattiHeroImage from "@assets/pexels-rccbtn-33704751_1756737856109.jpg";
 
 export default function Contatti() {
 
