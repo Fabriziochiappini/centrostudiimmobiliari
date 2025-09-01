@@ -34,7 +34,7 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
       >
         {/* Front Side */}
         <div 
-          className="absolute inset-0 w-full h-full backface-hidden border-2 border-[#a9f6db] rounded-lg flex items-center justify-center bg-cover bg-center"
+          className="absolute inset-0 w-full h-full backface-hidden border-2 border-[#2ca781] rounded-lg flex items-center justify-center bg-cover bg-center"
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
@@ -49,8 +49,8 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
         </div>
         
         {/* Back Side */}
-        <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-white border-2 border-[#a9f6db] rounded-lg flex items-center justify-center p-6">
-          <p className="text-[#071029] text-center leading-relaxed">
+        <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-white border-2 border-[#2ca781] rounded-lg flex items-center justify-center p-6">
+          <p className="text-black text-center leading-relaxed">
             {description}
           </p>
         </div>
@@ -116,13 +116,13 @@ export default function Partner() {
       />
 
       {/* Partner Cards Section */}
-      <section className="py-20 bg-[#071029]">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
               Scegli il Tuo Percorso
             </h2>
-            <p className="text-xl text-white/80">
+            <p className="text-xl text-black">
               Tre opportunità uniche per entrare nel mondo EXPONENT
             </p>
           </div>
@@ -151,10 +151,10 @@ export default function Partner() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-4">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
               Perché Scegliere EXPONENT
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-black">
               I valori che ci rendono unici nel settore immobiliare
             </p>
           </div>
@@ -162,14 +162,14 @@ export default function Partner() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-8 h-8 text-[#071029]" />
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
                     Riprenditi il tuo tempo
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-black leading-relaxed">
                     Qual è il valore più importante oggi? <strong>IL TEMPO</strong>. 
                     Noi di Exponent non te ne facciamo perdere altro.
                   </p>
@@ -177,14 +177,14 @@ export default function Partner() {
               </div>
               
               <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Users className="w-8 h-8 text-[#071029]" />
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Users className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
                     Hai bisogno di assistenza?
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-black leading-relaxed">
                     La nostra assistenza è unica perché è pensata su misura per le tue esigenze.
                   </p>
                 </div>
@@ -193,28 +193,28 @@ export default function Partner() {
             
             <div className="space-y-8">
               <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Lightbulb className="w-8 h-8 text-[#071029]" />
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Lightbulb className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
                     Semplice
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-black leading-relaxed">
                     I nostri sistemi sono semplici per te: analisi, consulenza, assistenza.
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Zap className="w-8 h-8 text-[#071029]" />
+                <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-[#071029] mb-3">
+                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
                     Smart
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-black leading-relaxed">
                     Non sprechiamo risorse, le generiamo. Ti porteremo esattamente dove vuoi arrivare.
                   </p>
                 </div>
@@ -225,25 +225,25 @@ export default function Partner() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-[#071029]">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
             Pronto a Entrare nel Mondo EXPONENT?
           </h2>
-          <p className="text-xl text-white/80 mb-12">
+          <p className="text-xl text-black mb-12">
             Contattaci oggi stesso per scoprire le opportunità di partnership che ti aspettano
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="/contatti" 
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#a9f6db] text-[#071029] font-semibold rounded-lg hover:bg-[#a9f6db]/80 transition-colors duration-300"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#2ca781] text-white font-semibold rounded-lg hover:bg-[#1a513b] transition-colors duration-300"
               data-testid="button-contatti"
             >
               Contattaci Ora
             </a>
             <a 
               href="/servizi" 
-              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#071029] transition-colors duration-300"
+              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-[#2ca781] text-[#2ca781] font-semibold rounded-lg hover:bg-[#2ca781] hover:text-white transition-colors duration-300"
               data-testid="button-servizi"
             >
               Scopri i Servizi
