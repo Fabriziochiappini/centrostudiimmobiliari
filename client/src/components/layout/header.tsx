@@ -1,12 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import MobileMenu from "@/components/ui/mobile-menu";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/Progetto senza titolo (94)_1756738116443.jpg";
 
 export default function Header() {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlHeader = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // Scrolling down and past threshold
+        setIsVisible(false);
+      } else {
+        // Scrolling up or at top
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', controlHeader);
+    return () => window.removeEventListener('scroll', controlHeader);
+  }, [lastScrollY]);
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -24,18 +46,18 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed w-full top-0 z-50 bg-white shadow-lg border-b">
+      <header className={`fixed w-full top-0 z-50 bg-white shadow-lg border-b transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/">
-                <span 
-                  className="text-2xl font-montserrat font-bold text-primary hover:text-primary/90 transition-colors cursor-pointer"
+                <img 
+                  src={logoImage}
+                  alt="Centro Studi Immobiliari"
+                  className="h-12 w-auto object-contain hover:opacity-90 transition-opacity cursor-pointer"
                   data-testid="logo"
-                >
-                  EXPONENT
-                </span>
+                />
               </Link>
             </div>
 
