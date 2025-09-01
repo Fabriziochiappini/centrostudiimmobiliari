@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import footerLogoImage from "@assets/Progetto senza titolo (94)_1756738184287.jpg";
 
 export default function Footer() {
   return (
@@ -7,7 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="md:col-span-1">
-            <div className="text-2xl font-montserrat font-bold text-primary mb-4">EXPONENT</div>
+            <img 
+              src={footerLogoImage}
+              alt="Centro Studi Immobiliari"
+              className="h-16 w-auto object-contain mb-4"
+            />
             <p className="text-background/80 mb-4">
               La tua consulenza immobiliare di fiducia per investimenti sicuri e redditizi.
             </p>
