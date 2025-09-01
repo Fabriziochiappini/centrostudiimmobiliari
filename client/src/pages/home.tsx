@@ -88,7 +88,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/public-objects/services-bg.jpg" 
+            src="/public-objects/services-bg.jpg?v=2" 
             alt="Servizi immobiliari"
             className="w-full h-full object-cover"
             onError={(e) => {
