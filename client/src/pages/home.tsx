@@ -243,7 +243,7 @@ export default function Home() {
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <TrendingDown className="w-8 h-8 text-white" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-black font-bold text-sm">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   1
                 </div>
               </div>
@@ -261,7 +261,7 @@ export default function Home() {
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <HomeIcon className="w-8 h-8 text-white" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-black font-bold text-sm">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   2
                 </div>
               </div>
@@ -279,7 +279,7 @@ export default function Home() {
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <TrendingUpIcon className="w-8 h-8 text-white" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-black font-bold text-sm">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   3
                 </div>
               </div>
@@ -297,8 +297,17 @@ export default function Home() {
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Repeat className="w-8 h-8 text-white" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-black font-bold text-sm">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   4
+</div>
+              </div>
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                Reinvestimento
+              </h3>
+              <p className="text-black text-sm leading-relaxed">
+                Acquistare un nuovo immobile con un budget più alto
+              </p>
+            </div>
                 </div>
               </div>
               <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
