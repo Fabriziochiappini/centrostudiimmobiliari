@@ -19,8 +19,8 @@ const RicercaContent = () => (
       Inoltre, il Property Finder può assisterti nella trattativa con l'agenzia immobiliare o il venditore privato, 
       cercando di ottenere il miglior prezzo possibile per l'immobile e garantendoti una transazione sicura e trasparente.
     </p>
-    <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-      <p className="text-[#a9f6db] font-medium">
+    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
+      <p className="text-black font-medium">
         In sintesi, il Property Finder è un professionista esperto che può supportarti nella ricerca e nell'acquisto 
         della casa dei tuoi sogni, garantendoti un servizio personalizzato e di alta qualità.
       </p>
