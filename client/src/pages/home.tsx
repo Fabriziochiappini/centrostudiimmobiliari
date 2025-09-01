@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="min-h-screen flex flex-col justify-center relative">
+      <section className="py-20 flex flex-col justify-center relative">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
