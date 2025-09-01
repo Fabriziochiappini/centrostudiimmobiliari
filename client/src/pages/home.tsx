@@ -324,9 +324,9 @@ export default function Home() {
       </section>
 
       {/* EXPONENT World Section */}
-      <section className="py-20 bg-primary">
+      <section className="py-20 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-center mb-12" style={{ color: '#2ca781' }}>
             Entra nel mondo EXPONENT
           </h2>
           
@@ -358,7 +358,7 @@ export default function Home() {
             <Link href="/partner">
               <Button 
                 size="lg"
-                className="bg-[#a9f6db] border-2 border-[#a9f6db] text-[#071029] hover:bg-[#a9f6db]/90 font-semibold py-4 px-10 text-lg"
+                className="bg-[#2ca781] border-2 border-[#2ca781] text-white hover:bg-[#2ca781]/90 font-semibold py-4 px-10 text-lg"
                 data-testid="button-diventa-partner"
               >
                 Diventa Partner
