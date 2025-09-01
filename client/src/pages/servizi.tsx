@@ -177,8 +177,8 @@ const ValorizzazioneContent = () => (
       </div>
     </div>
     
-    <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-      <p className="text-[#a9f6db] font-medium">
+    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
+      <p className="text-black font-medium">
         <strong>Contattaci per ulteriori informazioni</strong> e per scoprire come possiamo aiutarti a valorizzare 
         la tua casa e ottenere il massimo dalla vendita.
       </p>
