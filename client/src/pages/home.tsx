@@ -101,7 +101,6 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
             I Nostri Servizi
