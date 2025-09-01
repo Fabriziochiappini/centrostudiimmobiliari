@@ -33,6 +33,17 @@ export default function ChiSiamo() {
       {/* 4 Steps Strategy */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Top separator line */}
+          <div className="relative mb-16">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gray-200"></div>
+            </div>
+            <div className="relative flex justify-center">
+              <div className="bg-white px-6">
+                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              </div>
+            </div>
+          </div>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
               I Quattro Passaggi Fondamentali
@@ -115,6 +126,17 @@ export default function ChiSiamo() {
                 accedendo a proprietà di maggior valore e potenziale.
               </p>
             </Card>
+          </div>
+          {/* Bottom separator line */}
+          <div className="relative mt-16">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gray-200"></div>
+            </div>
+            <div className="relative flex justify-center">
+              <div className="bg-white px-6">
+                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
