@@ -61,7 +61,7 @@ const SaldoStralcioContent = () => (
     </p>
     
     <div className="grid grid-cols-1 gap-4">
-      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#a9f6db]">
+      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#2ca781]">
         <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
           🏠 <span className="ml-2">Debitore</span>
         </h4>
@@ -69,7 +69,7 @@ const SaldoStralcioContent = () => (
           Eliminazione completa del debito con sollievo finanziario immediato
         </p>
       </div>
-      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#a9f6db]">
+      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#2ca781]">
         <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
           💼 <span className="ml-2">Creditore</span>
         </h4>
@@ -77,7 +77,7 @@ const SaldoStralcioContent = () => (
           Recupero rapido ed efficiente senza lunghe battaglie legali
         </p>
       </div>
-      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#a9f6db]">
+      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#2ca781]">
         <h4 className="font-semibold text-[#071029] mb-3 flex items-center">
           💰 <span className="ml-2">Acquirente</span>
         </h4>
