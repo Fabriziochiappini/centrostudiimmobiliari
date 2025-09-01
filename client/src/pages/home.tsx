@@ -73,10 +73,10 @@ export default function Home() {
       />
 
       {/* Value Strategy Intro Section */}
-      <section className="py-20 bg-primary">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold" style={{ color: '#2ca781' }}>
               Massimizza i tuoi investimenti con la nostra Value Strategy
             </h2>
           </div>
