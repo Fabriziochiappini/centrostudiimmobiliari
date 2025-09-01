@@ -234,6 +234,17 @@ export default function ChiSiamo() {
       {/* Conclusion CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Top separator line */}
+          <div className="relative mb-12">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gray-200"></div>
+            </div>
+            <div className="relative flex justify-center">
+              <div className="bg-white px-6">
+                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              </div>
+            </div>
+          </div>
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
             Una Strategia Vincente
           </h2>
@@ -248,7 +259,7 @@ export default function ChiSiamo() {
             <Link href="/servizi">
               <Button 
                 size="lg"
-                className="bg-[#a9f6db] border-2 border-[#a9f6db] text-[#071029] hover:bg-[#a9f6db]/90 font-semibold py-4 px-8 text-lg"
+                className="bg-[#2ca781] border-2 border-[#2ca781] text-white hover:bg-[#2ca781]/90 font-semibold py-4 px-8 text-lg"
                 data-testid="button-scopri-servizi"
               >
                 Scopri i Servizi
@@ -259,7 +270,7 @@ export default function ChiSiamo() {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#a9f6db] text-primary hover:bg-[#a9f6db] hover:text-[#071029] font-semibold py-4 px-8 text-lg"
+                className="bg-[#2ca781] border-2 border-[#2ca781] text-white hover:bg-[#2ca781]/90 font-semibold py-4 px-8 text-lg"
                 data-testid="button-contattaci"
               >
                 Contattaci
