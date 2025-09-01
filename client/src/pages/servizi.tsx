@@ -232,8 +232,8 @@ export default function Servizi() {
       title: 'Ricerca',
       icon: Search,
       content: RicercaContent,
-      bgColor: 'bg-[#071029]',
-      textColor: 'text-white',
+      bgColor: 'bg-white',
+      textColor: 'text-gray-600',
       image: '/public-objects/ricerca-property-finder.jpg',
       imageAlt: 'Property Finder - Casa con giardino e viale d\'accesso',
       imagePlaceholder: '🏡'
@@ -254,8 +254,8 @@ export default function Servizi() {
       title: 'Saldo e Stralcio',
       icon: Scale,
       content: SaldoStralcioContent,
-      bgColor: 'bg-[#071029]',
-      textColor: 'text-white',
+      bgColor: 'bg-white',
+      textColor: 'text-gray-600',
       image: '/public-objects/saldo-stralcio-jurelit.jpg',
       imageAlt: 'Saldo e Stralcio - Partnership Jurelit',
       imagePlaceholder: '⚖️'
@@ -276,8 +276,8 @@ export default function Servizi() {
       title: 'Valorizzazione',
       icon: TrendingUp,
       content: ValorizzazioneContent,
-      bgColor: 'bg-[#071029]',
-      textColor: 'text-white',
+      bgColor: 'bg-white',
+      textColor: 'text-gray-600',
       image: '/public-objects/valorizzazione-home-staging.jpg',
       imageAlt: 'Valorizzazione - Home staging di un soggiorno moderno',
       imagePlaceholder: '📈'
@@ -305,10 +305,21 @@ export default function Servizi() {
       />
 
       {/* Services Full Width */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="w-full">
           <div className="text-center mb-20 px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#071029] mb-6">
+            {/* Top separator line */}
+            <div className="relative mb-12">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-gray-200"></div>
+              </div>
+              <div className="relative flex justify-center">
+                <div className="bg-white px-6">
+                  <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+                </div>
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2ca781] mb-6">
               I Nostri Servizi Specializzati
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -333,10 +344,10 @@ export default function Servizi() {
                       data-testid={`accordion-trigger-${service.id}`}
                     >
                       <div className="flex items-center space-x-4 flex-1 text-left">
-                        <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                          <IconComponent className="w-6 h-6 text-accent-foreground" />
+                        <div className="w-12 h-12 bg-[#2ca781] rounded-full flex items-center justify-center">
+                          <IconComponent className="w-6 h-6 text-white" />
                         </div>
-                        <h3 className="text-xl font-montserrat font-bold text-primary">
+                        <h3 className="text-xl font-montserrat font-bold text-[#2ca781]">
                           {service.title}
                         </h3>
                       </div>
@@ -382,15 +393,32 @@ export default function Servizi() {
               const isEven = index % 2 === 1;
               
               return (
-                <div key={service.id} className={`${service.bgColor} py-20`}>
-                  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div key={service.id}>
+                  {index > 0 && (
+                    <div className="bg-white py-8">
+                      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="relative">
+                          <div className="absolute inset-0 flex items-center">
+                            <div className="w-full border-t border-gray-200"></div>
+                          </div>
+                          <div className="relative flex justify-center">
+                            <div className="bg-white px-6">
+                              <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  <div className={`${service.bgColor} py-20`}>
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                       <div className={isEven ? "order-1" : "order-2 lg:order-1"}>
                         <div className="flex items-center mb-8">
-                          <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mr-6">
-                            <IconComponent className="w-8 h-8 text-accent-foreground" />
+                          <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-6">
+                            <IconComponent className="w-8 h-8 text-white" />
                           </div>
-                          <h3 className={`text-4xl font-montserrat font-bold ${service.bgColor === 'bg-white' ? 'text-primary' : 'text-white'}`}>
+                          <h3 className="text-4xl font-montserrat font-bold text-[#2ca781]">
                             {service.title}
                           </h3>
                         </div>
@@ -415,6 +443,7 @@ export default function Servizi() {
                           />
                         </div>
                       </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -425,12 +454,23 @@ export default function Servizi() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-primary">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-6">
+          {/* Top separator line */}
+          <div className="relative mb-12">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gray-200"></div>
+            </div>
+            <div className="relative flex justify-center">
+              <div className="bg-white px-6">
+                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              </div>
+            </div>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2ca781] mb-6">
             Pronto a Iniziare il Tuo Investimento?
           </h2>
-          <p className="text-xl text-white/80 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             I nostri esperti sono pronti ad aiutarti a trovare l'opportunità immobiliare perfetta per i tuoi obiettivi. 
             Contattaci oggi per una consulenza personalizzata e gratuita.
           </p>
@@ -438,14 +478,14 @@ export default function Servizi() {
             <Link href="/contatti">
               <Button 
                 size="lg" 
-                className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 py-3 text-lg"
+                className="bg-[#2ca781] text-white hover:bg-[#2ca781]/90 font-semibold px-8 py-3 text-lg"
                 data-testid="button-contact-cta"
               >
                 Contattaci Ora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <p className="text-white/60 text-sm">
+            <p className="text-gray-500 text-sm">
               Consulenza gratuita • Risposta entro 24h
             </p>
           </div>
