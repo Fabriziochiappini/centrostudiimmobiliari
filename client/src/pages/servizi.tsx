@@ -485,9 +485,6 @@ export default function Servizi() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <p className="text-black text-sm">
-              Consulenza gratuita • Risposta entro 24h
-            </p>
           </div>
         </div>
       </section>
