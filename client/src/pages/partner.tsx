@@ -149,6 +149,9 @@ export default function Partner() {
 
       {/* Why Choose EXPONENT Section */}
       <section className="py-20 bg-white">
+        {/* Linea separatrice superiore */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-16"></div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
@@ -222,6 +225,9 @@ export default function Partner() {
             </div>
           </div>
         </div>
+        
+        {/* Linea separatrice inferiore */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mt-16"></div>
       </section>
 
       {/* Call to Action Section */}
