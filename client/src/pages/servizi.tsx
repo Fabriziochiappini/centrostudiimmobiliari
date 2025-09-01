@@ -87,8 +87,8 @@ const SaldoStralcioContent = () => (
       </div>
     </div>
     
-    <div className="bg-[#a9f6db]/10 p-6 rounded-lg">
-      <p className="text-[#a9f6db] font-medium">
+    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
+      <p className="text-black font-medium">
         <strong>La collaborazione con Jurelit</strong> garantisce una gestione efficiente e trasparente 
         per risultati soddisfacenti per tutti i partecipanti.
       </p>
