@@ -37,7 +37,7 @@ export default function ScrollToTop() {
           <Button
             onClick={scrollToTop}
             size="lg"
-            className="bg-[#071029] hover:bg-[#071029]/90 text-white rounded-full w-14 h-14 shadow-lg transition-all duration-300 hover:scale-110 border-2 border-[#a9f6db]"
+            className="bg-primary hover:bg-primary/90 text-white rounded-full w-14 h-14 shadow-lg transition-all duration-300 hover:scale-110 border-2 border-accent"
             data-testid="scroll-to-top-button"
             aria-label="Torna all'inizio"
           >

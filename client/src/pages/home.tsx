@@ -23,7 +23,7 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
         data-testid={`flip-card-${title.toLowerCase()}`}
       >
         {/* Front Side */}
-        <div className="absolute inset-0 w-full h-full backface-hidden border-2 border-[#a9f6db] rounded-lg flex items-center justify-center">
+        <div className="absolute inset-0 w-full h-full backface-hidden border-2 border-accent rounded-lg flex items-center justify-center">
           <img 
             src={bgImage}
             alt={`Background for ${title}`}
@@ -50,8 +50,8 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
         </div>
         
         {/* Back Side */}
-        <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-white border-2 border-[#a9f6db] rounded-lg flex items-center justify-center p-6">
-          <p className="text-[#071029] text-center leading-relaxed">
+        <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-white border-2 border-accent rounded-lg flex items-center justify-center p-6">
+          <p className="text-primary text-center leading-relaxed">
             {description}
           </p>
         </div>
@@ -111,13 +111,13 @@ export default function Home() {
         <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
           {/* Ricerca */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
-              <Search className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-accent p-0.5"></div>
+            <div className="relative bg-primary text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+              <Search className="w-12 h-12 mb-4 text-accent" />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Ricerca</h3>
               <p className="text-white/80 mb-4">Affidati ai nostri Property Finder</p>
               <Link href="/servizi">
-                <span className="inline-flex items-center text-xs text-white/60 hover:text-[#a9f6db] transition-colors duration-200 cursor-pointer">
+                <span className="inline-flex items-center text-xs text-white/60 hover:text-accent transition-colors duration-200 cursor-pointer">
                   Scopri di più
                   <ArrowRight className="ml-1 w-3 h-3" />
                 </span>
@@ -127,13 +127,13 @@ export default function Home() {
 
           {/* NPL */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-accent p-0.5"></div>
+            <div className="relative bg-primary text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <FileText className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">NPL</h3>
               <p className="text-white/80 mb-4">Accedi a proprietà di valore prima che finiscano sul mercato tradizionale.</p>
               <Link href="/servizi">
-                <span className="inline-flex items-center text-xs text-white/60 hover:text-[#a9f6db] transition-colors duration-200 cursor-pointer">
+                <span className="inline-flex items-center text-xs text-white/60 hover:text-accent transition-colors duration-200 cursor-pointer">
                   Scopri di più
                   <ArrowRight className="ml-1 w-3 h-3" />
                 </span>
@@ -143,13 +143,13 @@ export default function Home() {
 
           {/* Saldo e Stralcio */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-accent p-0.5"></div>
+            <div className="relative bg-primary text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Handshake className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Saldo e Stralcio</h3>
               <p className="text-white/80 mb-4">Una soluzione win-win per trasformare il debito in valore.</p>
               <Link href="/servizi">
-                <span className="inline-flex items-center text-xs text-white/60 hover:text-[#a9f6db] transition-colors duration-200 cursor-pointer">
+                <span className="inline-flex items-center text-xs text-white/60 hover:text-accent transition-colors duration-200 cursor-pointer">
                   Scopri di più
                   <ArrowRight className="ml-1 w-3 h-3" />
                 </span>
@@ -159,13 +159,13 @@ export default function Home() {
 
           {/* Asta */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-accent p-0.5"></div>
+            <div className="relative bg-primary text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <Gavel className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Asta</h3>
               <p className="text-white/80 mb-4">Competenza e strategia per trasformare le aste in occasioni concrete.</p>
               <Link href="/servizi">
-                <span className="inline-flex items-center text-xs text-white/60 hover:text-[#a9f6db] transition-colors duration-200 cursor-pointer">
+                <span className="inline-flex items-center text-xs text-white/60 hover:text-accent transition-colors duration-200 cursor-pointer">
                   Scopri di più
                   <ArrowRight className="ml-1 w-3 h-3" />
                 </span>
@@ -175,13 +175,13 @@ export default function Home() {
 
           {/* Valorizzazione */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-accent p-0.5"></div>
+            <div className="relative bg-primary text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <TrendingUp className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Valorizzazione</h3>
               <p className="text-white/80 mb-4">Più attrattiva per gli acquirenti, più vantaggi per te.</p>
               <Link href="/servizi">
-                <span className="inline-flex items-center text-xs text-white/60 hover:text-[#a9f6db] transition-colors duration-200 cursor-pointer">
+                <span className="inline-flex items-center text-xs text-white/60 hover:text-accent transition-colors duration-200 cursor-pointer">
                   Scopri di più
                   <ArrowRight className="ml-1 w-3 h-3" />
                 </span>
@@ -191,13 +191,13 @@ export default function Home() {
 
           {/* Affitti Brevi */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: '#a9f6db', padding: '2px' }}></div>
-            <div className="relative bg-[#071029] text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-accent p-0.5"></div>
+            <div className="relative bg-primary text-white py-16 px-12 h-full flex flex-col justify-center items-center text-center m-0.5 group-hover:m-0 transition-all duration-300">
               <HomeIcon className="w-12 h-12 mb-4" style={{ color: '#a9f6db' }} />
               <h3 className="text-xl font-montserrat font-semibold mb-4">Affitti Brevi</h3>
               <p className="text-white/80 mb-4">Una scelta intelligente per investitori che puntano a valore e liquidità.</p>
               <Link href="/servizi">
-                <span className="inline-flex items-center text-xs text-white/60 hover:text-[#a9f6db] transition-colors duration-200 cursor-pointer">
+                <span className="inline-flex items-center text-xs text-white/60 hover:text-accent transition-colors duration-200 cursor-pointer">
                   Scopri di più
                   <ArrowRight className="ml-1 w-3 h-3" />
                 </span>

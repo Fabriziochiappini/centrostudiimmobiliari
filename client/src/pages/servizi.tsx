@@ -333,10 +333,10 @@ export default function Servizi() {
                       data-testid={`accordion-trigger-${service.id}`}
                     >
                       <div className="flex items-center space-x-4 flex-1 text-left">
-                        <div className="w-12 h-12 bg-[#a9f6db] rounded-full flex items-center justify-center">
-                          <IconComponent className="w-6 h-6 text-[#071029]" />
+                        <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                          <IconComponent className="w-6 h-6 text-accent-foreground" />
                         </div>
-                        <h3 className="text-xl font-montserrat font-bold text-[#071029]">
+                        <h3 className="text-xl font-montserrat font-bold text-primary">
                           {service.title}
                         </h3>
                       </div>
@@ -387,10 +387,10 @@ export default function Servizi() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                       <div className={isEven ? "order-1" : "order-2 lg:order-1"}>
                         <div className="flex items-center mb-8">
-                          <div className="w-16 h-16 bg-[#a9f6db] rounded-full flex items-center justify-center mr-6">
-                            <IconComponent className="w-8 h-8 text-[#071029]" />
+                          <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mr-6">
+                            <IconComponent className="w-8 h-8 text-accent-foreground" />
                           </div>
-                          <h3 className={`text-4xl font-montserrat font-bold ${service.bgColor === 'bg-white' ? 'text-[#071029]' : 'text-white'}`}>
+                          <h3 className={`text-4xl font-montserrat font-bold ${service.bgColor === 'bg-white' ? 'text-primary' : 'text-white'}`}>
                             {service.title}
                           </h3>
                         </div>
@@ -425,7 +425,7 @@ export default function Servizi() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-[#071029]">
+      <section className="py-20 bg-primary">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-6">
             Pronto a Iniziare il Tuo Investimento?
@@ -438,7 +438,7 @@ export default function Servizi() {
             <Link href="/contatti">
               <Button 
                 size="lg" 
-                className="bg-[#a9f6db] text-[#071029] hover:bg-[#a9f6db]/90 font-semibold px-8 py-3 text-lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 py-3 text-lg"
                 data-testid="button-contact-cta"
               >
                 Contattaci Ora

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="md:col-span-1">
-            <div className="text-2xl font-montserrat font-bold text-accent mb-4">EXPONENT</div>
+            <div className="text-2xl font-montserrat font-bold text-primary mb-4">EXPONENT</div>
             <p className="text-background/80 mb-4">
               La tua consulenza immobiliare di fiducia per investimenti sicuri e redditizi.
             </p>
@@ -144,13 +144,13 @@ export default function Footer() {
       </div>
       
       {/* Developer Credit */}
-      <div className="bg-[#071029] py-3">
+      <div className="bg-primary py-3">
         <div className="text-center">
           <a 
             href="https://webproitalia.com/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-[#a9f6db] hover:text-white text-sm transition-colors duration-200"
+            className="text-accent hover:text-white text-sm transition-colors duration-200"
             data-testid="link-webproitalia"
           >
             Realizzato da WEBPROITALIA
