@@ -208,10 +208,10 @@ export default function Home() {
       </section>
 
       {/* Value Strategy Title Section */}
-      <section className="py-20 bg-primary">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold" style={{ color: '#2ca781' }}>
               La Nostra Value Strategy in 4 passaggi
             </h2>
           </div>
