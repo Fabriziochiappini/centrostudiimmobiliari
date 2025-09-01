@@ -10,7 +10,7 @@ export default function Contatti() {
       <HeroSection
         title="Contattaci"
         subtitle="Siamo qui per rispondere a tutte le tue domande e fornirti la migliore consulenza immobiliare."
-        backgroundImage="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=800"
+        backgroundImage="/attached_assets/pexels-apasaric-618079_1756737746076.jpg"
       />
 
       {/* Contact Info Cards */}
