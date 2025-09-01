@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TrendingDown, HomeIcon, TrendingUp, Repeat, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import chiSiamoHeroImage from "@assets/pexels-apasaric-618079_1756737892045.jpg";
 
 export default function ChiSiamo() {
   return (
@@ -11,7 +12,7 @@ export default function ChiSiamo() {
       <HeroSection
         title="Chi Siamo"
         subtitle="Un team di professionisti esperti nel settore immobiliare, dedicati a offrire soluzioni innovative e servizi di qualità superiore."
-        backgroundImage="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=800"
+        backgroundImage={chiSiamoHeroImage}
       />
 
       {/* Value Strategy Introduction */}
