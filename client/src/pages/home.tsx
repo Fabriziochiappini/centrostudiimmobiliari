@@ -391,7 +391,7 @@ export default function Home() {
           <Link href="/contatti">
             <Button 
               size="lg"
-              className="bg-[#071029] border-2 border-[#071029] text-white hover:bg-[#071029]/90 font-semibold py-4 px-10 text-lg"
+              className="bg-[#2ca781] border-2 border-[#2ca781] text-white hover:bg-[#1a513b] font-semibold py-4 px-10 text-lg"
               data-testid="button-contattaci"
             >
               Contattaci Ora
