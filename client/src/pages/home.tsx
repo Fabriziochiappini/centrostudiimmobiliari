@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
+import SEOHead from "@/components/SEOHead";
 import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat } from "lucide-react";
 // File da caricare nell'Object Storage nella directory public:
 // hero-video.mp4, strategy-video.mp4, services-bg.jpg
@@ -63,6 +64,12 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
 export default function Home() {
   return (
     <div className="animate-fade-in">
+      <SEOHead 
+        title="Centro Studi Immobiliari | Exponent S.r.l.s – Consulenza e Opportunità nel Real Estate"
+        description="Scopri i servizi del Centro Studi Immobiliari di Exponent: Property Finder, Saldo e Stralcio, NPL, Aste Immobiliari, Home Staging e Affitti Brevi. Presenti a Bologna, Firenze, Milano, Padova, Piacenza, Cagliari, Venezia e Modena. Consulenza immobiliare su misura per valorizzare ogni investimento."
+        keywords="centro studi immobiliari, consulenza immobiliare exponent, property finder Italia, opportunità NPL immobiliari, saldo e stralcio immobili, aste immobiliari assistenza, home staging professionale, affitti brevi immobili, consulenza immobiliare Bologna, consulenza immobiliare Milano, consulenza immobiliare Firenze, consulenza immobiliare Padova, consulenza immobiliare Piacenza, consulenza immobiliare Cagliari, consulenza immobiliare Venezia, consulenza immobiliare Modena"
+        ogImage="/attached_assets/Progetto senza titolo (94)_1756738184287.jpg"
+      />
       {/* Hero Section */}
       <HeroSection
         title="EXPONENT"

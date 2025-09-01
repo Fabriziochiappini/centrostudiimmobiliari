@@ -14,6 +14,7 @@ import { apiRequest } from "@/lib/queryClient";
 import HeroSection from "@/components/layout/hero-section";
 import { insertPartnerApplicationSchema, type InsertPartnerApplication } from "@shared/schema";
 import { Clock, Users, Lightbulb, Zap } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 import businessCardBackground from "@assets/pexels-goumbik-590045_1756309994763.jpg";
 import academyCardBackground from "@assets/pexels-singkham-178541-1108572_1756310104781.jpg";
 import flipCardBackground from "@assets/pexels-sevenstormphotography-443378_1756309842710.jpg";
@@ -108,6 +109,12 @@ export default function Partner() {
 
   return (
     <div className="animate-fade-in">
+      <SEOHead 
+        title="Diventa Partner | Centro Studi Immobiliari - Opportunità di Collaborazione"
+        description="Unisciti alla rete di partner del Centro Studi Immobiliari. Scopri le opportunità di collaborazione nel settore immobiliare e accedi a nuove possibilità di business."
+        keywords="partner immobiliari, collaborazione real estate, rete di partner, opportunità business immobiliari, diventa partner"
+        ogImage="/attached_assets/Progetto senza titolo (94)_1756738184287.jpg"
+      />
       {/* Hero Section */}
       <HeroSection
         title="Diventa Partner"

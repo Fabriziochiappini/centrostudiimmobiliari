@@ -3,6 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import HeroSection from "@/components/layout/hero-section";
+import SEOHead from "@/components/SEOHead";
 
 // Componente per il contenuto del servizio Ricerca
 const RicercaContent = () => (
@@ -297,6 +298,12 @@ export default function Servizi() {
 
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Servizi Immobiliari | Centro Studi Immobiliari - Property Finder, NPL, Aste"
+        description="Scopri tutti i servizi immobiliari del Centro Studi Immobiliari: Property Finder, NPL, Saldo e Stralcio, Aste Immobiliari, Home Staging e Affitti Brevi. Consulenza professionale per investimenti immobiliari."
+        keywords="servizi immobiliari, property finder, NPL immobiliari, saldo e stralcio, aste immobiliari, home staging, affitti brevi, valorizzazione immobiliare"
+        ogImage="/attached_assets/Progetto senza titolo (94)_1756738184287.jpg"
+      />
       {/* Hero Section */}
       <HeroSection
         title="I Nostri Servizi"

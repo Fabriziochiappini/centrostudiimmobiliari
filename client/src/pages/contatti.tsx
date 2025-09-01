@@ -2,11 +2,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { MapPin, Phone, Mail, Building2 } from "lucide-react";
 import contattiHeroImage from "@assets/pexels-rccbtn-33704751_1756737856109.jpg";
+import SEOHead from "@/components/SEOHead";
 
 export default function Contatti() {
 
   return (
     <div className="animate-fade-in">
+      <SEOHead 
+        title="Contatti | Centro Studi Immobiliari - Bologna, Milano, Firenze e altre città"
+        description="Contatta il Centro Studi Immobiliari per consulenza immobiliare professionale. Presenti a Bologna, Milano, Firenze, Padova, Piacenza, Cagliari, Venezia e Modena. Tel: +39 051 196 000 10"
+        keywords="contatti centro studi immobiliari, consulenza immobiliare Bologna, consulenza immobiliare Milano, consulenza immobiliare Firenze, telefono consulenza immobiliare"
+        ogImage="/attached_assets/Progetto senza titolo (94)_1756738184287.jpg"
+      />
       {/* Hero Section */}
       <HeroSection
         title="Contattaci"

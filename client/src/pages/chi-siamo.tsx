@@ -4,10 +4,17 @@ import { TrendingDown, HomeIcon, TrendingUp, Repeat, ArrowRight } from "lucide-r
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import chiSiamoHeroImage from "@assets/pexels-apasaric-618079_1756737892045.jpg";
+import SEOHead from "@/components/SEOHead";
 
 export default function ChiSiamo() {
   return (
     <div className="animate-fade-in">
+      <SEOHead 
+        title="Chi Siamo | Centro Studi Immobiliari - Team di Esperti nel Real Estate"
+        description="Conosci il team di professionisti del Centro Studi Immobiliari. Esperti in consulenza immobiliare, investimenti e Value Strategy per massimizzare i tuoi rendimenti immobiliari."
+        keywords="centro studi immobiliari team, consulenti immobiliari, value strategy, esperti real estate, professionisti immobiliari"
+        ogImage="/attached_assets/Progetto senza titolo (94)_1756738184287.jpg"
+      />
       {/* Hero Section */}
       <HeroSection
         title="Chi Siamo"
