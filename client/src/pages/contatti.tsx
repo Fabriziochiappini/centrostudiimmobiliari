@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { MapPin, Phone, Mail, Building2 } from "lucide-react";
+import contattiHeroImage from "@assets/pexels-apasaric-618079_1756737746076.jpg";
 
 export default function Contatti() {
 
@@ -10,7 +11,7 @@ export default function Contatti() {
       <HeroSection
         title="Contattaci"
         subtitle="Siamo qui per rispondere a tutte le tue domande e fornirti la migliore consulenza immobiliare."
-        backgroundImage="/attached_assets/pexels-apasaric-618079_1756737746076.jpg"
+        backgroundImage={contattiHeroImage}
       />
 
       {/* Contact Info Cards */}
