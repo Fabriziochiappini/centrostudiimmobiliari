@@ -213,11 +213,11 @@ const AffittiBreviContent = () => (
       </div>
     </div>
     
-    <div className="bg-[#071029] p-6 rounded-lg text-white">
-      <p className="leading-relaxed mb-4">
+    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
+      <p className="leading-relaxed mb-4 text-black">
         Tuttavia, gestire un affitto a breve termine richiede tempo, dedizione e conoscenze specifiche del mercato.
       </p>
-      <p className="text-[#a9f6db] font-medium">
+      <p className="text-black font-medium">
         <strong>È qui che entriamo in gioco noi.</strong> Il nostro team specializzato gestisce ogni aspetto 
         della tua proprietà, permettendoti di goderti i guadagni senza stress.
       </p>
