@@ -123,13 +123,13 @@ const AstaContent = () => (
     </div>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#a9f6db]">
+      <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2ca781]">
         <h4 className="font-semibold text-[#071029] mb-2">🔒 Sicurezza</h4>
         <p className="text-gray-600 text-sm">
           Tutti i documenti sono pubblici e consultabili, garantendo massima trasparenza
         </p>
       </div>
-      <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#a9f6db]">
+      <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2ca781]">
         <h4 className="font-semibold text-[#071029] mb-2">💰 Risparmio</h4>
         <p className="text-gray-600 text-sm">
           Acquisto di immobili a prezzi sotto il valore di mercato
