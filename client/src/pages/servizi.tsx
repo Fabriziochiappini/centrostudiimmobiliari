@@ -137,11 +137,11 @@ const AstaContent = () => (
       </div>
     </div>
     
-    <div className="bg-[#071029] p-6 rounded-lg text-white">
-      <p className="leading-relaxed mb-4">
-        Tuttavia, comprendiamo che molti possano sentirsi intimiditi. Per questo <strong className="text-[#a9f6db]">consigliamo sempre di affidarsi a un professionista specializzato</strong>.
+    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
+      <p className="leading-relaxed mb-4 text-black">
+        Tuttavia, comprendiamo che molti possano sentirsi intimiditi. Per questo <strong className="text-black">consigliamo sempre di affidarsi a un professionista specializzato</strong>.
       </p>
-      <p className="text-[#a9f6db] font-medium">
+      <p className="text-black font-medium">
         Il nostro team di professionisti è qui per guidarti attraverso l'intero processo e assicurarti 
         un'esperienza di acquisto senza intoppi.
       </p>
