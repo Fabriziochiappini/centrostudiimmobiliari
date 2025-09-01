@@ -101,11 +101,7 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="relative z-10 text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
-            I Nostri Servizi
-          </h2>
-        </div>
+        
 
         <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
           {/* Ricerca */}
