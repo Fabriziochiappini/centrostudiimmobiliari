@@ -236,8 +236,6 @@ export default function Home() {
             target.style.backgroundColor = '#6b7280';
           }}
         ></div>
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
