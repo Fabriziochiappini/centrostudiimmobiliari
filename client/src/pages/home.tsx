@@ -308,15 +308,6 @@ export default function Home() {
                 Acquistare un nuovo immobile con un budget più alto
               </p>
             </div>
-                </div>
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Reinvestimento
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Acquistare un nuovo immobile con un budget più alto
-              </p>
-            </div>
           </div>
           
           {/* Approfondisci Button */}
