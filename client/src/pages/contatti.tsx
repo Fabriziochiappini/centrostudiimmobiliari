@@ -14,13 +14,13 @@ export default function Contatti() {
       />
 
       {/* Contact Info Cards */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-4">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
               Informazioni di Contatto
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-black max-w-2xl mx-auto">
               Siamo presenti su tutto il territorio nazionale per offrirti il miglior servizio
             </p>
           </div>
@@ -30,17 +30,17 @@ export default function Contatti() {
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-16 h-16 bg-[#a9f6db]/20 rounded-xl flex items-center justify-center">
-                    <Phone className="w-8 h-8 text-[#071029]" />
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <Phone className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-[#071029]">Telefono</h3>
-                    <p className="text-gray-600">Chiamaci per una consulenza immediata</p>
+                    <h3 className="text-xl font-montserrat font-bold text-black">Telefono</h3>
+                    <p className="text-black">Chiamaci per una consulenza immediata</p>
                   </div>
                 </div>
                 <a 
                   href="tel:+390511960010" 
-                  className="text-2xl font-semibold text-[#071029] hover:text-[#a9f6db] transition-colors duration-300"
+                  className="text-2xl font-semibold text-black hover:text-[#2ca781] transition-colors duration-300"
                 >
                   +39 051 196 000 10
                 </a>
@@ -50,17 +50,17 @@ export default function Contatti() {
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-16 h-16 bg-[#a9f6db]/20 rounded-xl flex items-center justify-center">
-                    <Mail className="w-8 h-8 text-[#071029]" />
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <Mail className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-[#071029]">Email</h3>
-                    <p className="text-gray-600">Scrivici per informazioni dettagliate</p>
+                    <h3 className="text-xl font-montserrat font-bold text-black">Email</h3>
+                    <p className="text-black">Scrivici per informazioni dettagliate</p>
                   </div>
                 </div>
                 <a 
                   href="mailto:info@exponent group.it" 
-                  className="text-xl font-semibold text-[#071029] hover:text-[#a9f6db] transition-colors duration-300 break-all"
+                  className="text-xl font-semibold text-black hover:text-[#2ca781] transition-colors duration-300 break-all"
                 >
                   info@exponent group.it
                 </a>
@@ -73,22 +73,22 @@ export default function Contatti() {
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#a9f6db]/20 rounded-xl flex items-center justify-center">
-                    <Building2 className="w-8 h-8 text-[#071029]" />
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <Building2 className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-[#071029]">Dati Aziendali</h3>
-                    <p className="text-gray-600">Informazioni societarie</p>
+                    <h3 className="text-xl font-montserrat font-bold text-black">Dati Aziendali</h3>
+                    <p className="text-black">Informazioni societarie</p>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="font-medium text-gray-700">Ragione Sociale:</span>
-                    <span className="text-[#071029] font-semibold">Exponent S.r.l.s</span>
+                    <span className="font-medium text-black">Ragione Sociale:</span>
+                    <span className="text-black font-semibold">Exponent S.r.l.s</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="font-medium text-gray-700">Partita IVA:</span>
-                    <span className="text-[#071029] font-semibold">04062291206</span>
+                    <span className="font-medium text-black">Partita IVA:</span>
+                    <span className="text-black font-semibold">04062291206</span>
                   </div>
                 </div>
               </CardContent>
@@ -98,19 +98,19 @@ export default function Contatti() {
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#a9f6db]/20 rounded-xl flex items-center justify-center">
-                    <MapPin className="w-8 h-8 text-[#071029]" />
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <MapPin className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-[#071029]">Le Nostre Sedi</h3>
-                    <p className="text-gray-600">Presenti in 8 città italiane</p>
+                    <h3 className="text-xl font-montserrat font-bold text-black">Le Nostre Sedi</h3>
+                    <p className="text-black">Presenti in 8 città italiane</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   {["Bologna", "Firenze", "Padova", "Milano", "Piacenza", "Cagliari", "Venezia", "Modena"].map((city) => (
                     <div key={city} className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
-                      <div className="w-2 h-2 bg-[#a9f6db] rounded-full"></div>
-                      <span className="text-gray-700 font-medium">{city}</span>
+                      <div className="w-2 h-2 bg-[#2ca781] rounded-full"></div>
+                      <span className="text-black font-medium">{city}</span>
                     </div>
                   ))}
                 </div>
@@ -121,20 +121,20 @@ export default function Contatti() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#071029]">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
               Pronti ad Aiutarti
             </h2>
-            <p className="text-xl text-white/80 mb-12">
+            <p className="text-xl text-black mb-12">
               Contattaci per una consulenza personalizzata sui tuoi investimenti immobiliari
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-lg mx-auto">
               <a 
                 href="tel:+390511960010" 
-                className="flex-1 bg-[#a9f6db] text-[#071029] py-4 px-8 rounded-xl font-semibold hover:bg-[#a9f6db]/80 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                className="flex-1 bg-[#2ca781] text-white py-4 px-8 rounded-xl font-semibold hover:bg-[#1a513b] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
                 data-testid="button-call"
               >
                 <Phone className="w-5 h-5" />
@@ -143,7 +143,7 @@ export default function Contatti() {
               
               <a 
                 href="mailto:info@exponent group.it" 
-                className="flex-1 bg-transparent border-2 border-white text-white py-4 px-8 rounded-xl font-semibold hover:bg-white hover:text-[#071029] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                className="flex-1 bg-transparent border-2 border-[#2ca781] text-[#2ca781] py-4 px-8 rounded-xl font-semibold hover:bg-[#2ca781] hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
                 data-testid="button-email"
               >
                 <Mail className="w-5 h-5" />
@@ -151,8 +151,8 @@ export default function Contatti() {
               </a>
             </div>
             
-            <div className="mt-12 pt-8 border-t border-white/20">
-              <p className="text-white/60 text-sm">
+            <div className="mt-12 pt-8 border-t border-gray-200">
+              <p className="text-black text-sm">
                 ⚡ Risposta garantita entro 24 ore
               </p>
             </div>
