@@ -108,15 +108,15 @@ const AstaContent = () => (
       <h4 className="text-xl font-semibold text-[#071029] mb-4 text-center">📋 Processo Aste</h4>
       <div className="grid grid-cols-1 gap-3">
         <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-          <div className="w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-xs font-bold text-[#071029]">1</div>
+          <div className="w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-xs font-bold text-white">1</div>
           <span className="text-sm font-medium text-gray-700">Lettura perizia e analisi documenti</span>
         </div>
         <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-          <div className="w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-xs font-bold text-[#071029]">2</div>
+          <div className="w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-xs font-bold text-white">2</div>
           <span className="text-sm font-medium text-gray-700">Visita immobile e valutazione</span>
         </div>
         <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-          <div className="w-8 h-8 bg-[#a9f6db] rounded-full flex items-center justify-center text-xs font-bold text-[#071029]">3</div>
+          <div className="w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-xs font-bold text-white">3</div>
           <span className="text-sm font-medium text-gray-700">Strategia d'acquisto e offerta</span>
         </div>
       </div>
