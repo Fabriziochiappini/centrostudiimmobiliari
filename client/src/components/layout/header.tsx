@@ -45,11 +45,11 @@ export default function Header() {
                 {navItems.map((item) => (
                   <Link key={item.href} href={item.href}>
                     <span
-                      className={`px-3 py-2 text-sm font-medium transition-colors duration-200 cursor-pointer ${
+                      className={`px-3 py-2 text-sm font-medium transition-all duration-200 cursor-pointer relative ${
                         isActive(item.href)
-                          ? "text-primary"
-                          : "text-foreground hover:text-primary"
-                      }`}
+                          ? "text-primary after:w-full"
+                          : "text-foreground hover:text-primary after:w-0 hover:after:w-full"
+                      } after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:h-0.5 after:bg-primary after:transition-all after:duration-200`}
                       data-testid={`nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
                     >
                       {item.label}
