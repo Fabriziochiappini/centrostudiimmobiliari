@@ -45,7 +45,14 @@ export default function HeroSection({
               ? "text-6xl md:text-8xl lg:text-9xl" 
               : "text-4xl md:text-5xl lg:text-6xl"
           }`}>
-            {title}
+            {title === "EXPONENT" ? (
+              <>
+                CENTRO STUDI<br />
+                Immobiliari
+              </>
+            ) : (
+              title
+            )}
           </h1>
           <p className={`text-white/90 max-w-3xl mx-auto mb-8 leading-relaxed ${
             isHomepage 
