@@ -79,13 +79,61 @@ export default function Home() {
         isHomepage={true}
       />
 
+      {/* Authority Hero Section - Dalla parte di chi acquista */}
+      <section className="py-32 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#2ca781]/10 text-[#2ca781] font-semibold text-sm uppercase tracking-wider mb-8">
+              🏆 Leader nel Settore Immobiliare
+            </div>
+            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-8 leading-tight">
+              Dalla Parte di 
+              <span style={{ color: '#2ca781' }}> Chi Acquista</span>
+            </h2>
+            <p className="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-light mb-12">
+              <strong className="font-semibold text-black">Centro Studi Immobiliari</strong> è l'unica realtà che mette 
+              gli interessi dell'acquirente al primo posto, garantendo trasparenza totale, 
+              competenza assoluta e risultati concreti in ogni operazione immobiliare.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div className="text-center">
+                <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>500+</div>
+                <p className="text-gray-600 font-medium">Clienti Soddisfatti</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>8</div>
+                <p className="text-gray-600 font-medium">Città Coperte</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>15</div>
+                <p className="text-gray-600 font-medium">Anni di Esperienza</p>
+              </div>
+            </div>
+            <Link href="/chi-siamo">
+              <Button 
+                size="lg"
+                className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-6 px-12 text-xl rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                data-testid="button-scopri-di-piu"
+              >
+                Scopri la Nostra Autorità nel Settore
+                <ArrowRight className="ml-3 w-6 h-6" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Value Strategy Intro Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold" style={{ color: '#2ca781' }}>
-              Massimizza i tuoi investimenti con la nostra Value Strategy
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
+              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy Esclusiva</span>
             </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Il metodo proprietario che ha permesso ai nostri clienti di ottenere rendimenti superiori alla media di mercato
+            </p>
           </div>
         </div>
       </section>
@@ -210,12 +258,19 @@ export default function Home() {
       </section>
 
       {/* Value Strategy Title Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold" style={{ color: '#2ca781' }}>
-              La Nostra Value Strategy in 4 passaggi
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              ✦ METODO PROPRIETARIO ✦
+            </div>
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-8">
+              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy</span> in 4 Passaggi
             </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 font-light">
+              Il sistema comprovato che ha generato oltre <strong className="text-black font-bold">€50 milioni</strong> di valore 
+              per i nostri clienti attraverso investimenti immobiliari strategici e mirati.
+            </p>
           </div>
         </div>
       </section>
@@ -313,23 +368,36 @@ export default function Home() {
           
           {/* Approfondisci Button */}
           <div className="text-center mt-12">
-            <Button 
-              size="lg"
-              className="bg-primary border-2 border-white text-white hover:bg-primary/90 font-semibold py-4 px-10 text-lg"
-              data-testid="button-approfondisci"
-            >
-              Approfondisci
-            </Button>
+            <Link href="/chi-siamo">
+              <Button 
+                size="lg"
+                className="bg-primary border-2 border-white text-white hover:bg-primary/90 font-semibold py-4 px-10 text-lg"
+                data-testid="button-approfondisci"
+              >
+                Approfondisci la Nostra Strategia
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* EXPONENT World Section */}
-      <section className="py-20 bg-white">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-center mb-12" style={{ color: '#2ca781' }}>
-            Entra nel mondo EXPONENT
-          </h2>
+      {/* Authority Partnership Section */}
+      <section className="py-32 bg-gradient-to-br from-[#2ca781] to-[#1a513b] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent to-white"></div>
+        <div className="relative w-full px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block px-6 py-3 bg-white/20 rounded-full text-white font-bold text-sm uppercase tracking-widest mb-8">
+              🤝 PARTNERSHIP ESCLUSIVA
+            </div>
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-8">
+              Entra nell'<span className="text-yellow-300">Elite</span> del Real Estate
+            </h2>
+            <p className="text-xl text-white/90 max-w-4xl mx-auto mb-16 font-light">
+              Selezionati professionisti si uniscono alla nostra rete esclusiva per accedere a 
+              <strong className="font-bold text-yellow-300"> opportunità riservate </strong> 
+              e costruire il futuro degli investimenti immobiliari in Italia.
+            </p>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* BUSINESS Card */}
