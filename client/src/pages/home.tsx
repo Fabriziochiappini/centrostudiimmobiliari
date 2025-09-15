@@ -608,50 +608,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Authority Partnership Section */}
-      <section className="py-32 bg-gradient-to-br from-[#2ca781] to-[#1a513b] text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent to-white"></div>
-        <div className="relative w-full px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-block px-6 py-3 bg-white/20 rounded-full text-white font-bold text-sm uppercase tracking-widest mb-8">
-              🤝 PARTNERSHIP ESCLUSIVA
-            </div>
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-8">
-              Entra nell'<span className="text-yellow-300">Elite</span> del Real Estate
-            </h2>
-            <p className="text-xl text-white/90 max-w-4xl mx-auto mb-16 font-light">
-              Selezionati professionisti si uniscono alla nostra rete esclusiva per accedere a 
-              <strong className="font-bold text-yellow-300"> opportunità riservate </strong> 
-              e costruire il futuro degli investimenti immobiliari in Italia.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* BUSINESS Card */}
-            <FlipCard
-              title="BUSINESS"
-              description="Come azienda, vogliamo ottimizzare ogni processo, ridurre gli sprechi e massimizzare i profitti."
-              backgroundImage="/public-objects/business-card-bg.jpg"
-            />
-            
-            {/* ACADEMY Card */}
-            <FlipCard
-              title="ACADEMY"
-              description="Sono un consulente o un'azienda e voglio iscrivermi a un corso professionale di vendita per crescere personalmente e far crescere il mio team."
-              backgroundImage="/public-objects/academy-card-bg.jpg"
-            />
-            
-            {/* INVESTOR Card */}
-            <FlipCard
-              title="INVESTOR"
-              description="Voglio trasformare ogni operazione immobiliare in un'opportunità di successo."
-              backgroundImage="/public-objects/investor-card-bg.jpg"
-            />
-          </div>
-          
-        </div>
-      </section>
-
       {/* Contact CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
