@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import HeroModern from "@/components/layout/hero-modern";
-import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat, Star, Quote, Award, CheckCircle, Shield } from "lucide-react";
+import { Search, FileText, Scale, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat, Star, Quote, Award, CheckCircle, Shield } from "lucide-react";
 // File da caricare nell'Object Storage nella directory public:
 // hero-video.mp4, strategy-video.mp4, services-bg.jpg
 // business-card-bg.jpg, academy-card-bg.jpg, investor-card-bg.jpg
@@ -237,6 +237,84 @@ export default function Home() {
                 data-testid="button-approfondisci"
               >
                 Approfondisci la Nostra Strategia
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              💼 SERVIZI SPECIALIZZATI
+            </div>
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
+              I Nostri <span style={{ color: '#2ca781' }}>Servizi Premium</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
+              Dalla ricerca immobiliare agli NPL, dalle aste ai saldi e stralci. 
+              <strong className="text-black font-bold"> Soluzioni complete</strong> per ogni esigenza di investimento.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            {/* Property Finder */}
+            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
+              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Search className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-lg font-montserrat font-bold text-black mb-3">Property Finder</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Ricerca personalizzata di immobili che soddisfano le tue esigenze specifiche con supporto nella trattativa
+              </p>
+            </div>
+
+            {/* NPL */}
+            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
+              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <FileText className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-lg font-montserrat font-bold text-black mb-3">NPL</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Accesso esclusivo a crediti non performanti per acquisire immobili a prezzi straordinariamente vantaggiosi
+              </p>
+            </div>
+
+            {/* Saldo e Stralcio */}
+            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
+              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Scale className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-lg font-montserrat font-bold text-black mb-3">Saldo e Stralcio</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Gestione efficiente e trasparente per eliminazione debiti e acquisizione immobili sotto mercato
+              </p>
+            </div>
+
+            {/* Aste Immobiliari */}
+            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
+              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Gavel className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-lg font-montserrat font-bold text-black mb-3">Aste Immobiliari</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Assistenza completa nella partecipazione alle aste con analisi perizie e strategia d'acquisto
+              </p>
+            </div>
+          </div>
+
+          {/* Services CTA */}
+          <div className="text-center">
+            <Link href="/servizi">
+              <Button 
+                size="lg"
+                className="bg-[#2ca781] border-2 border-[#2ca781] text-white hover:bg-[#1a513b] hover:border-[#1a513b] font-semibold py-4 px-10 text-lg group"
+                data-testid="button-servizi"
+              >
+                Scopri Tutti i Nostri Servizi
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
             </Link>
           </div>
