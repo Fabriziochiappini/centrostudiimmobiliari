@@ -264,7 +264,7 @@ export default function Home() {
             {/* Property Finder */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
               <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/public-objects/property-finder-bg.jpg)' }}
+                   style={{ backgroundImage: 'url(/attached_assets/coppia-di-tiro-medio-che-parla-con-l-agente-immobiliare_1757939645930.jpg)' }}
                    onError={(e) => {
                      const target = e.target as HTMLDivElement;
                      target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
@@ -287,7 +287,7 @@ export default function Home() {
             {/* NPL */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
               <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/public-objects/npl-bg.jpg)' }}
+                   style={{ backgroundImage: 'url(/attached_assets/consulenza-investimenti-immobiliari_1757937657387.jpg)' }}
                    onError={(e) => {
                      const target = e.target as HTMLDivElement;
                      target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
@@ -310,7 +310,7 @@ export default function Home() {
             {/* Saldo e Stralcio */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
               <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/public-objects/saldo-stralcio-bg.jpg)' }}
+                   style={{ backgroundImage: 'url(/attached_assets/vista-frontale-della-pianta-che-cresce-dalle-monete-d-oro_1757939645929.jpg)' }}
                    onError={(e) => {
                      const target = e.target as HTMLDivElement;
                      target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
@@ -336,7 +336,7 @@ export default function Home() {
             {/* Aste Immobiliari */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
               <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/public-objects/aste-bg.jpg)' }}
+                   style={{ backgroundImage: 'url(/attached_assets/paesaggio-analogico-della-citta-con-edifici_1757939645927.jpg)' }}
                    onError={(e) => {
                      const target = e.target as HTMLDivElement;
                      target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
@@ -359,7 +359,7 @@ export default function Home() {
             {/* Affitti Brevi */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
               <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/public-objects/affitti-brevi-bg.jpg)' }}
+                   style={{ backgroundImage: 'url(/attached_assets/architettura-moderna-dell-appartamento_1757939645923.jpg)' }}
                    onError={(e) => {
                      const target = e.target as HTMLDivElement;
                      target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
@@ -382,7 +382,7 @@ export default function Home() {
             {/* Valorizzazione */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
               <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/public-objects/valorizzazione-bg.jpg)' }}
+                   style={{ backgroundImage: 'url(/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg)' }}
                    onError={(e) => {
                      const target = e.target as HTMLDivElement;
                      target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
