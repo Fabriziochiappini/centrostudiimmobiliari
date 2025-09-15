@@ -9,7 +9,7 @@ export default function HeroModern() {
 
   const slides = [
     {
-      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16_1757939006977.jpeg",
+      backgroundImage: "/attached_assets/architettura-moderna-dell-appartamento_1757939645923.jpg",
       badge: "CENTRO STUDI IMMOBILIARI",
       title: "Il Valore Migliore Per Gli Investimenti Immobiliari",
       subtitle: "Consulenza strategica e soluzioni innovative per massimizzare i rendimenti del tuo portafoglio immobiliare con la sicurezza di 15 anni di esperienza nel settore.",
@@ -17,7 +17,7 @@ export default function HeroModern() {
       buttonLink: "/servizi"
     },
     {
-      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (1)_1757939006977.jpeg",
+      backgroundImage: "/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg",
       badge: "INVESTIMENTI PREMIUM",
       title: "Accedi Alle Migliori Opportunità Del Mercato",
       subtitle: "Network esclusivo di deals immobiliari selezionati con ROI superiori al 40%. Partnership riservata per investitori qualificati con patrimoni da €250K+.",
@@ -25,7 +25,7 @@ export default function HeroModern() {
       buttonLink: "/contatti"
     },
     {
-      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (2)_1757939006977.jpeg",
+      backgroundImage: "/attached_assets/paesaggio-analogico-della-citta-con-edifici_1757939645927.jpg",
       badge: "EXPERTISE CERTIFICATA",
       title: "La Consulenza Più Autorevole Del Settore",
       subtitle: "Team di professionisti certificati FIABCI e RICS. Metodologie proprietarie che hanno generato oltre €50M di valore per i nostri clienti premium.",
@@ -33,7 +33,7 @@ export default function HeroModern() {
       buttonLink: "/chi-siamo"
     },
     {
-      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (3)_1757939006976.jpeg",
+      backgroundImage: "/attached_assets/uomo-che-fa-una-presentazione-aziendale-usando-una-penna-digitale-futuristica_1757939645928.jpg",
       badge: "INNOVAZIONE E QUALITÀ",
       title: "Tecnologie Avanzate Per Il Real Estate",
       subtitle: "Utilizziamo strumenti digitali all'avanguardia per analisi precise di mercato e valutazioni immobiliari professionali.",
@@ -41,12 +41,20 @@ export default function HeroModern() {
       buttonLink: "/servizi"
     },
     {
-      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (4)_1757939006976.jpeg",
+      backgroundImage: "/attached_assets/vista-frontale-della-pianta-che-cresce-dalle-monete-d-oro_1757939645929.jpg",
       badge: "RISULTATI GARANTITI",
       title: "Portfolio da €50M+ Gestiti Con Successo",
       subtitle: "La nostra esperienza si traduce in risultati concreti: ROI medio del 67% e oltre 500 investitori soddisfatti.",
       buttonText: "VEDI I RISULTATI",
       buttonLink: "/chi-siamo"
+    },
+    {
+      backgroundImage: "/attached_assets/coppia-di-tiro-medio-che-parla-con-l-agente-immobiliare_1757939645930.jpg",
+      badge: "CONSULENZA PERSONALIZZATA",
+      title: "Un Partner Di Fiducia Per I Tuoi Investimenti",
+      subtitle: "Approccio consulenziale su misura per ogni cliente. Dalla pianificazione strategica all'execution, ti accompagniamo verso il successo.",
+      buttonText: "INIZIA LA CONSULENZA",
+      buttonLink: "/contatti"
     }
   ];
 
@@ -68,11 +76,11 @@ export default function HeroModern() {
         >
           {/* Background Image */}
           <img 
-            src={encodeURI(slide.backgroundImage)}
+            src={slide.backgroundImage}
             alt={slide.title}
             className="absolute inset-0 w-full h-full object-cover object-center"
             style={{ 
-              imageRendering: 'high-quality',
+              imageRendering: 'crisp-edges' as const,
               filter: 'contrast(1.05) saturate(1.1)',
               transform: 'translateZ(0)'
             }}
