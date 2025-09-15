@@ -331,11 +331,11 @@ export default function Servizi() {
               ✦ SERVIZI SPECIALIZZATI ✦
             </div>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
-              I Nostri Servizi <span style={{ color: '#2ca781' }}>Specializzati</span>
+              Servizi <span style={{ color: '#2ca781' }}>Premium Esclusivi</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
-              Soluzioni <strong className="font-bold text-black">complete e innovative</strong> per ogni fase del tuo investimento immobiliare, 
-              dal primo contatto alla massimizzazione dei rendimenti
+              <strong className="font-bold text-black">6 servizi specializzati</strong> che hanno generato <span className="text-[#2ca781] font-bold">€50M+ di valore</span> per i nostri clienti. 
+              Expertise comprovata in <strong className="font-bold text-black">500+ investimenti</strong> di successo.
             </p>
           </div>
           
@@ -429,7 +429,7 @@ export default function Servizi() {
                           <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-6">
                             <IconComponent className="w-8 h-8 text-white" />
                           </div>
-                          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-black">
+                          <h3 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-black">
                             {service.title}
                           </h3>
                         </div>
@@ -482,12 +482,12 @@ export default function Servizi() {
           <div className="inline-block px-6 py-3 bg-white/20 rounded-full text-white font-bold text-sm uppercase tracking-widest mb-8">
             🚀 INIZIA ORA IL TUO INVESTIMENTO
           </div>
-          <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-white mb-8 leading-tight">
-            Pronto a Iniziare il Tuo <span className="text-yellow-300">Investimento?</span>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-white mb-8 leading-tight">
+            Accedi ai <span className="text-yellow-300">Deals Esclusivi</span>
           </h2>
           <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed font-light max-w-5xl mx-auto">
-            I nostri <strong className="font-bold text-yellow-300">esperti specializzati</strong> sono pronti ad aiutarti a trovare l'opportunità immobiliare perfetta per i tuoi obiettivi. 
-            Contattaci oggi per una consulenza personalizzata e gratuita.
+            <strong className="font-bold text-white">Solo 50 consulenze exclusive all'anno.</strong> Accedi al network di investitori premium 
+            che ha realizzato un <span className="text-yellow-300 font-bold">ROI medio del 67%</span> negli ultimi 24 mesi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/contatti">

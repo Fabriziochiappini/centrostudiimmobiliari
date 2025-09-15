@@ -615,12 +615,12 @@ export default function Home() {
             <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
               ✦ METODO PROPRIETARIO ✦
             </div>
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-8">
-              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy</span> in 4 Passaggi
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+              La <span style={{ color: '#2ca781' }}>Value Strategy</span> Proprietaria
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 font-light">
-              Il sistema comprovato che ha generato oltre <strong className="text-black font-bold">€50 milioni</strong> di valore 
-              per i nostri clienti attraverso investimenti immobiliari strategici e mirati.
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
+              Il metodo <strong className="text-black font-bold">scientifico esclusivo</strong> che ha generato <span className="text-[#2ca781] font-bold">€50M+ di valore</span> 
+              con un <strong className="text-black font-bold">ROI medio del 67%</strong> per investitori selezionati.
             </p>
           </div>
         </div>
@@ -802,11 +802,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#071029] mb-6">
-            Hai bisogno di maggiori informazioni?
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-[#071029] mb-8 leading-tight">
+            Accesso <span style={{ color: '#2ca781' }}>VIP Immediato</span>
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Il nostro team di esperti è pronto ad aiutarti a trovare la soluzione perfetta per i tuoi investimenti immobiliari. Contattaci per una consulenza personalizzata.
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto font-light">
+            <strong className="font-bold text-black">Consulenza esclusiva per patrimoni €250K+</strong>. I nostri esperti certificati 
+            ti mostrano i deals riservati che generano <span className="text-[#2ca781] font-bold">rendimenti premium</span>.
           </p>
           <Link href="/contatti">
             <Button 
