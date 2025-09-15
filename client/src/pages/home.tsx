@@ -44,31 +44,31 @@ function HeroCarousel() {
 
   const slides = [
     {
-      src: "@assets/consulenza sugli immobili_1757937657387.jpg",
+      src: "/attached_assets/consulenza sugli immobili_1757937657387.jpg",
       alt: "Consulenza Legale Immobiliare - Centro Studi Immobiliari",
       title: "CENTRO STUDI Immobiliari",
       subtitle: "Consulenza Legale e Strategica per Investimenti Immobiliari Premium"
     },
     {
-      src: "@assets/consulenza investimenti immobiliari_1757937657387.jpg", 
+      src: "/attached_assets/consulenza investimenti immobiliari_1757937657387.jpg", 
       alt: "Consulenza Investimenti Immobiliari - Esperti del Settore",
       title: "INVESTIMENTI Strategici",
       subtitle: "Partner Qualificati per Opportunità di Alto Rendimento nel Real Estate"
     },
     {
-      src: "@assets/studio consulenza immobiliare_1757937657388.webp",
+      src: "/attached_assets/studio consulenza immobiliare_1757937657388.webp",
       alt: "Studio Consulenza Immobiliare - Team di Esperti",
       title: "EXPERTISE Comprovata", 
       subtitle: "15 Anni di Eccellenza nella Consulenza Immobiliare di Alto Livello"
     },
     {
-      src: "@assets/consulenza immobiliare centro studi immobiliare_1757937657388.jpg",
+      src: "/attached_assets/consulenza immobiliare centro studi immobiliare_1757937657388.jpg",
       alt: "Tecnologia Avanzata per Consulenza Immobiliare",
       title: "INNOVAZIONE Digitale",
       subtitle: "Tecnologie all'Avanguardia per Analisi e Valutazioni Immobiliari"
     },
     {
-      src: "@assets/consulenza immobiliare centro studi_1757937657389.jpg",
+      src: "/attached_assets/consulenza immobiliare centro studi_1757937657389.jpg",
       alt: "Team Consulenza Immobiliare - Professionisti Certificati", 
       title: "PARTNERSHIP Esclusiva",
       subtitle: "Network di Professionisti Selezionati per Risultati Garantiti"
