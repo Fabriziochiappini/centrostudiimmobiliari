@@ -1,165 +1,14 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
-import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat, Star, Quote, Award, CheckCircle, Shield, ChevronLeft, ChevronRight } from "lucide-react";
+import HeroModern from "@/components/layout/hero-modern";
+import { Search, FileText, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat, Star, Quote, Award, CheckCircle, Shield } from "lucide-react";
 // File da caricare nell'Object Storage nella directory public:
 // hero-video.mp4, strategy-video.mp4, services-bg.jpg
 // business-card-bg.jpg, academy-card-bg.jpg, investor-card-bg.jpg
 
-// Hero Carousel Component
-function HeroCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, duration: 30 },
-    [Autoplay({ delay: 4000, stopOnInteraction: false })]
-  );
-
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
-  const scrollTo = useCallback((index: number) => {
-    if (emblaApi) emblaApi.scrollTo(index);
-  }, [emblaApi]);
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on('select', onSelect);
-  }, [emblaApi, onSelect]);
-
-  const slides = [
-    {
-      src: "/attached_assets/consulenza sugli immobili_1757937657387.jpg",
-      alt: "Consulenza Legale Immobiliare - Centro Studi Immobiliari",
-      title: "CENTRO STUDI Immobiliari",
-      subtitle: "Consulenza Legale e Strategica per Investimenti Immobiliari Premium"
-    },
-    {
-      src: "/attached_assets/consulenza investimenti immobiliari_1757937657387.jpg", 
-      alt: "Consulenza Investimenti Immobiliari - Esperti del Settore",
-      title: "INVESTIMENTI Strategici",
-      subtitle: "Partner Qualificati per Opportunità di Alto Rendimento nel Real Estate"
-    },
-    {
-      src: "/attached_assets/studio consulenza immobiliare_1757937657388.webp",
-      alt: "Studio Consulenza Immobiliare - Team di Esperti",
-      title: "EXPERTISE Comprovata", 
-      subtitle: "15 Anni di Eccellenza nella Consulenza Immobiliare di Alto Livello"
-    },
-    {
-      src: "/attached_assets/consulenza immobiliare centro studi immobiliare_1757937657388.jpg",
-      alt: "Tecnologia Avanzata per Consulenza Immobiliare",
-      title: "INNOVAZIONE Digitale",
-      subtitle: "Tecnologie all'Avanguardia per Analisi e Valutazioni Immobiliari"
-    },
-    {
-      src: "/attached_assets/consulenza immobiliare centro studi_1757937657389.jpg",
-      alt: "Team Consulenza Immobiliare - Professionisti Certificati", 
-      title: "PARTNERSHIP Esclusiva",
-      subtitle: "Network di Professionisti Selezionati per Risultati Garantiti"
-    }
-  ];
-
-  return (
-    <section className="relative w-full h-screen overflow-hidden">
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container flex">
-          {slides.map((slide, index) => (
-            <div key={index} className="embla__slide relative flex-[0_0_100%] min-w-0">
-              <div className="relative w-full h-screen">
-                <img
-                  src={slide.src}
-                  alt={slide.alt}
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white max-w-6xl px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-montserrat font-bold mb-6 leading-tight">
-                      {slide.title}
-                    </h1>
-                    <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 max-w-4xl mx-auto mb-8 leading-relaxed font-light">
-                      {slide.subtitle}
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                      <Link href="/servizi">
-                        <Button 
-                          size="lg"
-                          className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-4 px-8 text-lg rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-                          data-testid="button-scopri-servizi"
-                        >
-                          Scopri i Nostri Servizi
-                          <ArrowRight className="ml-2 w-5 h-5" />
-                        </Button>
-                      </Link>
-                      <Link href="/contatti">
-                        <Button 
-                          size="lg"
-                          variant="outline"
-                          className="border-2 border-white text-white hover:bg-white hover:text-[#2ca781] font-bold py-4 px-8 text-lg rounded-xl transition-all duration-300"
-                          data-testid="button-contatti-hero"
-                        >
-                          Contattaci Ora
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Navigation Buttons */}
-      <button
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-300 z-20"
-        onClick={scrollPrev}
-        data-testid="button-carousel-prev"
-      >
-        <ChevronLeft className="w-6 h-6 text-white" />
-      </button>
-      <button
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-300 z-20"
-        onClick={scrollNext}
-        data-testid="button-carousel-next"
-      >
-        <ChevronRight className="w-6 h-6 text-white" />
-      </button>
-
-      {/* Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === selectedIndex 
-                ? 'bg-white scale-125' 
-                : 'bg-white/50 hover:bg-white/70'
-            }`}
-            onClick={() => scrollTo(index)}
-            data-testid={`indicator-${index}`}
-          />
-        ))}
-      </div>
-    </section>
-  );
-}
 
 // FlipCard Component
 function FlipCard({ title, description, backgroundImage }: { title: string; description: string; backgroundImage?: string }) {
@@ -222,8 +71,8 @@ export default function Home() {
         keywords="centro studi immobiliari, consulenza immobiliare exponent, property finder Italia, opportunità NPL immobiliari, saldo e stralcio immobili, aste immobiliari assistenza, home staging professionale, affitti brevi immobili, consulenza immobiliare Bologna, consulenza immobiliare Milano, consulenza immobiliare Firenze, consulenza immobiliare Padova, consulenza immobiliare Piacenza, consulenza immobiliare Cagliari, consulenza immobiliare Venezia, consulenza immobiliare Modena"
         ogImage="/attached_assets/Progetto senza titolo (94)_1756738184287.jpg"
       />
-      {/* Hero Carousel */}
-      <HeroCarousel />
+      {/* Modern Hero */}
+      <HeroModern />
 
       {/* Authority Hero Section - Dalla parte di chi acquista */}
       <section className="py-32 bg-white relative overflow-hidden">
