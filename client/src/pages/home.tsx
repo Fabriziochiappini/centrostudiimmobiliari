@@ -609,26 +609,8 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 flex flex-col justify-center relative">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img 
-            src="/public-objects/services-bg.jpg?v=2" 
-            alt="Servizi immobiliari"
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              const fallback = document.createElement('div');
-              fallback.className = 'absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-600 w-full h-full flex items-center justify-center';
-              fallback.innerHTML = '<div class="text-center text-white"><div class="text-6xl mb-4">🏢</div><p class="text-lg font-semibold">Carica "services-bg.jpg"</p><p class="text-sm">nella directory public dell\'Object Storage</p></div>';
-              target.parentNode?.appendChild(fallback);
-            }}
-          />
-        </div>
-        
-
-        <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
+      <section className="py-20 bg-white">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 grid-rows-2">
           {/* Ricerca */}
           <div className="group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:z-20">
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-accent p-0.5"></div>
