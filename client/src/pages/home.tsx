@@ -119,6 +119,144 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Value Strategy Intro Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
+              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy Esclusiva</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Il metodo proprietario che ha permesso ai nostri clienti di ottenere rendimenti superiori alla media di mercato
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Strategy Title Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              ✦ METODO PROPRIETARIO ✦
+            </div>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+              La <span style={{ color: '#2ca781' }}>Value Strategy</span> Proprietaria
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
+              Il metodo <strong className="text-black font-bold">scientifico esclusivo</strong> che ha generato <span className="text-[#2ca781] font-bold">€50M+ di valore</span> 
+              con un <strong className="text-black font-bold">ROI medio del 67%</strong> per investitori selezionati.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Strategy Section */}
+      <section className="py-20 relative overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: 'url(/public-objects/strategy-background.jpg)',
+            backgroundColor: '#6b7280'
+          }}
+          onError={(e) => {
+            console.error('Background image error:', e);
+            const target = e.target as HTMLDivElement;
+            target.style.backgroundImage = 'none';
+            target.style.backgroundColor = '#6b7280';
+          }}
+        ></div>
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Step 1 */}
+            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingDown className="w-8 h-8 text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  1
+                </div>
+              </div>
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                Acquisto Strategico
+              </h3>
+              <p className="text-black text-sm leading-relaxed">
+                Acquistare un immobile ad un prezzo inferiore al valore di mercato
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <HomeIcon className="w-8 h-8 text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  2
+                </div>
+              </div>
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                Massimizzazione Reddito
+              </h3>
+              <p className="text-black text-sm leading-relaxed">
+                Massimizzare la messa a reddito con il servizio affitti brevi
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUpIcon className="w-8 h-8 text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  3
+                </div>
+              </div>
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                Rivendita Valorizzata
+              </h3>
+              <p className="text-black text-sm leading-relaxed">
+                Rivendere l'immobile ad un prezzo più alto dopo la valorizzazione
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Repeat className="w-8 h-8 text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  4
+                </div>
+              </div>
+              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                Reinvestimento
+              </h3>
+              <p className="text-black text-sm leading-relaxed">
+                Acquistare un nuovo immobile con un budget più alto
+              </p>
+            </div>
+          </div>
+          
+          {/* Approfondisci Button */}
+          <div className="text-center mt-12">
+            <Link href="/chi-siamo">
+              <Button 
+                size="lg"
+                className="bg-primary border-2 border-white text-white hover:bg-primary/90 font-semibold py-4 px-10 text-lg"
+                data-testid="button-approfondisci"
+              >
+                Approfondisci la Nostra Strategia
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Premium Testimonials Section */}
       <section className="py-32 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
@@ -585,144 +723,6 @@ export default function Home() {
                 </span>
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Value Strategy Intro Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
-              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy Esclusiva</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Il metodo proprietario che ha permesso ai nostri clienti di ottenere rendimenti superiori alla media di mercato
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Value Strategy Title Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-              ✦ METODO PROPRIETARIO ✦
-            </div>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
-              La <span style={{ color: '#2ca781' }}>Value Strategy</span> Proprietaria
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
-              Il metodo <strong className="text-black font-bold">scientifico esclusivo</strong> che ha generato <span className="text-[#2ca781] font-bold">€50M+ di valore</span> 
-              con un <strong className="text-black font-bold">ROI medio del 67%</strong> per investitori selezionati.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Value Strategy Section */}
-      <section className="py-20 relative overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: 'url(/public-objects/strategy-background.jpg)',
-            backgroundColor: '#6b7280'
-          }}
-          onError={(e) => {
-            console.error('Background image error:', e);
-            const target = e.target as HTMLDivElement;
-            target.style.backgroundImage = 'none';
-            target.style.backgroundColor = '#6b7280';
-          }}
-        ></div>
-        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Step 1 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingDown className="w-8 h-8 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  1
-                </div>
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Acquisto Strategico
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Acquistare un immobile ad un prezzo inferiore al valore di mercato
-              </p>
-            </div>
-
-            {/* Step 2 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <HomeIcon className="w-8 h-8 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  2
-                </div>
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Massimizzazione Reddito
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Massimizzare la messa a reddito con il servizio affitti brevi
-              </p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUpIcon className="w-8 h-8 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  3
-                </div>
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Rivendita Valorizzata
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Rivendere l'immobile ad un prezzo più alto dopo la valorizzazione
-              </p>
-            </div>
-
-            {/* Step 4 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Repeat className="w-8 h-8 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  4
-</div>
-              </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Reinvestimento
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Acquistare un nuovo immobile con un budget più alto
-              </p>
-            </div>
-          </div>
-          
-          {/* Approfondisci Button */}
-          <div className="text-center mt-12">
-            <Link href="/chi-siamo">
-              <Button 
-                size="lg"
-                className="bg-primary border-2 border-white text-white hover:bg-primary/90 font-semibold py-4 px-10 text-lg"
-                data-testid="button-approfondisci"
-              >
-                Approfondisci la Nostra Strategia
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
