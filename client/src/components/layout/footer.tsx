@@ -65,13 +65,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/partner">
-                  <span className="text-background/80 hover:text-accent transition-colors duration-200 cursor-pointer">
-                    Diventa Partner
-                  </span>
-                </Link>
-              </li>
-              <li>
                 <Link href="/contatti">
                   <span className="text-background/80 hover:text-accent transition-colors duration-200 cursor-pointer">
                     Contatti

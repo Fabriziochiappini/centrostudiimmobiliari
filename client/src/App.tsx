@@ -10,7 +10,6 @@ import { useScrollToTop } from "./hooks/useScrollToTop";
 import Home from "./pages/home";
 import ChiSiamo from "./pages/chi-siamo";
 import Servizi from "./pages/servizi";
-import Partner from "./pages/partner";
 import Contatti from "./pages/contatti";
 import Sedi from "./pages/sedi";
 import PrivacyPolicy from "./pages/privacy-policy";
@@ -29,7 +28,6 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/chi-siamo" component={ChiSiamo} />
           <Route path="/servizi" component={Servizi} />
-          <Route path="/partner" component={Partner} />
           <Route path="/contatti" component={Contatti} />
           <Route path="/sedi" component={Sedi} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />

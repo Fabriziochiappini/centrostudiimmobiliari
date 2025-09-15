@@ -649,18 +649,6 @@ export default function Home() {
             />
           </div>
           
-          {/* Diventa Partner Button */}
-          <div className="text-center mt-12">
-            <Link href="/partner">
-              <Button 
-                size="lg"
-                className="bg-[#2ca781] border-2 border-[#2ca781] text-white hover:bg-[#2ca781]/90 font-semibold py-4 px-10 text-lg"
-                data-testid="button-diventa-partner"
-              >
-                Diventa Partner
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 

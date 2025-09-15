@@ -34,7 +34,6 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/chi-siamo", label: "Chi Siamo" },
     { href: "/servizi", label: "Servizi" },
-    { href: "/partner", label: "Diventa Partner" },
     { href: "/contatti", label: "Contatti" },
   ];
 
