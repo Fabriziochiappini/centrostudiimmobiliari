@@ -259,49 +259,147 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Prima riga - 3 servizi */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Property Finder */}
-            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Search className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                   style={{ backgroundImage: 'url(/public-objects/property-finder-bg.jpg)' }}
+                   onError={(e) => {
+                     const target = e.target as HTMLDivElement;
+                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                   }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                    <Search className="w-6 h-6 text-[#2ca781]" />
+                  </div>
+                  <h3 className="text-lg font-montserrat font-bold text-white">Property Finder</h3>
+                </div>
               </div>
-              <h3 className="text-lg font-montserrat font-bold text-black mb-3">Property Finder</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Ricerca personalizzata di immobili che soddisfano le tue esigenze specifiche con supporto nella trattativa
-              </p>
+              <div className="p-6">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Ricerca personalizzata di immobili che soddisfano le tue esigenze specifiche con supporto nella trattativa
+                </p>
+              </div>
             </div>
 
             {/* NPL */}
-            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <FileText className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                   style={{ backgroundImage: 'url(/public-objects/npl-bg.jpg)' }}
+                   onError={(e) => {
+                     const target = e.target as HTMLDivElement;
+                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                   }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                    <FileText className="w-6 h-6 text-[#2ca781]" />
+                  </div>
+                  <h3 className="text-lg font-montserrat font-bold text-white">NPL</h3>
+                </div>
               </div>
-              <h3 className="text-lg font-montserrat font-bold text-black mb-3">NPL</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Accesso esclusivo a crediti non performanti per acquisire immobili a prezzi straordinariamente vantaggiosi
-              </p>
+              <div className="p-6">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Accesso esclusivo a crediti non performanti per acquisire immobili a prezzi straordinariamente vantaggiosi
+                </p>
+              </div>
             </div>
 
             {/* Saldo e Stralcio */}
-            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Scale className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                   style={{ backgroundImage: 'url(/public-objects/saldo-stralcio-bg.jpg)' }}
+                   onError={(e) => {
+                     const target = e.target as HTMLDivElement;
+                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                   }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                    <Scale className="w-6 h-6 text-[#2ca781]" />
+                  </div>
+                  <h3 className="text-lg font-montserrat font-bold text-white">Saldo e Stralcio</h3>
+                </div>
               </div>
-              <h3 className="text-lg font-montserrat font-bold text-black mb-3">Saldo e Stralcio</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Gestione efficiente e trasparente per eliminazione debiti e acquisizione immobili sotto mercato
-              </p>
+              <div className="p-6">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Gestione efficiente e trasparente per eliminazione debiti e acquisizione immobili sotto mercato
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Seconda riga - 3 servizi */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Aste Immobiliari */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                   style={{ backgroundImage: 'url(/public-objects/aste-bg.jpg)' }}
+                   onError={(e) => {
+                     const target = e.target as HTMLDivElement;
+                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                   }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                    <Gavel className="w-6 h-6 text-[#2ca781]" />
+                  </div>
+                  <h3 className="text-lg font-montserrat font-bold text-white">Aste Immobiliari</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Assistenza completa nella partecipazione alle aste con analisi perizie e strategia d'acquisto
+                </p>
+              </div>
             </div>
 
-            {/* Aste Immobiliari */}
-            <div className="bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] hover:shadow-lg transition-all duration-300 group">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Gavel className="w-8 h-8 text-white" />
+            {/* Affitti Brevi */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                   style={{ backgroundImage: 'url(/public-objects/affitti-brevi-bg.jpg)' }}
+                   onError={(e) => {
+                     const target = e.target as HTMLDivElement;
+                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                   }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                    <HomeIcon className="w-6 h-6 text-[#2ca781]" />
+                  </div>
+                  <h3 className="text-lg font-montserrat font-bold text-white">Affitti Brevi</h3>
+                </div>
               </div>
-              <h3 className="text-lg font-montserrat font-bold text-black mb-3">Aste Immobiliari</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Assistenza completa nella partecipazione alle aste con analisi perizie e strategia d'acquisto
-              </p>
+              <div className="p-6">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Massimizzazione del rendimento tramite gestione completa di affitti brevi su Airbnb e Booking
+                </p>
+              </div>
+            </div>
+
+            {/* Valorizzazione */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                   style={{ backgroundImage: 'url(/public-objects/valorizzazione-bg.jpg)' }}
+                   onError={(e) => {
+                     const target = e.target as HTMLDivElement;
+                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                   }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                    <TrendingUpIcon className="w-6 h-6 text-[#2ca781]" />
+                  </div>
+                  <h3 className="text-lg font-montserrat font-bold text-white">Valorizzazione</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Home staging professionale e supporto completo per vendere più rapidamente e a prezzo migliore
+                </p>
+              </div>
             </div>
           </div>
 
