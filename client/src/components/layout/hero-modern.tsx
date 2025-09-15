@@ -9,7 +9,7 @@ export default function HeroModern() {
 
   const slides = [
     {
-      backgroundImage: "/attached_assets/consulenza sugli immobili_1757937657387.jpg",
+      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16_1757939006977.jpeg",
       badge: "CENTRO STUDI IMMOBILIARI",
       title: "Il Valore Migliore Per Gli Investimenti Immobiliari",
       subtitle: "Consulenza strategica e soluzioni innovative per massimizzare i rendimenti del tuo portafoglio immobiliare con la sicurezza di 15 anni di esperienza nel settore.",
@@ -17,7 +17,7 @@ export default function HeroModern() {
       buttonLink: "/servizi"
     },
     {
-      backgroundImage: "/attached_assets/consulenza investimenti immobiliari_1757937657387.jpg",
+      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (1)_1757939006977.jpeg",
       badge: "INVESTIMENTI PREMIUM",
       title: "Accedi Alle Migliori Opportunità Del Mercato",
       subtitle: "Network esclusivo di deals immobiliari selezionati con ROI superiori al 40%. Partnership riservata per investitori qualificati con patrimoni da €250K+.",
@@ -25,11 +25,27 @@ export default function HeroModern() {
       buttonLink: "/contatti"
     },
     {
-      backgroundImage: "/attached_assets/studio consulenza immobiliare_1757937657388.webp",
+      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (2)_1757939006977.jpeg",
       badge: "EXPERTISE CERTIFICATA",
       title: "La Consulenza Più Autorevole Del Settore",
       subtitle: "Team di professionisti certificati FIABCI e RICS. Metodologie proprietarie che hanno generato oltre €50M di valore per i nostri clienti premium.",
       buttonText: "SCOPRI IL TEAM",
+      buttonLink: "/chi-siamo"
+    },
+    {
+      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (3)_1757939006976.jpeg",
+      badge: "INNOVAZIONE E QUALITÀ",
+      title: "Tecnologie Avanzate Per Il Real Estate",
+      subtitle: "Utilizziamo strumenti digitali all'avanguardia per analisi precise di mercato e valutazioni immobiliari professionali.",
+      buttonText: "SCOPRI LE NOSTRE TECNOLOGIE",
+      buttonLink: "/servizi"
+    },
+    {
+      backgroundImage: "/attached_assets/WhatsApp Image 2025-09-15 at 14.22.16 (4)_1757939006976.jpeg",
+      badge: "RISULTATI GARANTITI",
+      title: "Portfolio da €50M+ Gestiti Con Successo",
+      subtitle: "La nostra esperienza si traduce in risultati concreti: ROI medio del 67% e oltre 500 investitori soddisfatti.",
+      buttonText: "VEDI I RISULTATI",
       buttonLink: "/chi-siamo"
     }
   ];
