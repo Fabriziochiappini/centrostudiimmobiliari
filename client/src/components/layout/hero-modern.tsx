@@ -69,7 +69,7 @@ export default function HeroModern() {
           {/* Background Image */}
           <div 
             className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${slide.backgroundImage})` }}
+            style={{ backgroundImage: `url("${encodeURI(slide.backgroundImage)}")` }}
           />
           
           {/* Overlay */}
