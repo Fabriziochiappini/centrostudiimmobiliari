@@ -287,7 +287,7 @@ export default function Home() {
             {/* NPL */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
               <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/attached_assets/consulenza-investimenti-immobiliari_1757937657387.jpg)' }}
+                   style={{ backgroundImage: 'url(/attached_assets/uomo-che-fa-una-presentazione-aziendale-usando-una-penna-digitale-futuristica_1757939645928.jpg)' }}
                    onError={(e) => {
                      const target = e.target as HTMLDivElement;
                      target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
