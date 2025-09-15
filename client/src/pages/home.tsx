@@ -608,38 +608,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact CTA Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Elegant separator line */}
-          <div className="relative mb-12">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-200"></div>
-            </div>
-            <div className="relative flex justify-center">
-              <div className="bg-white px-6">
-                <div className="w-12 h-0.5 bg-gradient-to-r from-[#071029] to-gray-400"></div>
-              </div>
-            </div>
-          </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-[#071029] mb-8 leading-tight">
-            Accesso <span style={{ color: '#2ca781' }}>VIP Immediato</span>
-          </h2>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto font-light">
-            <strong className="font-bold text-black">Consulenza esclusiva per patrimoni €250K+</strong>. I nostri esperti certificati 
-            ti mostrano i deals riservati che generano <span className="text-[#2ca781] font-bold">rendimenti premium</span>.
-          </p>
-          <Link href="/contatti">
-            <Button 
-              size="lg"
-              className="bg-[#2ca781] border-2 border-[#2ca781] text-white hover:bg-[#1a513b] font-semibold py-4 px-10 text-lg"
-              data-testid="button-contattaci"
-            >
-              Contattaci Ora
-            </Button>
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }
