@@ -470,20 +470,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value Strategy Intro Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
-              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy Esclusiva</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Il metodo proprietario che ha permesso ai nostri clienti di ottenere rendimenti superiori alla media di mercato
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="py-20 flex flex-col justify-center relative">
         {/* Background Image */}
@@ -599,6 +585,20 @@ export default function Home() {
                 </span>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Strategy Intro Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
+              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy Esclusiva</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Il metodo proprietario che ha permesso ai nostri clienti di ottenere rendimenti superiori alla media di mercato
+            </p>
           </div>
         </div>
       </section>
