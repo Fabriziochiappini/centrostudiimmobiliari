@@ -431,7 +431,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h4 className="font-montserrat font-bold text-sm text-black mb-2">CERTIFICATI FIABCI</h4>
+              <h4 className="font-montserrat font-bold text-sm text-black mb-2">CERTIFICAZIONE PROFESSIONALE</h4>
               <p className="text-xs text-gray-600">Federazione Internazionale Professionisti Immobiliari</p>
             </div>
 
@@ -440,8 +440,8 @@ export default function Home() {
               <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h4 className="font-montserrat font-bold text-sm text-black mb-2">MEMBRI RICS</h4>
-              <p className="text-xs text-gray-600">Royal Institution of Chartered Surveyors</p>
+              <h4 className="font-montserrat font-bold text-sm text-black mb-2">QUALIFICA INTERNAZIONALE</h4>
+              <p className="text-xs text-gray-600">Istituto Internazionale Peritale Immobiliare</p>
             </div>
 
             {/* Banking Partnerships */}
@@ -485,8 +485,8 @@ export default function Home() {
                 <Award className="w-10 h-10 text-white" />
               </div>
               <h4 className="text-xl font-montserrat font-bold text-black mb-4">Miglior Consulenza NPL</h4>
-              <p className="text-gray-600 mb-4">Premio assegnato dalla Camera di Commercio di Milano per l'eccellenza nei servizi NPL immobiliari</p>
-              <div className="text-sm text-gray-500 font-medium">Milano • 2024</div>
+              <p className="text-gray-600 mb-4">Premio per l'eccellenza nei servizi NPL immobiliari e consulenza specializzata</p>
+              <div className="text-sm text-gray-500 font-medium">Settore Immobiliare • 2024</div>
             </div>
 
             {/* Award 2 */}
@@ -496,7 +496,7 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-montserrat font-bold text-black mb-4">Innovation Award</h4>
               <p className="text-gray-600 mb-4">Riconoscimento per l'approccio innovativo alla Value Strategy nel real estate italiano</p>
-              <div className="text-sm text-gray-500 font-medium">FIABCI Italia • 2024</div>
+              <div className="text-sm text-gray-500 font-medium">Associazione Professionale • 2024</div>
             </div>
 
             {/* Award 3 */}
@@ -506,7 +506,7 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-montserrat font-bold text-black mb-4">Customer Excellence</h4>
               <p className="text-gray-600 mb-4">95% di soddisfazione clienti certificata da ente indipendente per la qualità del servizio</p>
-              <div className="text-sm text-gray-500 font-medium">TrustPilot • 2024</div>
+              <div className="text-sm text-gray-500 font-medium">Ente Certificatore • 2024</div>
             </div>
           </div>
         </div>
