@@ -67,9 +67,17 @@ export default function HeroModern() {
           }`}
         >
           {/* Background Image */}
-          <div 
-            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url("${encodeURI(slide.backgroundImage)}")` }}
+          <img 
+            src={encodeURI(slide.backgroundImage)}
+            alt={slide.title}
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            style={{ 
+              imageRendering: 'high-quality',
+              filter: 'contrast(1.05) saturate(1.1)',
+              transform: 'translateZ(0)'
+            }}
+            decoding="async"
+            loading={index === currentSlide ? "eager" : "lazy"}
           />
           
           {/* Overlay */}
