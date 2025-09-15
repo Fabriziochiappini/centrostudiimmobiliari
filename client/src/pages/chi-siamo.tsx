@@ -23,15 +23,19 @@ export default function ChiSiamo() {
       />
 
       {/* Value Strategy Introduction */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-6">
-            La Nostra Value Strategy
+      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+            ✦ METODO PROPRIETARIO ✦
+          </div>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+            La Nostra <span style={{ color: '#2ca781' }}>Value Strategy</span>
           </h2>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Un approccio intelligente che ti permette di massimizzare i tuoi investimenti immobiliari.
+          <p className="text-2xl md:text-3xl text-gray-700 mb-12 leading-relaxed font-light max-w-5xl mx-auto">
+            Un approccio <strong className="font-bold text-black">intelligente e proprietario</strong> che ti permette di massimizzare i tuoi investimenti immobiliari.
           </p>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
             Questa strategia si basa su quattro passaggi fondamentali che ti aiuteranno a ottenere 
             il massimo valore dai tuoi acquisti e vendite immobiliari.
           </p>
@@ -39,28 +43,31 @@ export default function ChiSiamo() {
       </section>
 
       {/* 4 Steps Strategy */}
-      <section className="py-20 bg-white">
+      <section className="py-32 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top separator line */}
-          <div className="relative mb-16">
+          <div className="relative mb-20">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-200"></div>
+              <div className="w-full border-t-2 border-gray-200"></div>
             </div>
             <div className="relative flex justify-center">
-              <div className="bg-white px-6">
-                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              <div className="bg-white px-8">
+                <div className="w-16 h-1 bg-gradient-to-r from-[#2ca781] to-gray-400 rounded-full"></div>
               </div>
             </div>
           </div>
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-4">
-              I Quattro Passaggi Fondamentali
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-6 leading-tight">
+              I Quattro Passaggi <span style={{ color: '#2ca781' }}>Fondamentali</span>
             </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light">
+              Il sistema comprovato per trasformare ogni investimento immobiliare in un successo garantito
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
               <div className="relative mb-6">
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <TrendingDown className="w-8 h-8 text-white" />
@@ -69,17 +76,17 @@ export default function ChiSiamo() {
                   1
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
+              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
                 Acquisto Strategico
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 Acquistare un immobile ad un prezzo inferiore rispetto al suo valore di mercato attraverso 
                 saldo e stralcio, aste o ricerca di proprietà in aree in sviluppo.
               </p>
             </Card>
 
             {/* Step 2 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
               <div className="relative mb-6">
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <HomeIcon className="w-8 h-8 text-white" />
@@ -88,17 +95,17 @@ export default function ChiSiamo() {
                   2
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
+              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
                 Massimizzazione Reddito
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 Massimizzare la messa a reddito attraverso il servizio di affitti brevi, ottenendo 
                 un reddito stabile e superiore rispetto agli affitti tradizionali.
               </p>
             </Card>
 
             {/* Step 3 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
               <div className="relative mb-6">
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <TrendingUp className="w-8 h-8 text-white" />
@@ -107,17 +114,17 @@ export default function ChiSiamo() {
                   3
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
+              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
                 Rivendita Valorizzata
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 Rivendere l'immobile ad un prezzo più alto utilizzando strategie di timing 
                 e valutazione del mercato per realizzare un profitto significativo.
               </p>
             </Card>
 
             {/* Step 4 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-8 text-center group hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
               <div className="relative mb-6">
                 <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Repeat className="w-8 h-8 text-white" />
@@ -126,23 +133,23 @@ export default function ChiSiamo() {
                   4
                 </div>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-black mb-4">
+              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
                 Reinvestimento
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 Utilizzare il profitto ottenuto per acquistare un immobile con un budget più alto, 
                 accedendo a proprietà di maggior valore e potenziale.
               </p>
             </Card>
           </div>
           {/* Bottom separator line */}
-          <div className="relative mt-16">
+          <div className="relative mt-20">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-200"></div>
+              <div className="w-full border-t-2 border-gray-200"></div>
             </div>
             <div className="relative flex justify-center">
-              <div className="bg-white px-6">
-                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              <div className="bg-white px-8">
+                <div className="w-16 h-1 bg-gradient-to-r from-[#2ca781] to-gray-400 rounded-full"></div>
               </div>
             </div>
           </div>
@@ -150,14 +157,18 @@ export default function ChiSiamo() {
       </section>
 
       {/* Detailed Explanation */}
-      <section className="py-20 bg-white">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-4">
-              Come Funziona nel Dettaglio
+      <section className="py-32 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-gradient-to-tr from-[#2ca781] to-transparent"></div>
+        <div className="relative w-full px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              💡 METODOLOGIA AVANZATA
+            </div>
+            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-8 leading-tight">
+              Come Funziona nel <span style={{ color: '#2ca781' }}>Dettaglio</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Scopri passo dopo passo come la nostra Value Strategy trasforma i tuoi investimenti immobiliari
+            <p className="text-xl md:text-2xl text-gray-600 max-w-5xl mx-auto font-light leading-relaxed">
+              Scopri passo dopo passo come la nostra <strong className="font-bold text-black">Value Strategy proprietaria</strong> trasforma i tuoi investimenti immobiliari in operazioni di successo garantito
             </p>
           </div>
           
@@ -240,24 +251,28 @@ export default function ChiSiamo() {
       </section>
 
       {/* Conclusion CTA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-32 bg-gradient-to-br from-[#2ca781] to-[#1a513b] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent to-white"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Top separator line */}
-          <div className="relative mb-12">
+          <div className="relative mb-16">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-200"></div>
+              <div className="w-full border-t-2 border-white/20"></div>
             </div>
             <div className="relative flex justify-center">
-              <div className="bg-white px-6">
-                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              <div className="bg-[#2ca781] px-8">
+                <div className="w-16 h-1 bg-gradient-to-r from-white to-yellow-300 rounded-full"></div>
               </div>
             </div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-6">
-            Una Strategia Vincente
+          <div className="inline-block px-6 py-3 bg-white/20 rounded-full text-white font-bold text-sm uppercase tracking-widest mb-8">
+            🏆 STRATEGIA PROPRIETARIA VINCENTE
+          </div>
+          <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-white mb-8 leading-tight">
+            Una Strategia <span className="text-yellow-300">Vincente</span>
           </h2>
-          <p className="text-lg text-black mb-8 leading-relaxed">
-            In conclusione, la nostra Value Strategy ti offre un approccio completo per massimizzare 
+          <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed font-light max-w-5xl mx-auto">
+            In conclusione, la nostra <strong className="font-bold text-yellow-300">Value Strategy proprietaria</strong> ti offre un approccio completo per massimizzare 
             i tuoi investimenti immobiliari. Acquistando proprietà ad un prezzo inferiore, sfruttando 
             gli affitti brevi per generare reddito, rivendendo ad un prezzo più alto e reinvestendo 
             i profitti, puoi creare una strategia vincente che ti permette di ottenere il massimo 

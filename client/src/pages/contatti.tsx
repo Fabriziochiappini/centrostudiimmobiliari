@@ -22,14 +22,18 @@ export default function Contatti() {
       />
 
       {/* Contact Info Cards */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
-              Informazioni di Contatto
+      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              📞 CONTATTACI SUBITO
+            </div>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+              Informazioni di <span style={{ color: '#2ca781' }}>Contatto</span>
             </h2>
-            <p className="text-xl text-black max-w-2xl mx-auto">
-              Siamo presenti su tutto il territorio nazionale per offrirti il miglior servizio
+            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-light">
+              Siamo presenti su <strong className="font-bold text-black">tutto il territorio nazionale</strong> per offrirti il miglior servizio
             </p>
           </div>
 
@@ -42,7 +46,7 @@ export default function Contatti() {
                     <Phone className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-black">Telefono</h3>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">Telefono</h3>
                     <p className="text-black">Chiamaci per una consulenza immediata</p>
                   </div>
                 </div>
@@ -62,7 +66,7 @@ export default function Contatti() {
                     <Mail className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-black">Email</h3>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">Email</h3>
                     <p className="text-black">Scrivici per informazioni dettagliate</p>
                   </div>
                 </div>
@@ -85,7 +89,7 @@ export default function Contatti() {
                     <Building2 className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-black">Dati Aziendali</h3>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">Dati Aziendali</h3>
                     <p className="text-black">Informazioni societarie</p>
                   </div>
                 </div>
@@ -110,7 +114,7 @@ export default function Contatti() {
                     <MapPin className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-montserrat font-bold text-black">Le Nostre Sedi</h3>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">Le Nostre Sedi</h3>
                     <p className="text-black">Presenti in 8 città italiane</p>
                   </div>
                 </div>
@@ -129,14 +133,18 @@ export default function Contatti() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-32 bg-gradient-to-br from-[#2ca781] to-[#1a513b] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent to-white"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
-              Pronti ad Aiutarti
+            <div className="inline-block px-6 py-3 bg-white/20 rounded-full text-white font-bold text-sm uppercase tracking-widest mb-8">
+              🚀 CONSULENZA PROFESSIONALE
+            </div>
+            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-white mb-8 leading-tight">
+              Pronti ad <span className="text-yellow-300">Aiutarti</span>
             </h2>
-            <p className="text-xl text-black mb-12">
-              Contattaci per una consulenza personalizzata sui tuoi investimenti immobiliari
+            <p className="text-xl md:text-2xl text-white/90 mb-16 font-light max-w-5xl mx-auto">
+              Contattaci per una <strong className="font-bold text-yellow-300">consulenza personalizzata e professionale</strong> sui tuoi investimenti immobiliari
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-lg mx-auto">
@@ -159,8 +167,8 @@ export default function Contatti() {
               </a>
             </div>
             
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="text-black text-sm">
+            <div className="mt-16 pt-8 border-t border-white/20">
+              <p className="text-white/90 text-lg font-medium">
                 ⚡ Risposta garantita entro 24 ore
               </p>
             </div>

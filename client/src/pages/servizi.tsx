@@ -312,25 +312,29 @@ export default function Servizi() {
       />
 
       {/* Services Full Width */}
-      <section className="py-20 bg-white">
-        <div className="w-full">
-          <div className="text-center mb-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
+        <div className="relative w-full">
+          <div className="text-center mb-24 px-4 sm:px-6 lg:px-8">
             {/* Top separator line */}
-            <div className="relative mb-12">
+            <div className="relative mb-16">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-200"></div>
+                <div className="w-full border-t-2 border-gray-200"></div>
               </div>
               <div className="relative flex justify-center">
-                <div className="bg-white px-6">
-                  <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+                <div className="bg-white px-8">
+                  <div className="w-16 h-1 bg-gradient-to-r from-[#2ca781] to-gray-400 rounded-full"></div>
                 </div>
               </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
-              I Nostri Servizi Specializzati
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              ✦ SERVIZI SPECIALIZZATI ✦
+            </div>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+              I Nostri Servizi <span style={{ color: '#2ca781' }}>Specializzati</span>
             </h2>
-            <p className="text-xl text-black max-w-4xl mx-auto leading-relaxed">
-              Soluzioni complete e innovative per ogni fase del tuo investimento immobiliare, 
+            <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
+              Soluzioni <strong className="font-bold text-black">complete e innovative</strong> per ogni fase del tuo investimento immobiliare, 
               dal primo contatto alla massimizzazione dei rendimenti
             </p>
           </div>
@@ -354,7 +358,7 @@ export default function Servizi() {
                         <div className="w-12 h-12 bg-[#2ca781] rounded-full flex items-center justify-center">
                           <IconComponent className="w-6 h-6 text-white" />
                         </div>
-                        <h3 className="text-xl font-montserrat font-bold text-black">
+                        <h3 className="text-2xl font-montserrat font-bold text-black">
                           {service.title}
                         </h3>
                       </div>
@@ -425,7 +429,7 @@ export default function Servizi() {
                           <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mr-6">
                             <IconComponent className="w-8 h-8 text-white" />
                           </div>
-                          <h3 className="text-4xl font-montserrat font-bold text-black">
+                          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-black">
                             {service.title}
                           </h3>
                         </div>
@@ -461,24 +465,28 @@ export default function Servizi() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <section className="py-32 bg-gradient-to-br from-[#2ca781] to-[#1a513b] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent to-white"></div>
+        <div className="relative max-w-6xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           {/* Top separator line */}
-          <div className="relative mb-12">
+          <div className="relative mb-16">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-200"></div>
+              <div className="w-full border-t-2 border-white/20"></div>
             </div>
             <div className="relative flex justify-center">
-              <div className="bg-white px-6">
-                <div className="w-12 h-0.5 bg-gradient-to-r from-[#2ca781] to-gray-400"></div>
+              <div className="bg-[#2ca781] px-8">
+                <div className="w-16 h-1 bg-gradient-to-r from-white to-yellow-300 rounded-full"></div>
               </div>
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
-            Pronto a Iniziare il Tuo Investimento?
+          <div className="inline-block px-6 py-3 bg-white/20 rounded-full text-white font-bold text-sm uppercase tracking-widest mb-8">
+            🚀 INIZIA ORA IL TUO INVESTIMENTO
+          </div>
+          <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-white mb-8 leading-tight">
+            Pronto a Iniziare il Tuo <span className="text-yellow-300">Investimento?</span>
           </h2>
-          <p className="text-xl text-black mb-8 leading-relaxed">
-            I nostri esperti sono pronti ad aiutarti a trovare l'opportunità immobiliare perfetta per i tuoi obiettivi. 
+          <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed font-light max-w-5xl mx-auto">
+            I nostri <strong className="font-bold text-yellow-300">esperti specializzati</strong> sono pronti ad aiutarti a trovare l'opportunità immobiliare perfetta per i tuoi obiettivi. 
             Contattaci oggi per una consulenza personalizzata e gratuita.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

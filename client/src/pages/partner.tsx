@@ -123,14 +123,18 @@ export default function Partner() {
       />
 
       {/* Partner Cards Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
-              Scegli il Tuo Percorso
+      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              🤝 OPPORTUNITÀ PARTNERSHIP
+            </div>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+              Scegli il Tuo <span style={{ color: '#2ca781' }}>Percorso</span>
             </h2>
-            <p className="text-xl text-black">
-              Tre opportunità uniche per entrare nel mondo EXPONENT
+            <p className="text-xl md:text-2xl text-gray-700 font-light max-w-4xl mx-auto">
+              Tre opportunità <strong className="font-bold text-black">uniche ed esclusive</strong> per entrare nel mondo EXPONENT
             </p>
           </div>
           
@@ -155,17 +159,29 @@ export default function Partner() {
       </section>
 
       {/* Why Choose EXPONENT Section */}
-      <section className="py-20 bg-white">
+      <section className="py-32 bg-white relative">
         {/* Linea separatrice superiore */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-16"></div>
+        <div className="relative mb-20">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t-2 border-gray-200"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <div className="bg-white px-8">
+              <div className="w-16 h-1 bg-gradient-to-r from-[#2ca781] to-gray-400 rounded-full"></div>
+            </div>
+          </div>
+        </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-4">
-              Perché Scegliere EXPONENT
+          <div className="text-center mb-20">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              ✦ VALORI DISTINTIVI ✦
+            </div>
+            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-8 leading-tight">
+              Perché Scegliere <span style={{ color: '#2ca781' }}>EXPONENT</span>
             </h2>
-            <p className="text-xl text-black">
-              I valori che ci rendono unici nel settore immobiliare
+            <p className="text-xl md:text-2xl text-gray-700 font-light max-w-4xl mx-auto">
+              I <strong className="font-bold text-black">valori distintivi</strong> che ci rendono unici nel settore immobiliare
             </p>
           </div>
           
@@ -176,7 +192,7 @@ export default function Partner() {
                   <Clock className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
+                  <h3 className="text-3xl font-montserrat font-bold text-black mb-4">
                     Riprenditi il tuo tempo
                   </h3>
                   <p className="text-black leading-relaxed">
@@ -191,7 +207,7 @@ export default function Partner() {
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
+                  <h3 className="text-3xl font-montserrat font-bold text-black mb-4">
                     Hai bisogno di assistenza?
                   </h3>
                   <p className="text-black leading-relaxed">
@@ -207,7 +223,7 @@ export default function Partner() {
                   <Lightbulb className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
+                  <h3 className="text-3xl font-montserrat font-bold text-black mb-4">
                     Semplice
                   </h3>
                   <p className="text-black leading-relaxed">
@@ -221,7 +237,7 @@ export default function Partner() {
                   <Zap className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-montserrat font-bold text-black mb-3">
+                  <h3 className="text-3xl font-montserrat font-bold text-black mb-4">
                     Smart
                   </h3>
                   <p className="text-black leading-relaxed">
@@ -234,17 +250,30 @@ export default function Partner() {
         </div>
         
         {/* Linea separatrice inferiore */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mt-16"></div>
+        <div className="relative mt-20">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t-2 border-gray-200"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <div className="bg-white px-8">
+              <div className="w-16 h-1 bg-gradient-to-r from-[#2ca781] to-gray-400 rounded-full"></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-[#2ca781] mb-6">
-            Pronto a Entrare nel Mondo EXPONENT?
+      <section className="py-32 bg-gradient-to-br from-[#2ca781] to-[#1a513b] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent to-white"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-block px-6 py-3 bg-white/20 rounded-full text-white font-bold text-sm uppercase tracking-widest mb-8">
+            🚀 ENTRA NELLA RETE EXPONENT
+          </div>
+          <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-white mb-8 leading-tight">
+            Pronto a Entrare nel Mondo <span className="text-yellow-300">EXPONENT?</span>
           </h2>
-          <p className="text-xl text-black mb-12">
-            Contattaci oggi stesso per scoprire le opportunità di partnership che ti aspettano
+          <p className="text-xl md:text-2xl text-white/90 mb-16 font-light max-w-5xl mx-auto">
+            Contattaci oggi stesso per scoprire le <strong className="font-bold text-yellow-300">opportunità di partnership esclusive</strong> che ti aspettano
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
