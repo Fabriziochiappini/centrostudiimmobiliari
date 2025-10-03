@@ -334,8 +334,8 @@ export default function Servizi() {
               Servizi <span style={{ color: '#2ca781' }}>Premium Esclusivi</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
-              <strong className="font-bold text-black">6 servizi specializzati</strong> che hanno generato <span className="text-[#2ca781] font-bold">€50M+ di valore</span> per i nostri clienti. 
-              Expertise comprovata in <strong className="font-bold text-black">500+ investimenti</strong> di successo.
+              <strong className="font-bold text-black">6 servizi specializzati</strong> che hanno generato un <span className="text-[#2ca781] font-bold">ROI medio del 25%</span> per i nostri clienti. 
+              Expertise comprovata in <strong className="font-bold text-black">500+ investimenti</strong>.
             </p>
           </div>
           
