@@ -192,6 +192,12 @@ const AffittiBreviContent = () => (
     </div>
     
     <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
+      <p className="text-black font-medium">
+        <strong>🔒 Massima Sicurezza:</strong> Il cliente paga prima di entrare in casa, <strong>rischio insolvenza pari allo zero</strong>
+      </p>
+    </div>
+    
+    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
       <p className="leading-relaxed mb-4 text-black">
         Tuttavia, gestire un affitto a breve termine richiede tempo, dedizione e conoscenze specifiche del mercato.
       </p>
