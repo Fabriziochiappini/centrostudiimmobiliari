@@ -17,7 +17,7 @@ export default function HeroModern() {
       buttonLink: "/servizi"
     },
     {
-      backgroundImage: "/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg",
+      backgroundImage: "/attached_assets/concetto-degli-uomini-di-affari-della-stretta-di-mano_1759497740852.jpg",
       badge: "INVESTIMENTI PREMIUM",
       title: "Accedi Alle Migliori Opportunità Del Mercato",
       subtitle: "Network esclusivo di deals immobiliari selezionati con ROI superiori al 40%, con possibilità di partnership riservata.",
