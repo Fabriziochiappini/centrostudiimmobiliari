@@ -186,7 +186,7 @@ const AffittiBreviContent = () => (
       <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2ca781]">
         <h4 className="font-semibold text-[#071029] mb-2">🛠️ Gestione Completa</h4>
         <p className="text-gray-600 text-sm">
-          Ti occupiamo di tutto: dalla pulizia alla comunicazione con gli ospiti
+          Ci occupiamo di tutto: dalla pulizia alla comunicazione con gli ospiti
         </p>
       </div>
     </div>
