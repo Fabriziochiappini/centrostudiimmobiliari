@@ -133,8 +133,7 @@ const AstaContent = () => (
 const ValorizzazioneContent = () => (
   <div className="space-y-6">
     <p className="text-lg leading-relaxed">
-      Il nostro servizio di valorizzazione immobiliare ti offre un <strong>supporto completo in ogni fase</strong> 
-      del processo di vendita della tua casa.
+      Il nostro servizio di valorizzazione immobiliare ti offre un <strong>supporto completo in ogni fase del</strong> processo di vendita della tua casa.
     </p>
     <p className="leading-relaxed">
       Comprendiamo che la maggior parte dei potenziali acquirenti cerca casa online, ed è proprio per questo motivo 
