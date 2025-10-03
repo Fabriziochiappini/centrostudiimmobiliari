@@ -20,7 +20,7 @@ export default function HeroModern() {
       backgroundImage: "/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg",
       badge: "INVESTIMENTI PREMIUM",
       title: "Accedi Alle Migliori Opportunità Del Mercato",
-      subtitle: "Network esclusivo di deals immobiliari selezionati con ROI superiori al 40%. Partnership riservata per investitori qualificati con patrimoni da €250K+.",
+      subtitle: "Network esclusivo di deals immobiliari selezionati con ROI superiori al 40%, con possibilità di partnership riservata.",
       buttonText: "RICHIEDI ACCESSO",
       buttonLink: "/contatti"
     },
