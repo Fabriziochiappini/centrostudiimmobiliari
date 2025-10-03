@@ -120,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* Value Strategy Title Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section id="value-strategy" className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
