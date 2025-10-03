@@ -116,11 +116,11 @@ export default function HeroModern() {
                   <Link href={slide.buttonLink}>
                     <Button
                       size="lg"
-                      className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-4 px-8 text-lg rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                      className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-3 px-4 sm:py-4 sm:px-8 text-sm sm:text-lg rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                       data-testid={`button-hero-${index}`}
                     >
-                      {slide.buttonText}
-                      <ArrowRight className="ml-2 w-5 h-5" />
+                      <span className="truncate">{slide.buttonText}</span>
+                      <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                     </Button>
                   </Link>
                 </div>

@@ -108,11 +108,11 @@ export default function Home() {
             <Link href="/chi-siamo">
               <Button 
                 size="lg"
-                className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-6 px-12 text-xl rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-4 px-6 sm:py-6 sm:px-12 text-base sm:text-xl rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto max-w-full"
                 data-testid="button-scopri-di-piu"
               >
-                Scopri la Nostra Autorità nel Settore
-                <ArrowRight className="ml-3 w-6 h-6" />
+                <span className="truncate">Scopri la Nostra Autorità nel Settore</span>
+                <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
               </Button>
             </Link>
           </div>
