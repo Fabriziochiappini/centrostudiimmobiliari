@@ -178,9 +178,9 @@ const AffittiBreviContent = () => (
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2ca781]">
-        <h4 className="font-semibold text-[#071029] mb-2">📈 Alti Rendimenti</h4>
+        <h4 className="font-semibold text-[#071029] mb-2">💰 Massimizzazione della Vendita</h4>
         <p className="text-gray-600 text-sm">
-          Guadagni potenzialmente superiori rispetto agli affitti tradizionali
+          Valorizziamo il potenziale di guadagno generando un profitto tramite affitti a breve termine durante il periodo di vendita
         </p>
       </div>
       <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2ca781]">
