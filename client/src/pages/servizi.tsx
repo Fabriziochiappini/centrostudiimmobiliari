@@ -9,23 +9,14 @@ import SEOHead from "@/components/SEOHead";
 const RicercaContent = () => (
   <div className="space-y-6">
     <p className="text-lg leading-relaxed">
-      Il Property Finder può aiutarti a trovare l'immobile che soddisfi le tue esigenze specifiche.
+      Il Property Finder è il miglior alleato per trovare l'immobile che soddisfi le tue esigenze specifiche.
     </p>
     <p className="leading-relaxed">
-      Grazie alla sua conoscenza del mercato immobiliare e alla sua esperienza nella ricerca di proprietà, 
-      il Property Finder può identificare le opzioni che meglio si adattano alle tue esigenze di acquisto, 
-      risparmiandoti tempo e sforzi nella ricerca.
+      Grazie alla sua conoscenza del mercato immobiliare e nella ricerca, il Property Finder può identificare le opzioni che meglio si adattano alle tue esigenze di acquisto, risparmiandoti tempo e sforzi.
     </p>
     <p className="leading-relaxed">
-      Inoltre, il Property Finder può assisterti nella trattativa con l'agenzia immobiliare o il venditore privato, 
-      cercando di ottenere il miglior prezzo possibile per l'immobile e garantendoti una transazione sicura e trasparente.
+      Inoltre, il Property Finder può assisterti nella trattativa con l'agenzia immobiliare o il venditore privato, cercando di ottenere il miglior prezzo possibile e garantendoti una transazione sicura e trasparente.
     </p>
-    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
-      <p className="text-black font-medium">
-        In sintesi, il Property Finder è un professionista esperto che può supportarti nella ricerca e nell'acquisto 
-        della casa dei tuoi sogni, garantendoti un servizio personalizzato e di alta qualità.
-      </p>
-    </div>
   </div>
 );
 
