@@ -137,8 +137,7 @@ const ValorizzazioneContent = () => (
     </p>
     <p className="leading-relaxed">
       Comprendiamo che la maggior parte dei potenziali acquirenti cerca casa online, ed è proprio per questo motivo 
-      che mettiamo a disposizione i nostri servizi per aiutarti a <strong>vendere la tua proprietà in modo più rapido</strong> 
-      e ad un prezzo più vantaggioso.
+      che mettiamo a disposizione i nostri servizi per aiutarti a <strong>vendere la tua proprietà in modo più rapido</strong> e ad un prezzo più vantaggioso.
     </p>
     
     <div className="grid grid-cols-1 gap-4">
