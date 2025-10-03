@@ -470,7 +470,7 @@ export default function Servizi() {
           </h2>
           <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed font-light max-w-5xl mx-auto">
             <strong className="font-bold text-white">Solo 50 consulenze exclusive all'anno.</strong> Accedi al network di investitori premium 
-            che ha realizzato un <span className="text-yellow-300 font-bold">ROI medio del 67%</span> negli ultimi 24 mesi.
+            che ha realizzato un <span className="text-yellow-300 font-bold">ROI medio del 25%</span> negli ultimi 24 mesi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/contatti">
