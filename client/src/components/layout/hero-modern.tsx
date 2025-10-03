@@ -43,8 +43,8 @@ export default function HeroModern() {
     {
       backgroundImage: "/attached_assets/vista-frontale-della-pianta-che-cresce-dalle-monete-d-oro_1757939645929.jpg",
       badge: "RISULTATI GARANTITI",
-      title: "Portfolio da €50M+ Gestiti Con Successo",
-      subtitle: "La nostra esperienza si traduce in risultati concreti: ROI medio del 67% e oltre 500 investitori soddisfatti.",
+      title: "Portfolio da oltre 2 miliardi €",
+      subtitle: "La nostra esperienza si traduce in risultati concreti: ROI medio 25% e oltre 500 investitori soddisfatti.",
       buttonText: "VEDI I RISULTATI",
       buttonLink: "/chi-siamo"
     },
