@@ -32,9 +32,8 @@ export default function Header() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/chi-siamo", label: "Chi Siamo" },
     { href: "/servizi", label: "Servizi" },
-    { href: "/#value-strategy", label: "Value Strategy" },
+    { href: "/chi-siamo", label: "Chi Siamo" },
     { href: "/contatti", label: "Contatti" },
   ];
 
