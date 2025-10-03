@@ -85,7 +85,7 @@ const AstaContent = () => (
     </p>
     
     <div className="bg-white p-6 rounded-xl shadow-lg">
-      <h4 className="text-xl font-semibold text-[#071029] mb-4 text-center">📋 Processo Aste</h4>
+      <h4 className="text-xl font-semibold text-[#071029] mb-4 text-center">Aste</h4>
       <div className="grid grid-cols-1 gap-3">
         <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
           <div className="w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-xs font-bold text-white">1</div>
@@ -119,11 +119,11 @@ const AstaContent = () => (
     
     <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
       <p className="leading-relaxed mb-4 text-black">
-        Tuttavia, comprendiamo che molti possano sentirsi intimiditi. Per questo <strong className="text-black">consigliamo sempre di affidarsi a un professionista specializzato</strong>.
+        Tuttavia, comprendiamo che molti possano sentirsi intimiditi da questa modalità di acquisto. Per questo <strong className="text-black">consigliamo sempre di affidarsi a un professionista specializzato</strong>.
       </p>
       <p className="text-black font-medium">
         Il nostro team di professionisti è qui per guidarti attraverso l'intero processo e assicurarti 
-        un'esperienza di acquisto senza intoppi.
+        un'esperienza di acquisto senza sorprese.
       </p>
     </div>
   </div>
