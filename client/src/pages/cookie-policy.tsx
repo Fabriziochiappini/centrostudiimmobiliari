@@ -125,7 +125,7 @@ export default function CookiePolicy() {
               <p className="text-gray-600">
                 <strong>Exponent S.r.l.s</strong><br />
                 P.IVA: 04062291206<br />
-                Email: info@exponent group.it<br />
+                Email: info@centrostudiimmobiliari.it<br />
                 Telefono: +39 051 196 000 10
               </p>
             </div>

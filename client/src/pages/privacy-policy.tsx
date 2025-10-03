@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">1. Titolare del trattamento</h2>
               <p className="text-gray-600 leading-relaxed">
                 Il titolare del trattamento dei dati è <strong>Exponent S.r.l.s</strong>, con sede legale in Italia, 
-                P.IVA 04062291206, contattabile all'indirizzo email info@exponent group.it e al numero di telefono +39 051 196 000 10.
+                P.IVA 04062291206, contattabile all'indirizzo email info@centrostudiimmobiliari.it e al numero di telefono +39 051 196 000 10.
               </p>
             </div>
 
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
               <h3 className="text-xl font-montserrat font-bold text-[#071029] mb-2">Contatti per la Privacy</h3>
               <p className="text-gray-600">
                 Per esercitare i tuoi diritti o per qualsiasi domanda relativa al trattamento dei dati, 
-                contattaci all'indirizzo <strong>info@exponent group.it</strong> o al numero <strong>+39 051 196 000 10</strong>.
+                contattaci all'indirizzo <strong>info@centrostudiimmobiliari.it</strong> o al numero <strong>+39 051 196 000 10</strong>.
               </p>
             </div>
           </div>

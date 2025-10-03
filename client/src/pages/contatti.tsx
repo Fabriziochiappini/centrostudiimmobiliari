@@ -71,10 +71,10 @@ export default function Contatti() {
                   </div>
                 </div>
                 <a 
-                  href="mailto:info@exponent group.it" 
+                  href="mailto:info@centrostudiimmobiliari.it" 
                   className="text-xl font-semibold text-black hover:text-[#2ca781] transition-colors duration-300 break-all"
                 >
-                  info@exponent group.it
+                  info@centrostudiimmobiliari.it
                 </a>
               </CardContent>
             </Card>
@@ -158,7 +158,7 @@ export default function Contatti() {
               </a>
               
               <a 
-                href="mailto:info@exponent group.it" 
+                href="mailto:info@centrostudiimmobiliari.it" 
                 className="flex-1 bg-transparent border-2 border-[#2ca781] text-[#2ca781] py-4 px-8 rounded-xl font-semibold hover:bg-[#2ca781] hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
                 data-testid="button-email"
               >

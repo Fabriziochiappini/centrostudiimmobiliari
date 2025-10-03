@@ -59,7 +59,7 @@ export default function Sedi() {
               <h3 className="text-2xl font-montserrat font-bold mb-4">Contatti Centrali</h3>
               <div className="space-y-2">
                 <p><strong>Telefono:</strong> +39 051 196 000 10</p>
-                <p><strong>Email:</strong> info@exponent group.it</p>
+                <p><strong>Email:</strong> info@centrostudiimmobiliari.it</p>
                 <p><strong>P.IVA:</strong> 04062291206</p>
               </div>
             </div>

@@ -108,7 +108,7 @@ export default function Footer() {
             <ul className="space-y-2 text-background/80">
               <li>Exponent S.r.l.s</li>
               <li>+39 051 196 000 10</li>
-              <li>info@exponent group.it</li>
+              <li>info@centrostudiimmobiliari.it</li>
               <li>P.IVA 04062291206</li>
             </ul>
           </div>

@@ -18,7 +18,7 @@ export default function TerminiServizio() {
               <p className="text-gray-600 leading-relaxed">
                 <strong>Exponent S.r.l.s</strong> è una società di consulenza immobiliare con P.IVA 04062291206, 
                 con sedi operative in Bologna, Firenze, Padova, Milano, Piacenza, Cagliari, Venezia e Modena. 
-                Contatti: info@exponent group.it - +39 051 196 000 10.
+                Contatti: info@centrostudiimmobiliari.it - +39 051 196 000 10.
               </p>
             </div>
 
@@ -127,7 +127,7 @@ export default function TerminiServizio() {
               <h3 className="text-xl font-montserrat font-bold text-[#071029] mb-2">Contatti</h3>
               <p className="text-gray-600">
                 Per qualsiasi domanda sui presenti termini di servizio, contatta:<br />
-                <strong>Email:</strong> info@exponent group.it<br />
+                <strong>Email:</strong> info@centrostudiimmobiliari.it<br />
                 <strong>Telefono:</strong> +39 051 196 000 10<br />
                 <strong>P.IVA:</strong> 04062291206
               </p>
