@@ -23,24 +23,12 @@ const RicercaContent = () => (
 // Componente per il contenuto del servizio NPL
 const NPLContent = () => (
   <div className="space-y-6">
-    <p className="text-lg leading-relaxed font-semibold">
-      Hai mai desiderato accedere a un'affare immobiliare unico nel suo genere?
+    <p className="text-lg leading-relaxed">
+      Gli NPL rappresentano un'opportunità straordinaria per acquisire immobili a prezzi vantaggiosi. Questi crediti bancari offrono l'opportunità di accedere a proprietà di valore prima che finiscano all'asta.
     </p>
     <p className="leading-relaxed">
-      Sei pronto a cogliere un'opportunità che potrebbe trasformare il tuo portafoglio di investimenti? 
-      Allora gli NPL, o crediti non performanti, potrebbero essere la chiave per sbloccare il tuo potenziale finanziario.
+      Grazie al nostro supporto, puoi accedere ai migliori investimenti in totale sicurezza.
     </p>
-    <p className="leading-relaxed">
-      Gli NPL rappresentano una via straordinaria per acquisire immobili a prezzi straordinariamente vantaggiosi. 
-      Questi crediti bancari non performanti offrono l'opportunità di accedere a proprietà di valore 
-      prima che finiscano sul mercato tradizionale.
-    </p>
-    <div className="p-6 rounded-lg" style={{ backgroundColor: '#bbdbca' }}>
-      <p className="font-medium text-black">
-        Grazie al supporto delle normative vigenti e all'autorizzazione della Banca d'Italia, 
-        puoi avere la sicurezza di un investimento solido e regolamentato.
-      </p>
-    </div>
   </div>
 );
 
