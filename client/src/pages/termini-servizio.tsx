@@ -17,7 +17,7 @@ export default function TerminiServizio() {
               <h2 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">1. Informazioni sulla società</h2>
               <p className="text-gray-600 leading-relaxed">
                 <strong>Exponent S.r.l.s</strong> è una società di consulenza immobiliare con P.IVA 04062291206, 
-                con sedi operative in Bologna, Firenze, Padova, Milano, Piacenza, Cagliari, Venezia e Modena. 
+                con sede operativa a Bologna e consulenza digitale in tutta Italia. 
                 Contatti: info@centrostudiimmobiliari.it - +39 051 196 000 10.
               </p>
             </div>

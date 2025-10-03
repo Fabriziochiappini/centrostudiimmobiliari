@@ -87,19 +87,10 @@ export default function Footer() {
             </ul>
           </div>
           
-          {/* Le Nostre Sedi */}
+          {/* Sede */}
           <div>
-            <h3 className="text-lg font-montserrat font-semibold mb-4">Le Nostre Sedi</h3>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-              <div className="text-background/80">Bologna</div>
-              <div className="text-background/80">Firenze</div>
-              <div className="text-background/80">Padova</div>
-              <div className="text-background/80">Milano</div>
-              <div className="text-background/80">Piacenza</div>
-              <div className="text-background/80">Cagliari</div>
-              <div className="text-background/80">Venezia</div>
-              <div className="text-background/80">Modena</div>
-            </div>
+            <h3 className="text-lg font-montserrat font-semibold mb-4">Sede</h3>
+            <div className="text-background/80">Bologna</div>
           </div>
           
           {/* Contact */}

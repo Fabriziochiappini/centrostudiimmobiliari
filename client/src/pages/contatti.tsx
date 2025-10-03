@@ -9,9 +9,9 @@ export default function Contatti() {
   return (
     <div className="animate-fade-in">
       <SEOHead 
-        title="Contatti | Centro Studi Immobiliari - Bologna, Milano, Firenze e altre città"
-        description="Contatta il Centro Studi Immobiliari per consulenza immobiliare professionale. Presenti a Bologna, Milano, Firenze, Padova, Piacenza, Cagliari, Venezia e Modena. Tel: +39 051 196 000 10"
-        keywords="contatti centro studi immobiliari, consulenza immobiliare Bologna, consulenza immobiliare Milano, consulenza immobiliare Firenze, telefono consulenza immobiliare"
+        title="Contatti | Centro Studi Immobiliari - Consulenza Digitale da Bologna"
+        description="Contatta il Centro Studi Immobiliari per consulenza immobiliare professionale. Consulenza digitale in tutta Italia dalla nostra sede di Bologna. Tel: +39 051 196 000 10"
+        keywords="contatti centro studi immobiliari, consulenza immobiliare Bologna, consulenza immobiliare digitale, telefono consulenza immobiliare"
         ogImage="/attached_assets/Progetto senza titolo (94)_1756738184287.jpg"
       />
       {/* Hero Section */}
@@ -33,7 +33,7 @@ export default function Contatti() {
               Informazioni di <span style={{ color: '#2ca781' }}>Contatto</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-light">
-              Siamo presenti su <strong className="font-bold text-black">tutto il territorio nazionale</strong> per offrirti il miglior servizio
+              Consulenza <strong className="font-bold text-black">digitale in tutta Italia</strong> dalla nostra sede di Bologna
             </p>
           </div>
 
@@ -114,17 +114,13 @@ export default function Contatti() {
                     <MapPin className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-black">Le Nostre Sedi</h3>
-                    <p className="text-black">Presenti in 8 città italiane</p>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">La Nostra Sede</h3>
+                    <p className="text-black">Consulenza digitale in tutta Italia</p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                  {["Bologna", "Firenze", "Padova", "Milano", "Piacenza", "Cagliari", "Venezia", "Modena"].map((city) => (
-                    <div key={city} className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
-                      <div className="w-2 h-2 bg-[#2ca781] rounded-full"></div>
-                      <span className="text-black font-medium">{city}</span>
-                    </div>
-                  ))}
+                <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                  <div className="w-3 h-3 bg-[#2ca781] rounded-full"></div>
+                  <span className="text-black font-semibold text-lg">Bologna</span>
                 </div>
               </CardContent>
             </Card>
