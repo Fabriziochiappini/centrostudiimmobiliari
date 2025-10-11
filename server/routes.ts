@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactRequestSchema, insertPartnerApplicationSchema } from "@shared/schema";
 import { ObjectStorageService } from "./objectStorage";
+import { sendContactEmails } from "./email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   
@@ -26,7 +27,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/contact", async (req, res) => {
     try {
       const validatedData = insertContactRequestSchema.parse(req.body);
+      
+      // Save to database
       const contactRequest = await storage.createContactRequest(validatedData);
+      
+      // Send emails
+      try {
+        await sendContactEmails(validatedData);
+      } catch (emailError) {
+        console.error("Email sending error:", emailError);
+        // Still return success if data was saved, but log the email error
+      }
+      
       res.json({ success: true, data: contactRequest });
     } catch (error) {
       console.error("Contact form error:", error);
