@@ -33,7 +33,7 @@ export default function MobileMenu({ isOpen, onClose, navItems, currentLocation 
         }`}
       >
         <div className="flex items-center justify-between h-16 px-4 border-b border-border">
-          <div className="text-xl font-montserrat font-bold text-primary">EXPONENT</div>
+          <div className="text-lg font-montserrat font-bold text-primary">Centro Studi Immobiliari</div>
           <Button
             variant="ghost"
             size="sm"
