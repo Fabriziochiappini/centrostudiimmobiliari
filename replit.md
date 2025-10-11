@@ -24,6 +24,11 @@ Preferred communication style: Simple, everyday language.
 - **Zod schemas** for request validation and type inference
 - **Custom middleware** for request logging and error handling
 - RESTful API endpoints for contact forms and partner applications
+- **SendGrid email integration** for transactional emails:
+  - Contact form submissions trigger automated emails
+  - Admin notification sent to info@centrostudiimmobiliari.it
+  - Client confirmation email sent from info@webproitalia.com
+  - Error handling ensures email delivery failures are surfaced to users
 
 ## Database Schema Design
 - **Drizzle ORM** configured for PostgreSQL with type-safe database operations
@@ -68,6 +73,12 @@ Preferred communication style: Simple, everyday language.
 ## State Management and Data Fetching
 - **TanStack React Query** for server state management and caching
 - **Wouter** for lightweight client-side routing
+
+## Email Services
+- **@sendgrid/mail** for transactional email delivery
+  - API key stored securely in Replit Secrets (SENDGRID_API_KEY)
+  - Verified sender: info@webproitalia.com
+  - Email templates with HTML formatting for professional appearance
 
 ## Development Tools
 - **Vite** for fast development server and building

@@ -1,10 +1,76 @@
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
-import { MapPin, Phone, Mail, Building2 } from "lucide-react";
+import { MapPin, Phone, Mail, Building2, Send } from "lucide-react";
 import contattiHeroImage from "@assets/pexels-rccbtn-33704751_1756737856109.jpg";
 import SEOHead from "@/components/SEOHead";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { insertContactRequestSchema } from "@shared/schema";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import type { z } from "zod";
+
+type ContactFormData = z.infer<typeof insertContactRequestSchema>;
 
 export default function Contatti() {
+  const { toast } = useToast();
+  const queryClient = useQueryClient();
+
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(insertContactRequestSchema),
+    defaultValues: {
+      nome: "",
+      cognome: "",
+      email: "",
+      telefono: "",
+      servizio: "",
+      messaggio: "",
+    },
+  });
+
+  const contactMutation = useMutation({
+    mutationFn: async (data: ContactFormData) => {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      
+      const result = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(result.error || "Errore nell'invio del messaggio");
+      }
+      
+      return result;
+    },
+    onSuccess: () => {
+      toast({
+        title: "✅ Messaggio inviato!",
+        description: "Ti risponderemo al più presto all'indirizzo email fornito.",
+      });
+      form.reset();
+      queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
+    },
+    onError: (error: any) => {
+      const errorMessage = error?.message || "Si è verificato un errore. Riprova più tardi o contattaci direttamente.";
+      toast({
+        variant: "destructive",
+        title: "❌ Errore nell'invio",
+        description: errorMessage,
+      });
+    },
+  });
+
+  const onSubmit = (data: ContactFormData) => {
+    contactMutation.mutate(data);
+  };
 
   return (
     <div className="animate-fade-in">
@@ -125,6 +191,181 @@ export default function Contatti() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-32 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              ✉️ INVIA UN MESSAGGIO
+            </div>
+            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-6 leading-tight">
+              Richiedi una <span style={{ color: '#2ca781' }}>Consulenza</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Compila il form e ti contatteremo entro 24 ore
+            </p>
+          </div>
+
+          <Card className="shadow-2xl border-0">
+            <CardContent className="p-8 md:p-12">
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="nome"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-black font-semibold">Nome *</FormLabel>
+                          <FormControl>
+                            <Input 
+                              placeholder="Il tuo nome" 
+                              {...field} 
+                              data-testid="input-nome"
+                              className="border-gray-300 focus:border-[#2ca781]"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="cognome"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-black font-semibold">Cognome *</FormLabel>
+                          <FormControl>
+                            <Input 
+                              placeholder="Il tuo cognome" 
+                              {...field} 
+                              data-testid="input-cognome"
+                              className="border-gray-300 focus:border-[#2ca781]"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-black font-semibold">Email *</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="email" 
+                              placeholder="tua@email.it" 
+                              {...field} 
+                              data-testid="input-email"
+                              className="border-gray-300 focus:border-[#2ca781]"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="telefono"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-black font-semibold">Telefono</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="tel" 
+                              placeholder="+39 123 456 7890" 
+                              {...field} 
+                              value={field.value || ""}
+                              data-testid="input-telefono"
+                              className="border-gray-300 focus:border-[#2ca781]"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
+                  <FormField
+                    control={form.control}
+                    name="servizio"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-black font-semibold">Servizio di Interesse</FormLabel>
+                        <Select onValueChange={field.onChange} value={field.value || ""}>
+                          <FormControl>
+                            <SelectTrigger data-testid="select-servizio" className="border-gray-300 focus:border-[#2ca781]">
+                              <SelectValue placeholder="Seleziona un servizio" />
+                            </SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            <SelectItem value="ricerca">Property Finder / Ricerca</SelectItem>
+                            <SelectItem value="npl">NPL - Non Performing Loans</SelectItem>
+                            <SelectItem value="saldo-stralcio">Saldo e Stralcio</SelectItem>
+                            <SelectItem value="asta">Aste Immobiliari</SelectItem>
+                            <SelectItem value="valorizzazione">Valorizzazione / Home Staging</SelectItem>
+                            <SelectItem value="affitti-brevi">Affitti Brevi</SelectItem>
+                            <SelectItem value="altro">Altro</SelectItem>
+                          </SelectContent>
+                        </Select>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="messaggio"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-black font-semibold">Messaggio *</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            placeholder="Descrivi la tua richiesta..."
+                            className="min-h-[150px] border-gray-300 focus:border-[#2ca781]"
+                            {...field}
+                            data-testid="textarea-messaggio"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={contactMutation.isPending}
+                    className="w-full bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-6 text-lg"
+                    data-testid="button-submit-contact"
+                  >
+                    {contactMutation.isPending ? (
+                      "Invio in corso..."
+                    ) : (
+                      <>
+                        <Send className="mr-2 h-5 w-5" />
+                        Invia Richiesta
+                      </>
+                    )}
+                  </Button>
+
+                  <p className="text-center text-sm text-gray-500">
+                    * Campi obbligatori
+                  </p>
+                </form>
+              </Form>
+            </CardContent>
+          </Card>
         </div>
       </section>
 

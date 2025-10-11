@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { insertContactRequestSchema, insertPartnerApplicationSchema } from "@shared/schema";
 import { ObjectStorageService } from "./objectStorage";
 import { sendContactEmails } from "./email";
+import { ZodError } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   
@@ -31,18 +32,26 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Save to database
       const contactRequest = await storage.createContactRequest(validatedData);
       
-      // Send emails
-      try {
-        await sendContactEmails(validatedData);
-      } catch (emailError) {
-        console.error("Email sending error:", emailError);
-        // Still return success if data was saved, but log the email error
-      }
+      // Send emails - if this fails, we want to inform the user
+      await sendContactEmails(validatedData);
       
       res.json({ success: true, data: contactRequest });
     } catch (error) {
       console.error("Contact form error:", error);
-      res.status(400).json({ success: false, error: "Errore nella validazione dei dati" });
+      
+      if (error instanceof ZodError) {
+        res.status(400).json({ success: false, error: "Errore nella validazione dei dati" });
+      } else {
+        // For SendGrid or other system errors, surface the specific error message
+        const errorMessage = error instanceof Error 
+          ? error.message 
+          : "Errore nell'invio del messaggio. Ti preghiamo di riprovare o contattarci direttamente.";
+        
+        res.status(500).json({ 
+          success: false, 
+          error: errorMessage
+        });
+      }
     }
   });
 
