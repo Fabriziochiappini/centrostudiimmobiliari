@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import logoImage from "@assets/Progetto senza titolo (94)_1756738116443.jpg";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -33,7 +34,11 @@ export default function MobileMenu({ isOpen, onClose, navItems, currentLocation 
         }`}
       >
         <div className="flex items-center justify-between h-16 px-4 border-b border-border">
-          <div className="text-lg font-montserrat font-bold text-primary">Centro Studi Immobiliari</div>
+          <img 
+            src={logoImage}
+            alt="Centro Studi Immobiliari"
+            className="h-10 w-auto object-contain"
+          />
           <Button
             variant="ghost"
             size="sm"
