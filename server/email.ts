@@ -16,6 +16,11 @@ interface ContactData {
 
 export async function sendContactEmails(data: ContactData) {
   try {
+    console.log('📧 Preparing emails...');
+    console.log(`   Admin email TO: ${TO_EMAIL}`);
+    console.log(`   Client email TO: ${data.email}`);
+    console.log(`   FROM: ${FROM_EMAIL}`);
+    
     // Email to Centro Studi Immobiliari with client details
     const adminEmail = {
       to: TO_EMAIL,
@@ -77,15 +82,21 @@ export async function sendContactEmails(data: ContactData) {
     };
 
     // Send both emails
-    await Promise.all([
+    const [adminResponse, clientResponse] = await Promise.all([
       sgMail.send(adminEmail),
       sgMail.send(clientEmail)
     ]);
 
-    console.log('✅ Emails sent successfully');
+    console.log('✅ Admin email sent - Status:', adminResponse[0].statusCode);
+    console.log('✅ Client email sent - Status:', clientResponse[0].statusCode);
+    console.log('📬 Email sent to:', TO_EMAIL, 'and', data.email);
+    
     return { success: true };
-  } catch (error) {
+  } catch (error: any) {
     console.error('❌ Error sending emails:', error);
-    throw error;
+    if (error.response) {
+      console.error('SendGrid error details:', error.response.body);
+    }
+    throw new Error('Errore nell\'invio delle email. Verifica la configurazione SendGrid.');
   }
 }
