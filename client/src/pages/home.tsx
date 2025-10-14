@@ -594,8 +594,8 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-yellow-300 mb-2">€50M+</div>
-                <div className="text-sm md:text-base text-white/80 uppercase tracking-wide">Portfolio Gestito</div>
+                <div className="text-4xl md:text-5xl font-bold text-yellow-300 mb-2">€2B+</div>
+                <div className="text-sm md:text-base text-white/80 tracking-wide">Portfolio di oltre 2 miliardi con opportunità dai 20M ai 100M e oltre</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-yellow-300 mb-2">95%</div>
