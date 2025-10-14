@@ -441,18 +441,17 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {/* Testimonial 1 - Marco Rossi */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-marco-rossi">
+            {/* Testimonial 1 - Alessandro Muraglia */}
+            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-alessandro-muraglia">
               <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
                 <Quote className="w-8 h-8" />
               </div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  MR
+                  AM
                 </div>
                 <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">Marco Rossi</h4>
-                  <p className="text-sm text-gray-600 font-medium">CEO, Rossi Holding S.p.A.</p>
+                  <h4 className="text-lg font-montserrat font-bold text-black">Alessandro Muraglia</h4>
                   <div className="flex items-center mt-1">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
@@ -460,37 +459,22 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <blockquote className="text-gray-700 leading-relaxed mb-6 italic">
-                "Grazie alla Value Strategy di Centro Studi ho realizzato un <strong className="text-[#2ca781] font-bold">ROI del 42%</strong> in soli 14 mesi. Il loro approccio scientifico agli NPL mi ha permesso di acquisire 3 proprietà premium a Milano a prezzi imbattibili."
+              <blockquote className="text-gray-700 leading-relaxed italic">
+                "Ottimo servizio. Mi sono rivolto a loro per approcciarmi al mercato delle aste immobiliari. Han saputo guidarmi nel processo facendomi ottenere ottime informazioni e risultati. La comunicazione è stata ottima e il costo è completamente giustificato dal servizio."
               </blockquote>
-              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">42%</div>
-                  <div className="text-xs text-gray-500 uppercase">ROI</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">14</div>
-                  <div className="text-xs text-gray-500 uppercase">Mesi</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">3</div>
-                  <div className="text-xs text-gray-500 uppercase">Immobili</div>
-                </div>
-              </div>
             </Card>
 
-            {/* Testimonial 2 - Alessandra Bianchi */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-alessandra-bianchi">
+            {/* Testimonial 2 - Michela Lamberti */}
+            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-michela-lamberti">
               <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
                 <Quote className="w-8 h-8" />
               </div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  AB
+                  ML
                 </div>
                 <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">Alessandra Bianchi</h4>
-                  <p className="text-sm text-gray-600 font-medium">Imprenditrice, Bianchi Ventures</p>
+                  <h4 className="text-lg font-montserrat font-bold text-black">Michela Lamberti</h4>
                   <div className="flex items-center mt-1">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
@@ -498,37 +482,22 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <blockquote className="text-gray-700 leading-relaxed mb-6 italic">
-                "Il servizio di affitti brevi ha trasformato il mio investimento a Firenze. Da <strong className="text-[#2ca781] font-bold">€2.800/mese</strong> di rendita tradizionale a <strong className="text-[#2ca781] font-bold">€5.200/mese</strong> con gli affitti brevi. Professionalità assoluta."
+              <blockquote className="text-gray-700 leading-relaxed italic">
+                "Mi sono rivolta a loro per l'acquisto di un appartamento in centro Milano e mi hanno aiutata moltissimo, raggiungendo l'obiettivo. Consiglio vivamente."
               </blockquote>
-              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">86%</div>
-                  <div className="text-xs text-gray-500 uppercase">Aumento</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">€5.2K</div>
-                  <div className="text-xs text-gray-500 uppercase">Rendita</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">100%</div>
-                  <div className="text-xs text-gray-500 uppercase">Occupancy</div>
-                </div>
-              </div>
             </Card>
 
-            {/* Testimonial 3 - Giuseppe Ferrari */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-giuseppe-ferrari">
+            {/* Testimonial 3 - Francesco Risco */}
+            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-francesco-risco">
               <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
                 <Quote className="w-8 h-8" />
               </div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  GF
+                  FR
                 </div>
                 <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">Giuseppe Ferrari</h4>
-                  <p className="text-sm text-gray-600 font-medium">Private Banker, UBS</p>
+                  <h4 className="text-lg font-montserrat font-bold text-black">Francesco Risco</h4>
                   <div className="flex items-center mt-1">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
@@ -536,23 +505,80 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <blockquote className="text-gray-700 leading-relaxed mb-6 italic">
-                "Attraverso il loro network esclusivo di aste ho acquisito un palazzo storico a Bologna per <strong className="text-[#2ca781] font-bold">40% sotto mercato</strong>. Oggi vale €1.8M e genera €180K/anno. Expertise imbattibile."
+              <blockquote className="text-gray-700 leading-relaxed italic">
+                "Nonostante la mia inesperienza nelle aste immobiliari, grazie al loro supporto sono riuscito ad acquistare una seconda casa per investimento in poco meno di 3 mesi. Mi ritengo pienamente soddisfatto del servizio."
               </blockquote>
-              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">40%</div>
-                  <div className="text-xs text-gray-500 uppercase">Sconto</div>
+            </Card>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {/* Testimonial 4 - Vanna Tintorri */}
+            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-vanna-tintorri">
+              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                <Quote className="w-8 h-8" />
+              </div>
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                  VT
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">€1.8M</div>
-                  <div className="text-xs text-gray-500 uppercase">Valore</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#2ca781]">€180K</div>
-                  <div className="text-xs text-gray-500 uppercase">Rendita/Anno</div>
+                <div>
+                  <h4 className="text-lg font-montserrat font-bold text-black">Vanna Tintorri</h4>
+                  <div className="flex items-center mt-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
                 </div>
               </div>
+              <blockquote className="text-gray-700 leading-relaxed italic">
+                "Bravi, professionali e cortesi! Insomma super servizio di assistenza e consulenza."
+              </blockquote>
+            </Card>
+
+            {/* Testimonial 5 - XVG Alias Group SRL */}
+            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-xvg-alias">
+              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                <Quote className="w-8 h-8" />
+              </div>
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                  XG
+                </div>
+                <div>
+                  <h4 className="text-lg font-montserrat font-bold text-black">XVG Alias Group SRL</h4>
+                  <div className="flex items-center mt-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <blockquote className="text-gray-700 leading-relaxed italic">
+                "Grazie ai consulenti del Centro Studi Immobiliari! Il servizio è stato professionale ed esaustivo. Ho avuto modo di valutare con loro alcune soluzioni e sono stati estremamente precisi e professionali nel segnalarmi le caratteristiche delle opportunità che mi presentavano. Alla fine siamo riusciti a trovare una soluzione adeguata alle nostre esigenze risparmiando molti soldi. Consiglio questo servizio estremamente valido ed efficace."
+              </blockquote>
+            </Card>
+
+            {/* Testimonial 6 - Antonio Canterino */}
+            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-antonio-canterino">
+              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                <Quote className="w-8 h-8" />
+              </div>
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                  AC
+                </div>
+                <div>
+                  <h4 className="text-lg font-montserrat font-bold text-black">Antonio Canterino</h4>
+                  <div className="flex items-center mt-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <blockquote className="text-gray-700 leading-relaxed italic">
+                "Mi sono trovato benissimo. Ho da poco acquistato casa a Bologna grazie a questo straordinario studio di consulenza. Sono stato seguito da un team super che ha avuto tanta pazienza e professionalità nel suo mestiere. Ha saputo capire subito i miei desideri di casa e consigliarmi su ogni punto, risolvendo ogni perplessità nella mia importante scelta oltre che seguirmi in tutto e per tutto sino al giorno dell'acquisto. 5 stelle meritatissime per un'azienda seria che segue il cliente in modo molto professionale. Consigliatissimi!"
+              </blockquote>
             </Card>
           </div>
 
