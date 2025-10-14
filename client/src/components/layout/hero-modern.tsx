@@ -56,7 +56,19 @@ const SLIDES = [
 
 export default function HeroModern() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState<Set<number>>(new Set());
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Preload all images
+  useEffect(() => {
+    SLIDES.forEach((slide, index) => {
+      const img = new Image();
+      img.src = slide.backgroundImage;
+      img.onload = () => {
+        setImagesLoaded(prev => new Set(prev).add(index));
+      };
+    });
+  }, []);
 
   // Auto-advance slides
   useEffect(() => {
@@ -87,10 +99,11 @@ export default function HeroModern() {
         {SLIDES.map((s, index) => (
           <div
             key={index}
-            className="absolute inset-0 transition-opacity duration-500 ease-in-out"
+            className="absolute inset-0 transition-opacity duration-1000 ease-out"
             style={{
               opacity: index === currentSlide ? 1 : 0,
-              pointerEvents: index === currentSlide ? 'auto' : 'none'
+              pointerEvents: index === currentSlide ? 'auto' : 'none',
+              willChange: 'opacity'
             }}
           >
             <img 
@@ -99,6 +112,7 @@ export default function HeroModern() {
               className="w-full h-full object-cover"
               loading={index < 2 ? "eager" : "lazy"}
               decoding="async"
+              style={{ willChange: 'opacity' }}
             />
           </div>
         ))}
@@ -112,7 +126,10 @@ export default function HeroModern() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-lg">
             {/* Card Container - Solid background, no blur */}
-            <div className="bg-white/95 rounded-xl p-6 md:p-8 shadow-2xl">
+            <div 
+              key={currentSlide}
+              className="bg-white/95 rounded-xl p-6 md:p-8 shadow-2xl animate-fade-in"
+            >
               {/* Badge */}
               <div className="inline-block px-4 py-2 bg-[#2ca781] text-white text-sm font-bold uppercase tracking-wider rounded-full mb-6">
                 {slide.badge}
