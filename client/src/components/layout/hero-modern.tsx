@@ -24,7 +24,7 @@ const SLIDES = [
     backgroundImage: "/attached_assets/paesaggio-analogico-della-citta-con-edifici_1757939645927.jpg",
     badge: "EXPERTISE CERTIFICATA",
     title: "La Consulenza Più Autorevole Del Settore",
-    subtitle: "Team di professionisti certificati FIABCI e RICS. Metodologie proprietarie che hanno generato oltre €50M di valore per i nostri clienti premium.",
+    subtitle: "Team di professionisti certificati e metodologie proprietarie che hanno generato oltre €50M di valore per i nostri clienti premium.",
     buttonText: "SCOPRI IL TEAM",
     buttonLink: "/chi-siamo"
   },
