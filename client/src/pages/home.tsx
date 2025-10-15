@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import HeroModern from "@/components/layout/hero-modern";
+import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
 import { Search, FileText, Scale, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat, Star, Quote, Award, CheckCircle, Shield } from "lucide-react";
 // File da caricare nell'Object Storage nella directory public:
 // hero-video.mp4, strategy-video.mp4, services-bg.jpg
@@ -79,42 +80,56 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#2ca781]/10 text-[#2ca781] font-semibold text-sm uppercase tracking-wider mb-8">
-              🏆 Leader nel Settore Immobiliare
-            </div>
-            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-8 leading-tight">
-              Dalla Parte di 
-              <span style={{ color: '#2ca781' }}> Chi Acquista</span>
-            </h2>
-            <p className="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-light mb-12">
-              <strong className="font-semibold text-black">Centro Studi Immobiliari</strong> è l'unica realtà che mette 
-              gli interessi dell'acquirente al primo posto, garantendo trasparenza totale, 
-              competenza assoluta e risultati concreti in ogni operazione immobiliare.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              <div className="text-center">
-                <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>500+</div>
-                <p className="text-gray-600 font-medium">Clienti Soddisfatti</p>
+            <ScrollReveal delay={0.1}>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#2ca781]/10 text-[#2ca781] font-semibold text-sm uppercase tracking-wider mb-8">
+                🏆 Leader nel Settore Immobiliare
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>8</div>
-                <p className="text-gray-600 font-medium">Città Coperte</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>15</div>
-                <p className="text-gray-600 font-medium">Anni di Esperienza</p>
-              </div>
-            </div>
-            <Link href="/chi-siamo">
-              <Button 
-                size="lg"
-                className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-4 px-6 sm:py-6 sm:px-12 text-base sm:text-xl rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto max-w-full"
-                data-testid="button-scopri-di-piu"
-              >
-                <span className="truncate">Scopri la Nostra Autorità nel Settore</span>
-                <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-              </Button>
-            </Link>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-8 leading-tight">
+                Dalla Parte di 
+                <span style={{ color: '#2ca781' }}> Chi Acquista</span>
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.3}>
+              <p className="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-light mb-12">
+                <strong className="font-semibold text-black">Centro Studi Immobiliari</strong> è l'unica realtà che mette 
+                gli interessi dell'acquirente al primo posto, garantendo trasparenza totale, 
+                competenza assoluta e risultati concreti in ogni operazione immobiliare.
+              </p>
+            </ScrollReveal>
+            <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <StaggerItem>
+                <div className="text-center">
+                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>500+</div>
+                  <p className="text-gray-600 font-medium">Clienti Soddisfatti</p>
+                </div>
+              </StaggerItem>
+              <StaggerItem>
+                <div className="text-center">
+                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>8</div>
+                  <p className="text-gray-600 font-medium">Città Coperte</p>
+                </div>
+              </StaggerItem>
+              <StaggerItem>
+                <div className="text-center">
+                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>15</div>
+                  <p className="text-gray-600 font-medium">Anni di Esperienza</p>
+                </div>
+              </StaggerItem>
+            </StaggerContainer>
+            <ScrollReveal delay={0.5}>
+              <Link href="/chi-siamo">
+                <Button 
+                  size="lg"
+                  className="bg-[#2ca781] hover:bg-[#1a513b] text-white font-bold py-4 px-6 sm:py-6 sm:px-12 text-base sm:text-xl rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto max-w-full"
+                  data-testid="button-scopri-di-piu"
+                >
+                  <span className="truncate">Scopri la Nostra Autorità nel Settore</span>
+                  <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+                </Button>
+              </Link>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -123,16 +138,22 @@ export default function Home() {
       <section id="value-strategy" className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-              ✦ METODO PROPRIETARIO ✦
-            </div>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
-              La <span style={{ color: '#2ca781' }}>Value Strategy</span> Proprietaria
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
-              Il metodo <strong className="text-black font-bold">scientifico esclusivo</strong> che ha generato <span className="text-[#2ca781] font-bold">€50M+ di valore</span> 
-              con un <strong className="text-black font-bold">ROI medio del 67%</strong> per investitori selezionati.
-            </p>
+            <ScrollReveal delay={0.1}>
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                ✦ METODO PROPRIETARIO ✦
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+                La <span style={{ color: '#2ca781' }}>Value Strategy</span> Proprietaria
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.3}>
+              <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
+                Il metodo <strong className="text-black font-bold">scientifico esclusivo</strong> che ha generato <span className="text-[#2ca781] font-bold">€50M+ di valore</span> 
+                con un <strong className="text-black font-bold">ROI medio del 67%</strong> per investitori selezionati.
+              </p>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -154,79 +175,87 @@ export default function Home() {
           }}
         ></div>
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" staggerDelay={0.15}>
             {/* Step 1 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingDown className="w-8 h-8 text-white" />
+            <StaggerItem>
+              <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingDown className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    1
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  1
-                </div>
+                <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                  Acquisto Strategico
+                </h3>
+                <p className="text-black text-sm leading-relaxed">
+                  Acquistare un immobile ad un prezzo inferiore al valore di mercato
+                </p>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Acquisto Strategico
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Acquistare un immobile ad un prezzo inferiore al valore di mercato
-              </p>
-            </div>
+            </StaggerItem>
 
             {/* Step 2 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <HomeIcon className="w-8 h-8 text-white" />
+            <StaggerItem>
+              <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <HomeIcon className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    2
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  2
-                </div>
+                <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                  Massimizzazione Reddito
+                </h3>
+                <p className="text-black text-sm leading-relaxed">
+                  Massimizzare la messa a reddito con il servizio affitti brevi
+                </p>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Massimizzazione Reddito
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Massimizzare la messa a reddito con il servizio affitti brevi
-              </p>
-            </div>
+            </StaggerItem>
 
             {/* Step 3 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUpIcon className="w-8 h-8 text-white" />
+            <StaggerItem>
+              <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUpIcon className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    3
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  3
-                </div>
+                <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                  Rivendita Valorizzata
+                </h3>
+                <p className="text-black text-sm leading-relaxed">
+                  Rivendere l'immobile ad un prezzo più alto dopo la valorizzazione
+                </p>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Rivendita Valorizzata
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Rivendere l'immobile ad un prezzo più alto dopo la valorizzazione
-              </p>
-            </div>
+            </StaggerItem>
 
             {/* Step 4 */}
-            <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Repeat className="w-8 h-8 text-white" />
+            <StaggerItem>
+              <div className="text-center group bg-white border-4 border-[#2ca781] p-8 rounded-lg">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Repeat className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    4
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#2ca781] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  4
-                </div>
+                <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
+                  Reinvestimento
+                </h3>
+                <p className="text-black text-sm leading-relaxed">
+                  Acquistare un nuovo immobile con un budget più alto
+                </p>
               </div>
-              <h3 className="text-lg font-montserrat font-semibold text-[#2ca781] mb-3">
-                Reinvestimento
-              </h3>
-              <p className="text-black text-sm leading-relaxed">
-                Acquistare un nuovo immobile con un budget più alto
-              </p>
-            </div>
-          </div>
+            </StaggerItem>
+          </StaggerContainer>
           
           {/* Approfondisci Button */}
           <div className="text-center mt-12">
