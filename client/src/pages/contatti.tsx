@@ -273,9 +273,13 @@ export default function Contatti() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-20">
-              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-                📞 CONTATTACI SUBITO
-              </div>
+              <a 
+                href="tel:+390511960010"
+                className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8 hover:bg-[#2ca781] hover:text-white transition-all duration-300 transform hover:scale-105"
+                data-testid="button-contattaci-subito"
+              >
+                📞 051 196 000 10
+              </a>
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
                 Informazioni di <span style={{ color: '#2ca781' }}>Contatto</span>
               </h2>
