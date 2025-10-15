@@ -8,7 +8,7 @@ const SLIDES = [
     backgroundImage: "/attached_assets/architettura-moderna-dell-appartamento_1757939645923.jpg",
     badge: "CENTRO STUDI IMMOBILIARI",
     title: "Il Valore Migliore Per Gli Investimenti Immobiliari",
-    subtitle: "Consulenza strategica e soluzioni innovative per massimizzare i rendimenti del tuo portafoglio immobiliare con la sicurezza di 15 anni di esperienza nel settore.",
+    subtitle: "Consulenza strategica e soluzioni innovative per massimizzare i rendimenti del tuo portafoglio immobiliare con la sicurezza di oltre 20 anni di esperienza nel settore.",
     buttonText: "SCOPRI DI PIÙ",
     buttonLink: "/servizi"
   },
