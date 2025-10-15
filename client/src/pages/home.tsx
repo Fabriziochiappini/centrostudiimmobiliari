@@ -98,23 +98,29 @@ export default function Home() {
                 competenza assoluta e risultati concreti in ogni operazione immobiliare.
               </p>
             </ScrollReveal>
-            <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
               <StaggerItem>
                 <div className="text-center">
-                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>500+</div>
-                  <p className="text-gray-600 font-medium">Clienti Soddisfatti</p>
+                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>+200</div>
+                  <p className="text-gray-600 font-medium">Investitori 2024</p>
+                </div>
+              </StaggerItem>
+              <StaggerItem>
+                <div className="text-center">
+                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>+500</div>
+                  <p className="text-gray-600 font-medium">Investitori in Gestione</p>
                 </div>
               </StaggerItem>
               <StaggerItem>
                 <div className="text-center">
                   <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>8</div>
-                  <p className="text-gray-600 font-medium">Città Coperte</p>
+                  <p className="text-gray-600 font-medium">Mercati Italiani</p>
                 </div>
               </StaggerItem>
               <StaggerItem>
                 <div className="text-center">
-                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>15</div>
-                  <p className="text-gray-600 font-medium">Anni di Esperienza</p>
+                  <div className="text-4xl font-bold" style={{ color: '#2ca781' }}>15+</div>
+                  <p className="text-gray-600 font-medium">Strategie di Acquisto</p>
                 </div>
               </StaggerItem>
             </StaggerContainer>

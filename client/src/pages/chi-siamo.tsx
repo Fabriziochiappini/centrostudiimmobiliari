@@ -23,6 +23,48 @@ export default function ChiSiamo() {
         backgroundImage={chiSiamoHeroImage}
       />
 
+      {/* Statistics Section */}
+      <section className="py-20 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-6">
+                📊 I NOSTRI NUMERI
+              </div>
+              <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-4 leading-tight">
+                Risultati <span style={{ color: '#2ca781' }}>Concreti</span>
+              </h2>
+            </div>
+          </ScrollReveal>
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" staggerDelay={0.1}>
+            <StaggerItem>
+              <div className="text-center p-6 bg-gradient-to-br from-[#2ca781]/5 to-transparent rounded-xl">
+                <div className="text-5xl font-bold mb-2" style={{ color: '#2ca781' }}>+200</div>
+                <p className="text-gray-700 font-semibold text-lg">Investitori 2024</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="text-center p-6 bg-gradient-to-br from-[#2ca781]/5 to-transparent rounded-xl">
+                <div className="text-5xl font-bold mb-2" style={{ color: '#2ca781' }}>+500</div>
+                <p className="text-gray-700 font-semibold text-lg">Investitori in Gestione</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="text-center p-6 bg-gradient-to-br from-[#2ca781]/5 to-transparent rounded-xl">
+                <div className="text-5xl font-bold mb-2" style={{ color: '#2ca781' }}>8</div>
+                <p className="text-gray-700 font-semibold text-lg">Mercati Italiani</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="text-center p-6 bg-gradient-to-br from-[#2ca781]/5 to-transparent rounded-xl">
+                <div className="text-5xl font-bold mb-2" style={{ color: '#2ca781' }}>15+</div>
+                <p className="text-gray-700 font-semibold text-lg">Strategie di Acquisto</p>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+        </div>
+      </section>
+
       {/* Value Strategy Introduction */}
       <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
