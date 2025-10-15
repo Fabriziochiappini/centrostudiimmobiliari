@@ -88,117 +88,6 @@ export default function Contatti() {
         backgroundImage={contattiHeroImage}
       />
 
-      {/* Contact Info Cards */}
-      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-20">
-              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-                📞 CONTATTACI SUBITO
-              </div>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
-                Informazioni di <span style={{ color: '#2ca781' }}>Contatto</span>
-              </h2>
-              <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-light">
-                Consulenza <strong className="font-bold text-black">digitale in tutta Italia</strong> dalla nostra sede di Bologna
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            {/* Contact Cards Row 1 */}
-            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
-                    <Phone className="w-8 h-8 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-black">Telefono</h3>
-                    <p className="text-black">Chiamaci per una consulenza immediata</p>
-                  </div>
-                </div>
-                <a 
-                  href="tel:+390511960010" 
-                  className="text-2xl font-semibold text-black hover:text-[#2ca781] transition-colors duration-300"
-                >
-                  +39 051 196 000 10
-                </a>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
-                    <Mail className="w-8 h-8 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-black">Email</h3>
-                    <p className="text-black">Scrivici per informazioni dettagliate</p>
-                  </div>
-                </div>
-                <a 
-                  href="mailto:info@centrostudiimmobiliari.it" 
-                  className="text-xl font-semibold text-black hover:text-[#2ca781] transition-colors duration-300 break-all"
-                >
-                  info@centrostudiimmobiliari.it
-                </a>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Company Info Card */}
-            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
-                    <Building2 className="w-8 h-8 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-black">Dati Aziendali</h3>
-                    <p className="text-black">Informazioni societarie</p>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="font-medium text-black">Ragione Sociale:</span>
-                    <span className="text-black font-semibold">Exponent S.r.l.s</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="font-medium text-black">Partita IVA:</span>
-                    <span className="text-black font-semibold">04062291206</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Offices Card */}
-            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
-                    <MapPin className="w-8 h-8 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-montserrat font-bold text-black">La Nostra Sede</h3>
-                    <p className="text-black">Consulenza digitale in tutta Italia</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
-                  <div className="w-3 h-3 bg-[#2ca781] rounded-full"></div>
-                  <span className="text-black font-semibold text-lg">Bologna</span>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
       <section className="py-32 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -374,6 +263,117 @@ export default function Contatti() {
               </Form>
             </CardContent>
           </Card>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Contact Info Cards */}
+      <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-20">
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                📞 CONTATTACI SUBITO
+              </div>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+                Informazioni di <span style={{ color: '#2ca781' }}>Contatto</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-light">
+                Consulenza <strong className="font-bold text-black">digitale in tutta Italia</strong> dalla nostra sede di Bologna
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {/* Contact Cards Row 1 */}
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <Phone className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">Telefono</h3>
+                    <p className="text-black">Chiamaci per una consulenza immediata</p>
+                  </div>
+                </div>
+                <a 
+                  href="tel:+390511960010" 
+                  className="text-2xl font-semibold text-black hover:text-[#2ca781] transition-colors duration-300"
+                >
+                  +39 051 196 000 10
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <Mail className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">Email</h3>
+                    <p className="text-black">Scrivici per informazioni dettagliate</p>
+                  </div>
+                </div>
+                <a 
+                  href="mailto:info@centrostudiimmobiliari.it" 
+                  className="text-xl font-semibold text-black hover:text-[#2ca781] transition-colors duration-300 break-all"
+                >
+                  info@centrostudiimmobiliari.it
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Company Info Card */}
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <Building2 className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">Dati Aziendali</h3>
+                    <p className="text-black">Informazioni societarie</p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-black">Ragione Sociale:</span>
+                    <span className="text-black font-semibold">Exponent S.r.l.s</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="font-medium text-black">Partita IVA:</span>
+                    <span className="text-black font-semibold">04062291206</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Offices Card */}
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="w-16 h-16 bg-[#2ca781] rounded-xl flex items-center justify-center">
+                    <MapPin className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-montserrat font-bold text-black">La Nostra Sede</h3>
+                    <p className="text-black">Consulenza digitale in tutta Italia</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                  <div className="w-3 h-3 bg-[#2ca781] rounded-full"></div>
+                  <span className="text-black font-semibold text-lg">Bologna</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
           </ScrollReveal>
         </div>
       </section>
