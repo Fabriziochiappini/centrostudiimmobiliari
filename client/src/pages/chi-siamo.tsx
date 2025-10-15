@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import chiSiamoHeroImage from "@assets/pexels-apasaric-618079_1756737892045.jpg";
 import SEOHead from "@/components/SEOHead";
+import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
 
 export default function ChiSiamo() {
   return (
@@ -25,21 +26,23 @@ export default function ChiSiamo() {
       {/* Value Strategy Introduction */}
       <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-            ✦ METODO PROPRIETARIO ✦
+        <ScrollReveal>
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+              ✦ METODO PROPRIETARIO ✦
+            </div>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+              La Nostra <span style={{ color: '#2ca781' }}>Value Strategy</span>
+            </h2>
+            <p className="text-2xl md:text-3xl text-gray-700 mb-12 leading-relaxed font-light max-w-5xl mx-auto">
+              Un approccio <strong className="font-bold text-black">intelligente e proprietario</strong> che ti permette di massimizzare i tuoi investimenti immobiliari.
+            </p>
+            <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+              Questa strategia si basa su quattro passaggi fondamentali che ti aiuteranno a ottenere 
+              il massimo valore dai tuoi acquisti e vendite immobiliari.
+            </p>
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
-            La Nostra <span style={{ color: '#2ca781' }}>Value Strategy</span>
-          </h2>
-          <p className="text-2xl md:text-3xl text-gray-700 mb-12 leading-relaxed font-light max-w-5xl mx-auto">
-            Un approccio <strong className="font-bold text-black">intelligente e proprietario</strong> che ti permette di massimizzare i tuoi investimenti immobiliari.
-          </p>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-            Questa strategia si basa su quattro passaggi fondamentali che ti aiuteranno a ottenere 
-            il massimo valore dai tuoi acquisti e vendite immobiliari.
-          </p>
-        </div>
+        </ScrollReveal>
       </section>
 
       {/* 4 Steps Strategy */}
@@ -56,92 +59,102 @@ export default function ChiSiamo() {
               </div>
             </div>
           </div>
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-6 leading-tight">
-              I Quattro Passaggi <span style={{ color: '#2ca781' }}>Fondamentali</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light">
-              Il sistema comprovato per trasformare ogni investimento immobiliare in un successo garantito
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Step 1 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingDown className="w-8 h-8 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  1
-                </div>
-              </div>
-              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
-                Acquisto Strategico
-              </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
-                Acquistare un immobile ad un prezzo inferiore rispetto al suo valore di mercato attraverso 
-                saldo e stralcio, aste o ricerca di proprietà in aree in sviluppo.
+          <ScrollReveal>
+            <div className="text-center mb-20">
+              <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-6 leading-tight">
+                I Quattro Passaggi <span style={{ color: '#2ca781' }}>Fondamentali</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light">
+                Il sistema comprovato per trasformare ogni investimento immobiliare in un successo garantito
               </p>
-            </Card>
+            </div>
+          </ScrollReveal>
+          
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" staggerDelay={0.15}>
+            {/* Step 1 */}
+            <StaggerItem>
+              <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingDown className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    1
+                  </div>
+                </div>
+                <h3 className="text-xl font-montserrat font-bold text-black mb-4">
+                  Acquisto Strategico
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Acquistare un immobile ad un prezzo inferiore rispetto al suo valore di mercato attraverso 
+                  saldo e stralcio, aste o ricerca di proprietà in aree in sviluppo.
+                </p>
+              </Card>
+            </StaggerItem>
 
             {/* Step 2 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <HomeIcon className="w-8 h-8 text-white" />
+            <StaggerItem>
+              <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <HomeIcon className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    2
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  2
-                </div>
-              </div>
-              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
-                Massimizzazione Reddito
-              </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
-                Massimizzare la messa a reddito attraverso il servizio di affitti brevi, ottenendo 
-                un reddito stabile e superiore rispetto agli affitti tradizionali.
-              </p>
-            </Card>
+                <h3 className="text-xl font-montserrat font-bold text-black mb-4">
+                  Massimizzazione Reddito
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Massimizzare la messa a reddito attraverso il servizio di affitti brevi, ottenendo 
+                  un reddito stabile e superiore rispetto agli affitti tradizionali.
+                </p>
+              </Card>
+            </StaggerItem>
 
             {/* Step 3 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-8 h-8 text-white" />
+            <StaggerItem>
+              <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    3
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  3
-                </div>
-              </div>
-              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
-                Rivendita Valorizzata
-              </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
-                Rivendere l'immobile ad un prezzo più alto utilizzando strategie di timing 
-                e valutazione del mercato per realizzare un profitto significativo.
-              </p>
-            </Card>
+                <h3 className="text-xl font-montserrat font-bold text-black mb-4">
+                  Rivendita Valorizzata
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Rivendere l'immobile ad un prezzo più alto utilizzando strategie di timing 
+                  e valutazione del mercato per realizzare un profitto significativo.
+                </p>
+              </Card>
+            </StaggerItem>
 
             {/* Step 4 */}
-            <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Repeat className="w-8 h-8 text-white" />
+            <StaggerItem>
+              <Card className="bg-white border-4 border-[#2ca781] p-10 text-center group hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Repeat className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    4
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#071029] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  4
-                </div>
-              </div>
-              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
-                Reinvestimento
-              </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
-                Utilizzare il profitto ottenuto per acquistare un immobile con un budget più alto, 
-                accedendo a proprietà di maggior valore e potenziale.
-              </p>
-            </Card>
-          </div>
+                <h3 className="text-xl font-montserrat font-bold text-black mb-4">
+                  Reinvestimento
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Utilizzare il profitto ottenuto per acquistare un immobile con un budget più alto, 
+                  accedendo a proprietà di maggior valore e potenziale.
+                </p>
+              </Card>
+            </StaggerItem>
+          </StaggerContainer>
           {/* Bottom separator line */}
           <div className="relative mt-20">
             <div className="absolute inset-0 flex items-center">

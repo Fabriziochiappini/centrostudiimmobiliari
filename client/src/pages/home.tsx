@@ -275,162 +275,176 @@ export default function Home() {
       {/* Services Overview Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-              💼 SERVIZI SPECIALIZZATI
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                💼 SERVIZI SPECIALIZZATI
+              </div>
+              <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
+                I Nostri <span style={{ color: '#2ca781' }}>Servizi Premium</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
+                Dalla ricerca immobiliare agli NPL, dalle aste ai saldi e stralci. 
+                <strong className="text-black font-bold"> Soluzioni complete</strong> per ogni esigenza di investimento.
+              </p>
             </div>
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
-              I Nostri <span style={{ color: '#2ca781' }}>Servizi Premium</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 font-light">
-              Dalla ricerca immobiliare agli NPL, dalle aste ai saldi e stralci. 
-              <strong className="text-black font-bold"> Soluzioni complete</strong> per ogni esigenza di investimento.
-            </p>
-          </div>
+          </ScrollReveal>
           
           {/* Prima riga - 3 servizi */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8" staggerDelay={0.1}>
             {/* Property Finder */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/attached_assets/coppia-di-tiro-medio-che-parla-con-l-agente-immobiliare_1757939645930.jpg)' }}
-                   onError={(e) => {
-                     const target = e.target as HTMLDivElement;
-                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
-                   }}>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
-                    <Search className="w-6 h-6 text-[#2ca781]" />
+            <StaggerItem>
+              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+                <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                     style={{ backgroundImage: 'url(/attached_assets/coppia-di-tiro-medio-che-parla-con-l-agente-immobiliare_1757939645930.jpg)' }}
+                     onError={(e) => {
+                       const target = e.target as HTMLDivElement;
+                       target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                     }}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                      <Search className="w-6 h-6 text-[#2ca781]" />
+                    </div>
+                    <h3 className="text-lg font-montserrat font-bold text-white">Property Finder</h3>
                   </div>
-                  <h3 className="text-lg font-montserrat font-bold text-white">Property Finder</h3>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Ricerca personalizzata di immobili che soddisfano le tue esigenze specifiche con supporto nella trattativa
+                  </p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Ricerca personalizzata di immobili che soddisfano le tue esigenze specifiche con supporto nella trattativa
-                </p>
-              </div>
-            </div>
+            </StaggerItem>
 
             {/* NPL */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/attached_assets/uomo-che-fa-una-presentazione-aziendale-usando-una-penna-digitale-futuristica_1757939645928.jpg)' }}
-                   onError={(e) => {
-                     const target = e.target as HTMLDivElement;
-                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
-                   }}>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
-                    <FileText className="w-6 h-6 text-[#2ca781]" />
+            <StaggerItem>
+              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+                <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                     style={{ backgroundImage: 'url(/attached_assets/uomo-che-fa-una-presentazione-aziendale-usando-una-penna-digitale-futuristica_1757939645928.jpg)' }}
+                     onError={(e) => {
+                       const target = e.target as HTMLDivElement;
+                       target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                     }}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                      <FileText className="w-6 h-6 text-[#2ca781]" />
+                    </div>
+                    <h3 className="text-lg font-montserrat font-bold text-white">NPL</h3>
                   </div>
-                  <h3 className="text-lg font-montserrat font-bold text-white">NPL</h3>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Accesso esclusivo a crediti non performanti per acquisire immobili a prezzi straordinariamente vantaggiosi
+                  </p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Accesso esclusivo a crediti non performanti per acquisire immobili a prezzi straordinariamente vantaggiosi
-                </p>
-              </div>
-            </div>
+            </StaggerItem>
 
             {/* Saldo e Stralcio */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/attached_assets/vista-frontale-della-pianta-che-cresce-dalle-monete-d-oro_1757939645929.jpg)' }}
-                   onError={(e) => {
-                     const target = e.target as HTMLDivElement;
-                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
-                   }}>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
-                    <Scale className="w-6 h-6 text-[#2ca781]" />
+            <StaggerItem>
+              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+                <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                     style={{ backgroundImage: 'url(/attached_assets/vista-frontale-della-pianta-che-cresce-dalle-monete-d-oro_1757939645929.jpg)' }}
+                     onError={(e) => {
+                       const target = e.target as HTMLDivElement;
+                       target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                     }}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                      <Scale className="w-6 h-6 text-[#2ca781]" />
+                    </div>
+                    <h3 className="text-lg font-montserrat font-bold text-white">Saldo e Stralcio</h3>
                   </div>
-                  <h3 className="text-lg font-montserrat font-bold text-white">Saldo e Stralcio</h3>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Gestione efficiente e trasparente per eliminazione debiti e acquisizione immobili sotto mercato
+                  </p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Gestione efficiente e trasparente per eliminazione debiti e acquisizione immobili sotto mercato
-                </p>
-              </div>
-            </div>
-          </div>
+            </StaggerItem>
+          </StaggerContainer>
 
           {/* Seconda riga - 3 servizi */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12" staggerDelay={0.1}>
             {/* Aste Immobiliari */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/attached_assets/paesaggio-analogico-della-citta-con-edifici_1757939645927.jpg)' }}
-                   onError={(e) => {
-                     const target = e.target as HTMLDivElement;
-                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
-                   }}>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
-                    <Gavel className="w-6 h-6 text-[#2ca781]" />
+            <StaggerItem>
+              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+                <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                     style={{ backgroundImage: 'url(/attached_assets/paesaggio-analogico-della-citta-con-edifici_1757939645927.jpg)' }}
+                     onError={(e) => {
+                       const target = e.target as HTMLDivElement;
+                       target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                     }}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                      <Gavel className="w-6 h-6 text-[#2ca781]" />
+                    </div>
+                    <h3 className="text-lg font-montserrat font-bold text-white">Aste Immobiliari</h3>
                   </div>
-                  <h3 className="text-lg font-montserrat font-bold text-white">Aste Immobiliari</h3>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Assistenza completa nella partecipazione alle aste con analisi perizie e strategia d'acquisto
+                  </p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Assistenza completa nella partecipazione alle aste con analisi perizie e strategia d'acquisto
-                </p>
-              </div>
-            </div>
+            </StaggerItem>
 
             {/* Affitti Brevi */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/attached_assets/architettura-moderna-dell-appartamento_1757939645923.jpg)' }}
-                   onError={(e) => {
-                     const target = e.target as HTMLDivElement;
-                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
-                   }}>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
-                    <HomeIcon className="w-6 h-6 text-[#2ca781]" />
+            <StaggerItem>
+              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+                <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                     style={{ backgroundImage: 'url(/attached_assets/architettura-moderna-dell-appartamento_1757939645923.jpg)' }}
+                     onError={(e) => {
+                       const target = e.target as HTMLDivElement;
+                       target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                     }}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                      <HomeIcon className="w-6 h-6 text-[#2ca781]" />
+                    </div>
+                    <h3 className="text-lg font-montserrat font-bold text-white">Affitti Brevi</h3>
                   </div>
-                  <h3 className="text-lg font-montserrat font-bold text-white">Affitti Brevi</h3>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Massimizzazione del rendimento tramite gestione completa di affitti brevi su Airbnb e Booking
+                  </p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Massimizzazione del rendimento tramite gestione completa di affitti brevi su Airbnb e Booking
-                </p>
-              </div>
-            </div>
+            </StaggerItem>
 
             {/* Valorizzazione */}
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
-                   style={{ backgroundImage: 'url(/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg)' }}
-                   onError={(e) => {
-                     const target = e.target as HTMLDivElement;
-                     target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
-                   }}>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
-                    <TrendingUpIcon className="w-6 h-6 text-[#2ca781]" />
+            <StaggerItem>
+              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+                <div className="h-48 bg-cover bg-center bg-no-repeat relative" 
+                     style={{ backgroundImage: 'url(/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg)' }}
+                     onError={(e) => {
+                       const target = e.target as HTMLDivElement;
+                       target.style.backgroundImage = 'linear-gradient(135deg, #2ca781 0%, #1a513b 100%)';
+                     }}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3">
+                      <TrendingUpIcon className="w-6 h-6 text-[#2ca781]" />
+                    </div>
+                    <h3 className="text-lg font-montserrat font-bold text-white">Valorizzazione</h3>
                   </div>
-                  <h3 className="text-lg font-montserrat font-bold text-white">Valorizzazione</h3>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Home staging professionale e supporto completo per vendere più rapidamente e a prezzo migliore
+                  </p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Home staging professionale e supporto completo per vendere più rapidamente e a prezzo migliore
-                </p>
-              </div>
-            </div>
-          </div>
+            </StaggerItem>
+          </StaggerContainer>
 
           {/* Services CTA */}
           <div className="text-center">
@@ -452,26 +466,29 @@ export default function Home() {
       <section className="py-32 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-              <Award className="w-4 h-4 mr-2" />
-              CLIENTI PREMIUM
+          <ScrollReveal>
+            <div className="text-center mb-20">
+              <div className="inline-flex items-center px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                <Award className="w-4 h-4 mr-2" />
+                CLIENTI PREMIUM
+              </div>
+              <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-8 leading-tight">
+                Storie di <span style={{ color: '#2ca781' }}>Successo Verificate</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-light mb-4">
+                I risultati <strong className="font-bold text-black">concreti e misurabili</strong> dei nostri clienti parlano per noi
+              </p>
+              <div className="flex items-center justify-center gap-2 text-[#2ca781] font-semibold">
+                <Shield className="w-5 h-5" />
+                <span className="text-sm">Risultati verificati e documentati</span>
+              </div>
             </div>
-            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-8 leading-tight">
-              Storie di <span style={{ color: '#2ca781' }}>Successo Verificate</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-light mb-4">
-              I risultati <strong className="font-bold text-black">concreti e misurabili</strong> dei nostri clienti parlano per noi
-            </p>
-            <div className="flex items-center justify-center gap-2 text-[#2ca781] font-semibold">
-              <Shield className="w-5 h-5" />
-              <span className="text-sm">Risultati verificati e documentati</span>
-            </div>
-          </div>
+          </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" staggerDelay={0.15}>
             {/* Testimonial 1 - Alessandro Muraglia */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-alessandro-muraglia">
+            <StaggerItem>
+              <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-alessandro-muraglia">
               <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
                 <Quote className="w-8 h-8" />
               </div>
@@ -491,125 +508,136 @@ export default function Home() {
               <blockquote className="text-gray-700 leading-relaxed italic">
                 "Ottimo servizio. Mi sono rivolto a loro per approcciarmi al mercato delle aste immobiliari. Han saputo guidarmi nel processo facendomi ottenere ottime informazioni e risultati. La comunicazione è stata ottima e il costo è completamente giustificato dal servizio."
               </blockquote>
-            </Card>
+              </Card>
+            </StaggerItem>
 
             {/* Testimonial 2 - Michela Lamberti */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-michela-lamberti">
-              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
-                <Quote className="w-8 h-8" />
-              </div>
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  ML
+            <StaggerItem>
+              <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-michela-lamberti">
+                <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                  <Quote className="w-8 h-8" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">Michela Lamberti</h4>
-                  <div className="flex items-center mt-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                    ML
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-montserrat font-bold text-black">Michela Lamberti</h4>
+                    <div className="flex items-center mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <blockquote className="text-gray-700 leading-relaxed italic">
-                "Mi sono rivolta a loro per l'acquisto di un appartamento in centro Milano e mi hanno aiutata moltissimo, raggiungendo l'obiettivo. Consiglio vivamente."
-              </blockquote>
-            </Card>
+                <blockquote className="text-gray-700 leading-relaxed italic">
+                  "Mi sono rivolta a loro per l'acquisto di un appartamento in centro Milano e mi hanno aiutata moltissimo, raggiungendo l'obiettivo. Consiglio vivamente."
+                </blockquote>
+              </Card>
+            </StaggerItem>
 
             {/* Testimonial 3 - Francesco Risco */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-francesco-risco">
-              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
-                <Quote className="w-8 h-8" />
-              </div>
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  FR
+            <StaggerItem>
+              <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-francesco-risco">
+                <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                  <Quote className="w-8 h-8" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">Francesco Risco</h4>
-                  <div className="flex items-center mt-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                    FR
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-montserrat font-bold text-black">Francesco Risco</h4>
+                    <div className="flex items-center mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <blockquote className="text-gray-700 leading-relaxed italic">
-                "Nonostante la mia inesperienza nelle aste immobiliari, grazie al loro supporto sono riuscito ad acquistare una seconda casa per investimento in poco meno di 3 mesi. Mi ritengo pienamente soddisfatto del servizio."
-              </blockquote>
-            </Card>
-          </div>
+                <blockquote className="text-gray-700 leading-relaxed italic">
+                  "Nonostante la mia inesperienza nelle aste immobiliari, grazie al loro supporto sono riuscito ad acquistare una seconda casa per investimento in poco meno di 3 mesi. Mi ritengo pienamente soddisfatto del servizio."
+                </blockquote>
+              </Card>
+            </StaggerItem>
+          </StaggerContainer>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" staggerDelay={0.15}>
             {/* Testimonial 4 - Vanna Tintorri */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-vanna-tintorri">
-              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
-                <Quote className="w-8 h-8" />
-              </div>
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  VT
+            <StaggerItem>
+              <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-vanna-tintorri">
+                <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                  <Quote className="w-8 h-8" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">Vanna Tintorri</h4>
-                  <div className="flex items-center mt-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                    VT
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-montserrat font-bold text-black">Vanna Tintorri</h4>
+                    <div className="flex items-center mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <blockquote className="text-gray-700 leading-relaxed italic">
-                "Bravi, professionali e cortesi! Insomma super servizio di assistenza e consulenza."
-              </blockquote>
-            </Card>
+                <blockquote className="text-gray-700 leading-relaxed italic">
+                  "Bravi, professionali e cortesi! Insomma super servizio di assistenza e consulenza."
+                </blockquote>
+              </Card>
+            </StaggerItem>
 
             {/* Testimonial 5 - XVG Alias Group SRL */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-xvg-alias">
-              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
-                <Quote className="w-8 h-8" />
-              </div>
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  XG
+            <StaggerItem>
+              <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-xvg-alias">
+                <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                  <Quote className="w-8 h-8" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">XVG Alias Group SRL</h4>
-                  <div className="flex items-center mt-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                    XG
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-montserrat font-bold text-black">XVG Alias Group SRL</h4>
+                    <div className="flex items-center mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <blockquote className="text-gray-700 leading-relaxed italic">
-                "Grazie ai consulenti del Centro Studi Immobiliari! Il servizio è stato professionale ed esaustivo. Ho avuto modo di valutare con loro alcune soluzioni e sono stati estremamente precisi e professionali nel segnalarmi le caratteristiche delle opportunità che mi presentavano. Alla fine siamo riusciti a trovare una soluzione adeguata alle nostre esigenze risparmiando molti soldi. Consiglio questo servizio estremamente valido ed efficace."
-              </blockquote>
-            </Card>
+                <blockquote className="text-gray-700 leading-relaxed italic">
+                  "Grazie ai consulenti del Centro Studi Immobiliari! Il servizio è stato professionale ed esaustivo. Ho avuto modo di valutare con loro alcune soluzioni e sono stati estremamente precisi e professionali nel segnalarmi le caratteristiche delle opportunità che mi presentavano. Alla fine siamo riusciti a trovare una soluzione adeguata alle nostre esigenze risparmiando molti soldi. Consiglio questo servizio estremamente valido ed efficace."
+                </blockquote>
+              </Card>
+            </StaggerItem>
 
             {/* Testimonial 6 - Antonio Canterino */}
-            <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-antonio-canterino">
-              <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
-                <Quote className="w-8 h-8" />
-              </div>
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  AC
+            <StaggerItem>
+              <Card className="relative bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#2ca781] group hover:scale-105" data-testid="testimonial-antonio-canterino">
+                <div className="absolute top-6 right-6 text-[#2ca781] opacity-20">
+                  <Quote className="w-8 h-8" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-montserrat font-bold text-black">Antonio Canterino</h4>
-                  <div className="flex items-center mt-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#2ca781] to-[#1a513b] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                    AC
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-montserrat font-bold text-black">Antonio Canterino</h4>
+                    <div className="flex items-center mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <blockquote className="text-gray-700 leading-relaxed italic">
-                "Mi sono trovato benissimo. Ho da poco acquistato casa a Bologna grazie a questo straordinario studio di consulenza. Sono stato seguito da un team super che ha avuto tanta pazienza e professionalità nel suo mestiere. Ha saputo capire subito i miei desideri di casa e consigliarmi su ogni punto, risolvendo ogni perplessità nella mia importante scelta oltre che seguirmi in tutto e per tutto sino al giorno dell'acquisto. 5 stelle meritatissime per un'azienda seria che segue il cliente in modo molto professionale. Consigliatissimi!"
-              </blockquote>
-            </Card>
-          </div>
+                <blockquote className="text-gray-700 leading-relaxed italic">
+                  "Mi sono trovato benissimo. Ho da poco acquistato casa a Bologna grazie a questo straordinario studio di consulenza. Sono stato seguito da un team super che ha avuto tanta pazienza e professionalità nel suo mestiere. Ha saputo capire subito i miei desideri di casa e consigliarmi su ogni punto, risolvendo ogni perplessità nella mia importante scelta oltre che seguirmi in tutto e per tutto sino al giorno dell'acquisto. 5 stelle meritatissime per un'azienda seria che segue il cliente in modo molto professionale. Consigliatissimi!"
+                </blockquote>
+              </Card>
+            </StaggerItem>
+          </StaggerContainer>
 
           {/* Authority Proof Points */}
           <div className="bg-gradient-to-r from-[#2ca781] to-[#1a513b] rounded-2xl p-8 md:p-12 text-white">

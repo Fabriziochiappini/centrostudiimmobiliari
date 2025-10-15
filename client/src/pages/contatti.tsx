@@ -15,6 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import type { z } from "zod";
+import ScrollReveal from "@/components/animations/ScrollReveal";
 
 type ContactFormData = z.infer<typeof insertContactRequestSchema>;
 
@@ -91,19 +92,22 @@ export default function Contatti() {
       <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-              📞 CONTATTACI SUBITO
+          <ScrollReveal>
+            <div className="text-center mb-20">
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                📞 CONTATTACI SUBITO
+              </div>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+                Informazioni di <span style={{ color: '#2ca781' }}>Contatto</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-light">
+                Consulenza <strong className="font-bold text-black">digitale in tutta Italia</strong> dalla nostra sede di Bologna
+              </p>
             </div>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
-              Informazioni di <span style={{ color: '#2ca781' }}>Contatto</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-light">
-              Consulenza <strong className="font-bold text-black">digitale in tutta Italia</strong> dalla nostra sede di Bologna
-            </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <ScrollReveal>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {/* Contact Cards Row 1 */}
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
@@ -191,25 +195,29 @@ export default function Contatti() {
               </CardContent>
             </Card>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Contact Form Section */}
       <section className="py-32 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-              ✉️ INVIA UN MESSAGGIO
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                ✉️ INVIA UN MESSAGGIO
+              </div>
+              <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-6 leading-tight">
+                Richiedi una <span style={{ color: '#2ca781' }}>Consulenza</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Compila il form e ti contatteremo entro 24 ore
+              </p>
             </div>
-            <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-6 leading-tight">
-              Richiedi una <span style={{ color: '#2ca781' }}>Consulenza</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Compila il form e ti contatteremo entro 24 ore
-            </p>
-          </div>
+          </ScrollReveal>
 
-          <Card className="shadow-2xl border-0">
+          <ScrollReveal delay={0.2}>
+            <Card className="shadow-2xl border-0">
             <CardContent className="p-8 md:p-12">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -366,6 +374,7 @@ export default function Contatti() {
               </Form>
             </CardContent>
           </Card>
+          </ScrollReveal>
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import HeroSection from "@/components/layout/hero-section";
 import SEOHead from "@/components/SEOHead";
+import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
 
 // Componente per il contenuto del servizio Ricerca
 const RicercaContent = () => (
@@ -298,33 +299,36 @@ export default function Servizi() {
       <section className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-[#2ca781] to-transparent"></div>
         <div className="relative w-full">
-          <div className="text-center mb-24 px-4 sm:px-6 lg:px-8">
-            {/* Top separator line */}
-            <div className="relative mb-16">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t-2 border-gray-200"></div>
-              </div>
-              <div className="relative flex justify-center">
-                <div className="bg-white px-8">
-                  <div className="w-16 h-1 bg-gradient-to-r from-[#2ca781] to-gray-400 rounded-full"></div>
+          <ScrollReveal>
+            <div className="text-center mb-24 px-4 sm:px-6 lg:px-8">
+              {/* Top separator line */}
+              <div className="relative mb-16">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t-2 border-gray-200"></div>
+                </div>
+                <div className="relative flex justify-center">
+                  <div className="bg-white px-8">
+                    <div className="w-16 h-1 bg-gradient-to-r from-[#2ca781] to-gray-400 rounded-full"></div>
+                  </div>
                 </div>
               </div>
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                ✦ SERVIZI SPECIALIZZATI ✦
+              </div>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
+                Servizi <span style={{ color: '#2ca781' }}>Premium Esclusivi</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
+                <strong className="font-bold text-black">6 servizi specializzati</strong> che hanno generato un <span className="text-[#2ca781] font-bold">ROI medio del 25%</span> per i nostri clienti. 
+                Expertise comprovata in <strong className="font-bold text-black">500+ investimenti</strong>.
+              </p>
             </div>
-            <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
-              ✦ SERVIZI SPECIALIZZATI ✦
-            </div>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-black mb-8 leading-tight">
-              Servizi <span style={{ color: '#2ca781' }}>Premium Esclusivi</span>
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
-              <strong className="font-bold text-black">6 servizi specializzati</strong> che hanno generato un <span className="text-[#2ca781] font-bold">ROI medio del 25%</span> per i nostri clienti. 
-              Expertise comprovata in <strong className="font-bold text-black">500+ investimenti</strong>.
-            </p>
-          </div>
+          </ScrollReveal>
           
           {/* Mobile/Tablet Accordion View */}
           <div className="block lg:hidden px-4 sm:px-6">
-            <Accordion type="single" collapsible className="space-y-4">
+            <StaggerContainer staggerDelay={0.1}>
+              <Accordion type="single" collapsible className="space-y-4">
               {services.map((service) => {
                 const IconComponent = service.icon;
                 return (
@@ -378,6 +382,7 @@ export default function Servizi() {
                 );
               })}
             </Accordion>
+            </StaggerContainer>
           </div>
           
           {/* Desktop Full Layout */}
