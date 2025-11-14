@@ -6,7 +6,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 const SLIDES = [
   {
     backgroundImage: "/attached_assets/architettura-moderna-dell-appartamento_1757939645923.jpg",
-    badge: "CENTRO STUDI IMMOBILIARI",
+    badge: "IL CONSULENTE DI CHI ACQUISTA",
     title: "Il Valore Migliore Per Gli Investimenti Immobiliari",
     subtitle: "Consulenza strategica e soluzioni innovative per massimizzare i rendimenti del tuo portafoglio immobiliare con la sicurezza di oltre 20 anni di esperienza nel settore.",
     buttonText: "SCOPRI DI PIÙ",

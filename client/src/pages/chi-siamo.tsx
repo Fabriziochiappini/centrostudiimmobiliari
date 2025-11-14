@@ -20,7 +20,7 @@ export default function ChiSiamo() {
       {/* Hero Section */}
       <HeroSection
         title="Chi Siamo"
-        subtitle="Un team di professionisti esperti nel settore immobiliare, dedicati a offrire soluzioni innovative e servizi di qualità superiore."
+        subtitle="Il consulente di chi acquista. Un team di professionisti esperti nel settore immobiliare, dedicati a offrire soluzioni innovative e servizi di qualità superiore."
         backgroundImage={chiSiamoHeroImage}
       />
 
