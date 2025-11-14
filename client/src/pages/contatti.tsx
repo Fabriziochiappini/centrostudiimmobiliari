@@ -513,7 +513,7 @@ export default function Contatti() {
               🚀 CONSULENZA PROFESSIONALE
             </div>
             <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-white mb-8 leading-tight">
-              Pronti ad <span className="text-yellow-300">Aiutarti</span>
+              La nostra <span className="text-yellow-300">esperienza</span> al tuo servizio
             </h2>
             <p className="text-xl md:text-2xl text-white/90 mb-16 font-light max-w-5xl mx-auto">
               Contattaci per una <strong className="font-bold text-yellow-300">consulenza personalizzata e professionale</strong> sui tuoi investimenti immobiliari
