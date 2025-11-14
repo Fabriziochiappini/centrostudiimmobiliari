@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TrendingDown, HomeIcon, TrendingUp, Repeat, ArrowRight, MapPin, Calendar, Euro, BarChart3, Clock, CheckCircle2, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import DownloadGuideSection from "@/components/layout/download-guide-section";
 import chiSiamoHeroImage from "@assets/pexels-apasaric-618079_1756737892045.jpg";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
@@ -357,6 +358,10 @@ export default function ChiSiamo() {
           </div>
         </div>
       </section>
+
+      {/* Download Guide Section */}
+      <DownloadGuideSection />
+
     </div>
   );
 }

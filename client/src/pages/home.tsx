@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import HeroModern from "@/components/layout/hero-modern";
+import DownloadGuideSection from "@/components/layout/download-guide-section";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
 import { Search, FileText, Scale, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat, Star, Quote, Award, CheckCircle, Shield } from "lucide-react";
 // File da caricare nell'Object Storage nella directory public:
@@ -776,6 +777,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Download Guide Section */}
+      <DownloadGuideSection />
 
     </div>
   );

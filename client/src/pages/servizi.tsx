@@ -3,6 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import HeroSection from "@/components/layout/hero-section";
+import DownloadGuideSection from "@/components/layout/download-guide-section";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
 
@@ -491,6 +492,10 @@ export default function Servizi() {
           </div>
         </div>
       </section>
+
+      {/* Download Guide Section */}
+      <DownloadGuideSection />
+
     </div>
   );
 }

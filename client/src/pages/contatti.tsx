@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/layout/hero-section";
 import { MapPin, Phone, Mail, Building2, Send } from "lucide-react";
+import DownloadGuideSection from "@/components/layout/download-guide-section";
 import contattiHeroImage from "@assets/pexels-rccbtn-33704751_1756737856109.jpg";
 import SEOHead from "@/components/SEOHead";
 import { useForm } from "react-hook-form";
@@ -546,6 +547,10 @@ export default function Contatti() {
           </div>
         </div>
       </section>
+
+      {/* Download Guide Section */}
+      <DownloadGuideSection />
+
     </div>
   );
 }
