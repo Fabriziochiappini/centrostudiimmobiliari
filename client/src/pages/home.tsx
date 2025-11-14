@@ -731,53 +731,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Enhanced Authority Awards Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-6">
-              <TrendingUp className="w-4 h-4 mr-2" />
-              RICONOSCIMENTI 2024
-            </div>
-            <h3 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-8">
-              Premi e <span style={{ color: '#2ca781' }}>Riconoscimenti</span>
-            </h3>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Award 1 */}
-            <div className="bg-gradient-to-br from-yellow-50 to-amber-50 border-2 border-yellow-200 rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300" data-testid="award-miglior-consulenza">
-              <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="w-10 h-10 text-white" />
-              </div>
-              <h4 className="text-xl font-montserrat font-bold text-black mb-4">Miglior Consulenza NPL</h4>
-              <p className="text-gray-600 mb-4">Premio per l'eccellenza nei servizi NPL immobiliari e consulenza specializzata</p>
-              <div className="text-sm text-gray-500 font-medium">Settore Immobiliare • 2024</div>
-            </div>
-
-            {/* Award 2 */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300" data-testid="award-innovazione">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-10 h-10 text-white" />
-              </div>
-              <h4 className="text-xl font-montserrat font-bold text-black mb-4">Innovation Award</h4>
-              <p className="text-gray-600 mb-4">Riconoscimento per l'approccio innovativo alla Value Strategy nel real estate italiano</p>
-              <div className="text-sm text-gray-500 font-medium">Associazione Professionale • 2024</div>
-            </div>
-
-            {/* Award 3 */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300" data-testid="award-customer-satisfaction">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Star className="w-10 h-10 text-white" />
-              </div>
-              <h4 className="text-xl font-montserrat font-bold text-black mb-4">Customer Excellence</h4>
-              <p className="text-gray-600 mb-4">95% di soddisfazione clienti certificata da ente indipendente per la qualità del servizio</p>
-              <div className="text-sm text-gray-500 font-medium">Ente Certificatore • 2024</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Download Guide Section */}
       <DownloadGuideSection />
 
