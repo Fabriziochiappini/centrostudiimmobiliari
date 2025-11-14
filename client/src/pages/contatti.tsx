@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import type { z } from "zod";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
@@ -378,6 +379,126 @@ export default function Contatti() {
               </CardContent>
             </Card>
           </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-32 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <div className="inline-block px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-8">
+                ❓ DOMANDE FREQUENTI
+              </div>
+              <h2 className="text-5xl md:text-6xl font-montserrat font-bold text-black mb-6 leading-tight">
+                FAQ - <span style={{ color: '#2ca781' }}>Risposte Rapide</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Le risposte alle domande più comuni sui nostri servizi
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              <AccordionItem value="item-1" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-1">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">1. Perché affidarsi al vostro Centro Studi Immobiliare per le aste?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Perché massimizziamo il risparmio e minimizziamo i rischi. Analizziamo l'immobile, individuiamo le criticità nascoste e costruiamo una strategia su misura per farti acquistare al miglior prezzo possibile. È il modo più sicuro e veloce per comprare immobili all'asta senza sorprese.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-2">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">2. Come funziona l'acquisto di un immobile all'asta?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Ti seguiamo passo passo: ricerca dell'immobile → analisi tecnica → prezzo massimo consigliato → partecipazione alla gara → aggiudicazione → supporto al saldo prezzo e alla consegna dell'immobile. Il nostro metodo elimina incertezze e ti porta dritto all'obiettivo.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-3">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">3. Perché gli stralci immobiliari sono un'opportunità così vantaggiosa?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Lo stralcio immobiliare ti permette di acquistare prima dell'asta a un prezzo spesso ancora più basso. Gestiamo per te la trattativa con banca e debitore, riducendo debiti e tempi. Risultato: immobili scontati fino al 60% e operazioni rapide.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-4">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">4. Cosa sono gli NPL e perché sono un investimento ad alto rendimento?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Gli NPL (Non Performing Loans) sono crediti deteriorati garantiti da immobili. Analizziamo per te il credito, l'immobile sottostante e la strategia di recupero più profittevole. Ottimo per investitori che vogliono operazioni a ROI superiore alla media.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-5">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">5. Quali rischi ci sono e come li eliminate?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  I rischi esistono, ma noi li anticipiamo. Con due diligence completa, analisi catastale/urbanistica legale e valutazioni di mercato aggiornate, ti offriamo operazioni sicure, pronte e guidate da professionisti esperti in aste, stralci e NPL.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">6. Quanto posso risparmiare con aste o stralci immobiliari?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  I nostri clienti ottengono risparmi medi tra 20% e 60% sotto il valore di mercato. Nei casi di stralcio o NPL, le opportunità possono essere ancora maggiori.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-7" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-7">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">7. Posso investire anche se non ho esperienza nel settore?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Assolutamente sì. Molti nostri clienti iniziano da zero. Ti forniamo formazione, analisi, strategia e supporto operativo completo. Tu decidi l'obiettivo, noi costruiamo l'operazione.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-8" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-8">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">8. L'immobile in asta è sempre libero?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Non sempre, ma verifichiamo subito lo stato di occupazione e gestiamo ogni fase fino al rilascio. Ti diciamo prima cosa aspettarti, così eviti sorprese.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-9" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-9">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">9. Offrite consulenza anche a investitori e società?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  Sì. Lavoriamo con investitori privati, fondi, società immobiliari e veicoli d'investimento interessati a operazioni scalabili. Offriamo analisi portafogli NPL, scouting aste e deal strutturati.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-10" className="border border-gray-200 rounded-lg px-6" data-testid="faq-item-10">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-lg font-semibold text-black">10. Come posso iniziare subito?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  <p className="mb-3">Richiedi una analisi preliminare gratuita. In pochi minuti ti diciamo:</p>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>se l'operazione è fattibile</li>
+                    <li>quanto puoi risparmiare</li>
+                    <li>quali sono i rischi</li>
+                    <li>la strategia migliore per acquistare o investire</li>
+                  </ul>
+                  <p className="mt-3">Il primo passo per trasformare un'opportunità immobiliare in un vero affare.</p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </ScrollReveal>
         </div>
       </section>
