@@ -678,59 +678,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Professional Certifications Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-[#2ca781]/10 rounded-full text-[#2ca781] font-bold text-sm uppercase tracking-widest mb-6">
-              <CheckCircle className="w-4 h-4 mr-2" />
-              CERTIFICAZIONI PREMIUM
-            </div>
-            <h3 className="text-3xl md:text-4xl font-montserrat font-bold text-black mb-8">
-              Credenziali e <span style={{ color: '#2ca781' }}>Partnership Esclusive</span>
-            </h3>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {/* FIABCI Certification */}
-            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] transition-colors duration-300" data-testid="cert-fiabci">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="font-montserrat font-bold text-sm text-black mb-2">CERTIFICAZIONE PROFESSIONALE</h4>
-              <p className="text-xs text-gray-600">Federazione Internazionale Professionisti Immobiliari</p>
-            </div>
-
-            {/* RICS Membership */}
-            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] transition-colors duration-300" data-testid="cert-rics">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="font-montserrat font-bold text-sm text-black mb-2">QUALIFICA INTERNAZIONALE</h4>
-              <p className="text-xs text-gray-600">Istituto Internazionale Peritale Immobiliare</p>
-            </div>
-
-            {/* Banking Partnerships */}
-            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] transition-colors duration-300" data-testid="cert-banking">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4">
-                <Handshake className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="font-montserrat font-bold text-sm text-black mb-2">PARTNER BANCARI</h4>
-              <p className="text-xs text-gray-600">Accesso Esclusivo NPL & Distressed Assets</p>
-            </div>
-
-            {/* 15 Years Experience */}
-            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-[#2ca781] transition-colors duration-300" data-testid="cert-experience">
-              <div className="w-16 h-16 bg-[#2ca781] rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="font-montserrat font-bold text-sm text-black mb-2">15 ANNI</h4>
-              <p className="text-xs text-gray-600">Esperienza Comprovata nel Real Estate</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Download Guide Section */}
       <DownloadGuideSection />
 
