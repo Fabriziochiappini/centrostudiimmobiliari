@@ -15,6 +15,7 @@ import Sedi from "./pages/sedi";
 import PrivacyPolicy from "./pages/privacy-policy";
 import CookiePolicy from "./pages/cookie-policy";
 import TerminiServizio from "./pages/termini-servizio";
+import Condizioni from "./pages/condizioni";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -33,6 +34,7 @@ function Router() {
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/cookie-policy" component={CookiePolicy} />
           <Route path="/termini-servizio" component={TerminiServizio} />
+          <Route path="/condizioni" component={Condizioni} />
           <Route component={NotFound} />
         </Switch>
       </main>
