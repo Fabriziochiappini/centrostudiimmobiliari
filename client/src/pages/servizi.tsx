@@ -220,7 +220,7 @@ export default function Servizi() {
       content: RicercaContent,
       bgColor: 'bg-white',
       textColor: 'text-black',
-      image: '/public-objects/ricerca-property-finder.jpg',
+      image: '/attached_assets/coppia-di-tiro-medio-che-parla-con-l-agente-immobiliare_1757939645930.jpg',
       imageAlt: 'Property Finder - Casa con giardino e viale d\'accesso',
       imagePlaceholder: '🏡'
     },
@@ -231,7 +231,7 @@ export default function Servizi() {
       content: NPLContent,
       bgColor: 'bg-white',
       textColor: 'text-black',
-      image: '/public-objects/npl-opportunita.jpg',
+      image: '/attached_assets/uomo-che-fa-una-presentazione-aziendale-usando-una-penna-digitale-futuristica_1757939645928.jpg',
       imageAlt: 'NPL - Opportunità di investimento immobiliare',
       imagePlaceholder: '📊'
     },
@@ -242,7 +242,7 @@ export default function Servizi() {
       content: SaldoStralcioContent,
       bgColor: 'bg-white',
       textColor: 'text-black',
-      image: '/public-objects/saldo-stralcio-jurelit.jpg',
+      image: '/attached_assets/vista-frontale-della-pianta-che-cresce-dalle-monete-d-oro_1757939645929.jpg',
       imageAlt: 'Saldo e Stralcio - Partnership Jurelit',
       imagePlaceholder: '⚖️'
     },
@@ -253,7 +253,7 @@ export default function Servizi() {
       content: AstaContent,
       bgColor: 'bg-white',
       textColor: 'text-black',
-      image: '/public-objects/asta-immobiliare.jpg',
+      image: '/attached_assets/paesaggio-analogico-della-citta-con-edifici_1757939645927.jpg',
       imageAlt: 'Aste immobiliari - Tribunale e martelletto',
       imagePlaceholder: '🔨'
     },
@@ -264,7 +264,7 @@ export default function Servizi() {
       content: ValorizzazioneContent,
       bgColor: 'bg-white',
       textColor: 'text-black',
-      image: '/public-objects/valorizzazione-home-staging.jpg',
+      image: '/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg',
       imageAlt: 'Valorizzazione - Home staging di un soggiorno moderno',
       imagePlaceholder: '📈'
     },
@@ -275,7 +275,7 @@ export default function Servizi() {
       content: AffittiBreviContent,
       bgColor: 'bg-white',
       textColor: 'text-black',
-      image: '/public-objects/affitti-brevi-airbnb.jpg',
+      image: '/attached_assets/architettura-moderna-dell-appartamento_1757939645923.jpg',
       imageAlt: 'Affitti Brevi - Camera da letto accogliente per ospiti',
       imagePlaceholder: '🏨'
     }
@@ -293,7 +293,7 @@ export default function Servizi() {
       <HeroSection
         title="I Nostri Servizi"
         subtitle="Soluzioni complete e personalizzate per ogni esigenza immobiliare, dalla consulenza strategica alla gestione del patrimonio."
-        backgroundImage="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=800"
+        backgroundImage="/attached_assets/vista-edificio-per-uffici-dall-alto-al-tramonto_1757939645926.jpg"
       />
 
       {/* Services Full Width */}

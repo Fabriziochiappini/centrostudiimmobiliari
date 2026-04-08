@@ -7,15 +7,10 @@ import HeroModern from "@/components/layout/hero-modern";
 import DownloadGuideSection from "@/components/layout/download-guide-section";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/animations/ScrollReveal";
 import { Search, FileText, Scale, Handshake, Gavel, TrendingUp, Home as HomeIcon, ArrowRight, ShoppingCart, TrendingDown, TrendingUp as TrendingUpIcon, Repeat, Star, Quote, Award, CheckCircle, Shield } from "lucide-react";
-// File da caricare nell'Object Storage nella directory public:
-// hero-video.mp4, strategy-video.mp4, services-bg.jpg
-// business-card-bg.jpg, academy-card-bg.jpg, investor-card-bg.jpg
-
-
 // FlipCard Component
 function FlipCard({ title, description, backgroundImage }: { title: string; description: string; backgroundImage?: string }) {
   const [isFlipped, setIsFlipped] = useState(false);
-  const bgImage = backgroundImage || "/public-objects/flip-card-bg.jpg";
+  const bgImage = backgroundImage || "/attached_assets/pexels-sevenstormphotography-443378_1756309760873.jpg";
 
   return (
     <div className="relative h-80 perspective-1000">
@@ -32,14 +27,9 @@ function FlipCard({ title, description, backgroundImage }: { title: string; desc
             src={bgImage}
             alt={`Background for ${title}`}
             className="absolute inset-0 w-full h-full object-cover rounded-lg"
-            onError={(e) => {
+            onError={(e: any) => {
               const target = e.target as HTMLImageElement;
               target.style.display = 'none';
-              const fallback = document.createElement('div');
-              fallback.className = 'absolute inset-0 bg-gray-200 rounded-lg flex items-center justify-center';
-              const filename = bgImage.split('/').pop() || 'flip-card-bg.jpg';
-              fallback.innerHTML = `<div class="text-center text-gray-500"><div class="text-4xl mb-2">🖼️</div><p class="text-sm">Carica "${filename}" nell'Object Storage</p></div>`;
-              target.parentNode?.appendChild(fallback);
             }}
           />
           <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
@@ -171,14 +161,8 @@ export default function Home() {
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url(/public-objects/strategy-background.jpg)',
+            backgroundImage: 'url(/attached_assets/concetto-degli-uomini-di-affari-della-stretta-di-mano_1759497740852.jpg)',
             backgroundColor: '#6b7280'
-          }}
-          onError={(e) => {
-            console.error('Background image error:', e);
-            const target = e.target as HTMLDivElement;
-            target.style.backgroundImage = 'none';
-            target.style.backgroundColor = '#6b7280';
           }}
         ></div>
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
