@@ -1,7 +1,7 @@
 import SEOHead from "@/components/SEOHead";
 import { FileText } from "lucide-react";
 
-export default function Condizioni() {
+export default function TerminiECondizioni() {
   return (
     <div className="animate-fade-in">
       <SEOHead
