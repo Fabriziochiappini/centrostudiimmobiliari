@@ -16,7 +16,7 @@ export default function TerminiServizio() {
             <div>
               <h2 className="text-2xl font-montserrat font-bold text-[#071029] mb-4">1. Informazioni sulla società</h2>
               <p className="text-gray-600 leading-relaxed">
-                <strong>Exponent S.r.l.s</strong> è una società di consulenza immobiliare con P.IVA 04062291206, 
+                <strong>Exponent S.r.l.s</strong> è una società di consulenza immobiliare con P.IVA 04066291206, 
                 con sede operativa a Bologna e consulenza digitale in tutta Italia. 
                 Contatti: info@centrostudiimmobiliari.it - +39 051 196 000 10.
               </p>
@@ -129,7 +129,7 @@ export default function TerminiServizio() {
                 Per qualsiasi domanda sui presenti termini di servizio, contatta:<br />
                 <strong>Email:</strong> info@centrostudiimmobiliari.it<br />
                 <strong>Telefono:</strong> +39 051 196 000 10<br />
-                <strong>P.IVA:</strong> 04062291206
+                <strong>P.IVA:</strong> 04066291206
               </p>
             </div>
           </div>

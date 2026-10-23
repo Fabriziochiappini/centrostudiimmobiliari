@@ -355,7 +355,7 @@ export default function Contatti() {
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-medium text-black">Partita IVA:</span>
-                    <span className="text-black font-semibold">04062291206</span>
+                    <span className="text-black font-semibold">04066291206</span>
                   </div>
                 </div>
               </CardContent>

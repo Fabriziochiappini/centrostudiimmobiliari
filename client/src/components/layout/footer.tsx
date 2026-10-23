@@ -100,7 +100,7 @@ export default function Footer() {
               <li>Exponent S.r.l.s</li>
               <li>+39 051 196 000 10</li>
               <li>info@centrostudiimmobiliari.it</li>
-              <li>P.IVA 04062291206</li>
+              <li>P.IVA 04066291206</li>
             </ul>
           </div>
         </div>

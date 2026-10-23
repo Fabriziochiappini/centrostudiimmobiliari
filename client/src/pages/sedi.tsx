@@ -60,7 +60,7 @@ export default function Sedi() {
               <div className="space-y-2">
                 <p><strong>Telefono:</strong> +39 051 196 000 10</p>
                 <p><strong>Email:</strong> info@centrostudiimmobiliari.it</p>
-                <p><strong>P.IVA:</strong> 04062291206</p>
+                <p><strong>P.IVA:</strong> 04066291206</p>
               </div>
             </div>
           </div>
